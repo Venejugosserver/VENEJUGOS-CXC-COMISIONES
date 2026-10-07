@@ -1,0 +1,30 @@
+GLOBAL KPI · CxC y comisiones - Venejugos
+
+Archivos (todos sueltos, sin carpetas)
+- cxc.html ........ el panel. Va en la raíz del repositorio KPI-GLOBAL, junto a performance.html.
+                    Se llama cxc.html para no pisar un index.html que ya tengas.
+                    Queda en: https://venejugosserver.github.io/KPI-GLOBAL/cxc.html
+- tasa_bcv.py ..... el robot que lee la tasa del BCV. Va en la raíz del repositorio.
+- tasa-bcv.yml .... la programación del robot (GitHub Actions). Este NO se sube arrastrando: ver paso 2.
+- LEEME.txt ....... estas instrucciones.
+
+Paso 1. Subir cxc.html y tasa_bcv.py
+  En el repositorio: Add file > Upload files > arrastra los dos archivos > Commit changes.
+
+Paso 2. Crear el robot (tasa-bcv.yml)
+  GitHub no acepta carpetas al arrastrar, así que este archivo se crea a mano:
+  1. Add file > Create new file.
+  2. En el nombre escribe exactamente:  .github/workflows/tasa-bcv.yml
+     (al escribir cada "/" GitHub crea la carpeta solo).
+  3. Abre tasa-bcv.yml con el Bloc de notas, copia todo y pégalo en el editor.
+  4. Commit changes.
+
+Paso 3. Dar permiso al robot para guardar la tasa
+  Settings > Actions > General > Workflow permissions > "Read and write permissions" > Save.
+
+Paso 4. Probarlo
+  Pestaña Actions > "Tasa BCV" > Run workflow.
+  Si termina en verde aparece tasa_bcv.json en la raíz del repositorio y el panel ya muestra la tasa.
+  Desde ahí se actualiza solo de lunes a viernes a las 8:00 a. m., 1:00 p. m. y 6:00 p. m. (hora de Caracas).
+
+Contraseña de Administración: la que ya tienes.
