@@ -1,0 +1,50 @@
+GLOBAL KPI · CxC y comisiones - Venejugos
+Corte base: 07/10/2026
+
+Cómo verlo
+- Abre index.html con Chrome o Edge (doble clic).
+- Necesita internet para las fuentes y para dos funciones: "Print · descargar imagen" y "Cargar Excel de CxC".
+
+LAS 3 VISTAS (botones grandes arriba)
+1) GENERAL (abierta para todos)
+   - Panel principal: KPI, otras líneas vs Bigott, alerta de cartera vencida, antigüedad, resumen por canal y cartera por supervisor.
+   - CxC por vendedor: tabla por canal; toca un vendedor para ver sus clientes.
+   - No muestra comisiones (eso es de la vista administrativa).
+2) ADMINISTRATIVA (con contraseña)
+   - Comisiones: cobranza y comisión por vendedor, agrupadas por canal y divididas en otras líneas / Bigott.
+   - Descargas: baja la CxC procesada en un Excel.
+   - Carga y edición: carga del Excel de CxC del día, edición de comisiones y canales, restablecer datos base.
+3) CALCULADOR (abierto)
+   - Parámetros por categoría: Vendedor tradicional (el resto), Vendedor Foodservice (Lisbeth y Mary) y Vendedor Bigott (Liliana Romero).
+   - Cada categoría tiene su % para otras líneas y su % para Bigott (todos los vendedores venden Bigott).
+   - Simulador rápido: eliges vendedor, escribes lo cobrado en otras líneas y en Bigott y ves la comisión.
+   - Calculador por equipo: una fila por vendedor, subtotal por categoría y total general.
+   - Los % se guardan en el navegador. "Restablecer parámetros" vuelve a los valores de partida.
+   - Foodservice y Vendedor Bigott arrancan con la tasa de Tradicional (avisa en pantalla) hasta que escribas sus % propios.
+   - Dentro de la sesión administrativa aparece "Traer cobranza del corte".
+
+CONEXIÓN GITHUB (Administrativa > Carga y edición)
+- Escribe usuario, repositorio (KPI-GLOBAL), rama (main), archivo (cxc-datos.json) y token. Queda guardado en ese dispositivo.
+- "Guardar en GitHub" crea o actualiza el archivo. "Cargar de GitHub" lo baja. "Descargar JSON" guarda una copia.
+- Con token, el panel lee y escribe por la API de GitHub: funciona con repositorio PRIVADO y sin GitHub Pages.
+- Al abrir la página: si hay "cambios sin publicar" en ese dispositivo mandan los locales; si no, se lee lo último de GitHub.
+- El botón "⟳ Actualizar" (barra de arriba, en las 3 vistas) trae lo último publicado. El sello naranja "Cambios sin publicar" avisa cuando falta guardar.
+- Token: GitHub > Settings > Developer settings > Fine-grained tokens > solo ese repositorio > Contents: Read and write.
+- Hay cédulas y montos: usa repositorio privado y no compartas el token. Si el repositorio es público, desmarca "Incluir comisiones".
+- Para ver los datos en otro dispositivo, configura la misma conexión allí una vez.
+
+Print de pantalla
+- El botón "Print · descargar imagen" (barra de filtros) guarda la vista que estás viendo como "cxc venejugos.png".
+
+Para que las comisiones también se vean en la vista General
+- En index.html cambia COMISIONES_PUBLICAS = false por true.
+
+Filtros (en General y Comisiones)
+- Línea (todas / otras líneas / Bigott), Canal, Supervisor, Coordinador y Vendedor.
+
+Dónde se guardan los cambios
+- En esta copia local, en el navegador de cada computadora.
+- En el panel publicado en claude.ai, en el panel.
+
+GitHub Pages
+- Puedes subir index.html junto a performance.html en el repositorio KPI-GLOBAL (con otro nombre, por ejemplo cxc.html); no necesita archivos adicionales.
