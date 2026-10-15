@@ -1,0 +1,54 @@
+GLOBAL KPI · CxC y comisiones - Venejugos
+Datos base: CxC al 14/10/2026 y comisiones al 14/10/2026
+
+Archivos (todos sueltos, sin carpetas)
+- cxc.html ........ el panel. Va en la raíz del repositorio VENEJUGOS-CXC-COMISIONES.
+                    Queda en: https://venejugosserver.github.io/VENEJUGOS-CXC-COMISIONES/cxc.html
+- tasa_bcv.py ..... el robot que lee la tasa del BCV. Va en la raíz del repositorio.
+- tasa-bcv.yml .... la programación del robot (GitHub Actions). Este NO se sube arrastrando: ver paso 2.
+- LEEME.txt ....... estas instrucciones.
+
+Paso 1. Subir cxc.html (reemplaza el anterior) y tasa_bcv.py
+  Add file > Upload files > arrastra los archivos > Commit changes.
+
+Paso 2. Robot de la tasa BCV (solo si aún no lo creaste)
+  1. Add file > Create new file.
+  2. En el nombre escribe exactamente:  .github/workflows/tasa-bcv.yml
+  3. Pega el contenido de tasa-bcv.yml y Commit changes.
+  4. Settings > Actions > General > Workflow permissions > "Read and write permissions".
+  5. Actions > "Tasa BCV" > Run workflow para probarlo.
+  Borra de la raíz el tasa-bcv.yml suelto: ahí no funciona.
+
+Imprimir / PDF
+- El botón "Imprimir / PDF" (cinta de filtros) imprime la pestaña que estés viendo en hoja A4 horizontal, sin la cinta de filtros ni las pestañas.
+- En la ventana de impresión elige "Guardar como PDF" como destino. El PDF se llama "cxc venejugos <pestaña> <fecha>".
+- Respeta los filtros activos y los bloqueos: si un tipo de empleado está bloqueado, sus comisiones no salen impresas.
+- Dentro de claude.ai no hay ventana de impresión: el mismo botón baja el PDF directo.
+
+Claves por empleado
+- Cada empleado que cobra comisión (vendedores, supervisores y el vendedor Bigott) tiene su propia clave.
+- Para entrar se eligen tres datos: tipo de empleado, empleado y su clave (botón "Ingresar clave"). La clave solo sirve para el empleado elegido.
+- Con su clave ve su comisión y el panel se enfoca en él; sin ella, su comisión queda oculta. La CxC se ve completa para todos.
+- La clave de Administración desbloquea las comisiones de todos.
+- El filtro "Tipo de empleado" (vendedor tradicional, foodservice, Bigott y supervisor) solo agrupa; no pide clave.
+- Es un candado de la página, no seguridad real: quien tenga el archivo puede leer el código.
+- Las claves NO van en este archivo ni en el repositorio: van en la lista aparte "claves-por-vendedor.xlsx".
+- Para agregar un empleado o cambiar una clave hay que publicar el panel con la clave nueva.
+
+Detalle de CxC
+- La pestaña "Detalle de CxC" lista los documentos de cada vendedor: módulo, cliente, documento, fecha de emisión, vencimiento, deuda y sector.
+- Se filtra con Vendedor (y los demás filtros); tiene buscador por cliente o documento y filtro de vencidos / por vencer.
+- Para verlo, el Excel de CxC debe traer las columnas MÓDULOS, fecha emi y vcto (el del 14/10 ya las trae).
+
+Analista
+- La columna "Analista" del Excel de CxC se muestra como Analista en filtros, tablas y Excel descargado.
+
+Excel de comisiones
+- Una sola tabla con la columna TIPO DE EMPLEADO (VENDEDOR TRADICIONAL, VENDEDOR FOODSERVICE, VENDEDOR BIGOTT o SUPERVISOR).
+- El tipo define el canal del vendedor; los SUPERVISOR van en su propio grupo y su cobrado (el de su equipo) no se suma al de los vendedores.
+- Si el nombre del archivo trae la fecha (COMISIONES_14-10.xlsx), esa es la fecha de la cobranza.
+- "Descargar plantilla con los datos actuales" (Administración) baja el Excel con esta misma estructura.
+
+Dónde se guardan los cambios
+- En cada navegador (localStorage). Si ya habías cargado archivos en este navegador, verás esos datos y no la base del 14/10:
+  en Administración usa "Restablecer datos base".
