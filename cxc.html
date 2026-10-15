@@ -1,0 +1,2288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdhIiB4MT0iMCIgeTE9IjAuMzciIHgyPSIxIiB5Mj0iMC42MyI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMEIyQThBIi8+PHN0b3Agb2Zmc2V0PSIuNTgiIHN0b3AtY29sb3I9IiMxNzQwQzQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyQzU2RTAiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGNsaXBQYXRoIGlkPSJ0YSI+PHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTYiLz48L2NsaXBQYXRoPgogICAgPGNsaXBQYXRoIGlkPSJjYSI+PHBvbHlnb24gcG9pbnRzPSIyNTAsNDYgNjQwLC0xNDAgNjQwLDMwMCAyNTAsMzAwIi8+PC9jbGlwUGF0aD4KICAgIDxjbGlwUGF0aCBpZD0ib2EiPjxjaXJjbGUgY3g9IjIyNiIgY3k9IjMwMCIgcj0iMTM2Ii8+PC9jbGlwUGF0aD4KICA8L2RlZnM+CiAgPGcgY2xpcC1wYXRoPSJ1cmwoI3RhKSI+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnYSkiLz4KICAgIDxjaXJjbGUgY3g9IjQ1MiIgY3k9IjU4IiByPSIxOTYiIGZpbGw9IiNFNTE0MkIiIGNsaXAtcGF0aD0idXJsKCNjYSkiLz4KICAgIDxnIGZpbGw9IiNmZmYiPgogICAgICA8cmVjdCB4PSIxNDgiIHk9IjMxOCIgd2lkdGg9IjQ0IiBoZWlnaHQ9Ijc4IiByeD0iMTEiIG9wYWNpdHk9Ii42Ii8+CiAgICAgIDxyZWN0IHg9IjIwNCIgeT0iMjcwIiB3aWR0aD0iNDQiIGhlaWdodD0iMTI2IiByeD0iMTEiIG9wYWNpdHk9Ii44MiIvPgogICAgICA8cmVjdCB4PSIyNjAiIHk9IjIxNCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjE4MiIgcng9IjExIi8+CiAgICA8L2c+CiAgICA8Y2lyY2xlIGN4PSIyMjYiIGN5PSIzMDAiIHI9IjEzNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIyIi8+CiAgICA8cGF0aCBkPSJNMzMwIDE3NiBMNDAyIDEwNCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDxwYXRoIGQ9Ik0zNTYgOTggSDQwOCBWMTUwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDwvZz48L3N2Zz4=">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GLOBAL KPI · CxC y comisiones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<style>:root{
+  --azul:#0B2A8A; --azul-med:#1740C4; --azul-claro:#E8EDFB;
+  --rojo:#E5142B; --rojo-oscuro:#B00C1F; --rojo-claro:#F9C5CC;
+  --blanco:#FFFFFF; --papel:#F4F6FC; --tinta:#10193A; --gris:#66708F; --linea:#D8DFF2; --linea-fuerte:#B9C4DD; --borde-tarjeta:#C9D2E8;
+  --verde:#128C5A; --ambar:#E08A00; --zebra:#FAFBFF;
+  --bajo-bg:#FDF1F3; --bajo-borde:#F6C9D0;
+  --pill-ok-bg:#DCF3E9; --pill-med-bg:#FDF0D8; --pill-mal-bg:#FBE0E3;
+  --azul-tinte:#BFCDF5; --azul-texto:#0B2A8A; --txt-claro:#10193A;
+  --sombra:0 1px 3px rgba(11,42,138,.14);
+  --radio:4px;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --azul-claro:#1B2752; --blanco:#111B3F; --papel:#0A1230; --tinta:#E6EBFA; --gris:#9AA6C8; --linea:#26335F; --linea-fuerte:#3A4B80; --borde-tarjeta:#2E3D70;
+    --zebra:#142048; --azul-texto:#A9BDFF; --txt-claro:#F2F5FF; --bajo-bg:#3A1622; --bajo-borde:#6B2433; --azul-tinte:#2B3F86; --rojo-claro:#5E1E2A;
+    --pill-ok-bg:#123D2C; --pill-med-bg:#45330F; --pill-mal-bg:#4A1822;
+    --verde:#3CC48A; --ambar:#F2A93B;
+    --sombra:0 1px 3px rgba(0,0,0,.45);
+  }
+}
+:root[data-theme="dark"]{
+  --azul-claro:#1B2752; --blanco:#111B3F; --papel:#0A1230; --tinta:#E6EBFA; --gris:#9AA6C8; --linea:#26335F; --linea-fuerte:#3A4B80; --borde-tarjeta:#2E3D70;
+  --zebra:#142048; --azul-texto:#A9BDFF; --txt-claro:#F2F5FF; --bajo-bg:#3A1622; --bajo-borde:#6B2433; --azul-tinte:#2B3F86; --rojo-claro:#5E1E2A;
+  --pill-ok-bg:#123D2C; --pill-med-bg:#45330F; --pill-mal-bg:#4A1822;
+  --verde:#3CC48A; --ambar:#F2A93B;
+  --sombra:0 1px 3px rgba(0,0,0,.45);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 90px)}
+html,body{margin:0}
+body{
+  font-family:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+  background:var(--papel);color:var(--tinta);font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased;
+}
+button,input,select{font-family:inherit}
+img{max-width:100%}
+[hidden]{display:none !important}
+
+/* ---------- Encabezado ---------- */
+.cab{background:linear-gradient(105deg,#0B2A8A 0%,#1740C4 58%,#2C56E0 100%);color:#fff;position:relative;overflow:hidden}
+.cab-deco{position:absolute;right:-70px;top:-60px;width:260px;height:260px;pointer-events:none}
+.cab-in{display:flex;gap:18px;align-items:center;padding:18px 26px;position:relative;z-index:2;flex-wrap:wrap}
+.logo{width:56px;height:56px;border-radius:3px;background:#fff;padding:5px;flex:0 0 auto;box-shadow:0 4px 14px rgba(0,0,0,.18);object-fit:contain}
+.logo-der{width:60px;height:60px;flex:0 0 auto;margin-left:14px;border:2px solid #fff;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.tit{min-width:0}
+.tit h1{margin:0;font-size:1.32rem;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.tit p{margin:3px 0 0;font-size:.82rem;color:#C9D6FF;font-weight:500}
+.tit p .panel{color:#fff;font-weight:800}
+.sello{margin-left:auto;display:flex;gap:8px;align-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);border-radius:3px;padding:7px 15px;font-size:.76rem;font-weight:700;white-space:nowrap}
+.sello + .sello{margin-left:0}
+
+/* ---------- Cinta de filtros ---------- */
+.filtros{display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap;background:var(--blanco);border-bottom:1px solid var(--linea);padding:12px 26px;position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.campo{display:flex;flex-direction:column;gap:4px;min-width:150px}
+.campo label{font-size:.68rem;font-weight:700;color:var(--gris);letter-spacing:.03em}
+select,input[type=text],input[type=password],input[type=date]{
+  font-family:inherit;font-size:.86rem;padding:8px 10px;border:1.5px solid var(--linea);border-radius:3px;background:var(--blanco);color:var(--tinta);min-width:140px
+}
+select:focus,input:focus{outline:2px solid var(--azul-med);outline-offset:1px;border-color:var(--azul-med)}
+.btn{font-family:inherit;font-size:.84rem;font-weight:700;padding:9px 18px;border-radius:3px;border:0;background:var(--rojo);color:#fff;cursor:pointer;transition:background .15s;display:inline-flex;align-items:center;gap:7px;text-decoration:none}
+.btn:hover{background:var(--rojo-oscuro)}
+.btn.azul{background:var(--azul)} .btn.azul:hover{background:var(--azul-med)}
+.btn.linea{background:var(--blanco);color:var(--azul-texto);border:1.5px solid var(--linea)}
+.btn.linea:hover{background:var(--azul-claro)}
+.btn[disabled]{opacity:.55;cursor:not-allowed}
+.btn:focus-visible,.pest:focus-visible,.btn-x:focus-visible,tr[data-vend]:focus-visible,tr[data-canal]:focus-visible{outline:3px solid var(--ambar);outline-offset:2px}
+.btn svg{width:16px;height:16px;flex:none}
+.estado{font-size:.74rem;color:var(--gris);margin-left:auto;align-self:center}
+.estado b{color:var(--tinta)}
+
+/* ---------- Rejilla ---------- */
+main{padding:20px 26px 48px;max-width:1500px;margin:0 auto}
+.rej{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.c3{grid-column:span 3}.c4{grid-column:span 4}.c6{grid-column:span 6}.c12{grid-column:span 12}
+@media (max-width:1080px){.c3{grid-column:span 6}.c4,.c6{grid-column:span 12}}
+@media (max-width:620px){.c3{grid-column:span 12}}
+
+.tarjeta{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--radio);box-shadow:var(--sombra);padding:16px 18px;min-width:0}
+.tarjeta h3{margin:0 0 2px;font-size:.95rem;font-weight:800;letter-spacing:-.01em}
+.tarjeta .sub{margin:0 0 12px;font-size:.74rem;color:var(--gris)}
+
+/* KPI */
+.kpi{position:relative;overflow:hidden}
+.kpi::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--azul)}
+.kpi.rojo::before{background:var(--rojo)} .kpi.verde::before{background:var(--verde)} .kpi.ambar::before{background:var(--ambar)}
+.kpi .rot{font-size:.72rem;font-weight:700;color:var(--gris);margin:0 0 6px}
+.kpi .val{font-size:1.9rem;font-weight:800;letter-spacing:-.03em;line-height:1;margin:0}
+.kpi .val small{font-size:.9rem;font-weight:700;color:var(--gris);margin-left:4px}
+.kpi .pie{margin:8px 0 0;font-size:.74rem;color:var(--gris);line-height:1.45}
+.kpi .pie b{color:var(--tinta)}
+.kpi.mini .val{font-size:1.45rem}
+.kpi.mini .val.pend{font-size:1.05rem;color:var(--gris);font-weight:700}
+.barrita{height:7px;background:var(--azul-claro);border-radius:2px;overflow:hidden;margin-top:10px;display:flex}
+.barrita span{display:block;height:100%}
+.ok-bg{background:var(--verde)} .med-bg{background:var(--ambar)} .mal-bg{background:var(--rojo)}
+
+/* Pestañas */
+.pestanas{display:flex;gap:8px;border-bottom:2px solid var(--linea);margin-top:18px;overflow-x:auto;scrollbar-width:none}
+.pestanas::-webkit-scrollbar{display:none}
+.pest{font-family:inherit;font-size:.86rem;font-weight:700;padding:10px 20px;border:0;background:transparent;color:var(--gris);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
+.pest:hover{color:var(--azul-med)}
+.pest[aria-selected="true"]{color:var(--azul-med);border-bottom-color:var(--rojo)}
+.pest svg{width:14px;height:14px}
+.vista{margin-top:16px}
+
+/* Tablas */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:.82rem}
+th{text-align:right;font-weight:700;color:#fff;background:var(--azul);padding:9px 10px;white-space:nowrap}
+th.izq,td.izq{text-align:left}
+td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--linea);white-space:nowrap}
+tbody tr:nth-child(even) td{background:var(--zebra)}
+tbody tr.fila:hover td{background:var(--azul-claro)}
+tr[data-vend],tr[data-canal]{cursor:pointer}
+tfoot td,tr.total td{font-weight:800;background:var(--azul-claro);border-top:2px solid var(--azul)}
+tr.grupo td{background:var(--azul-claro) !important;font-weight:800;border-top:2px solid var(--azul);text-align:left}
+tr.grupo td small{font-weight:600;color:var(--gris);margin-left:8px}
+tr.subtotal td{font-weight:800;background:var(--blanco) !important;border-bottom:2px solid var(--linea)}
+tr.foco td:first-child{box-shadow:inset 4px 0 0 var(--rojo)}
+th.l-otras{box-shadow:inset 0 -4px 0 #6F8FF0} th.l-big{box-shadow:inset 0 -4px 0 var(--rojo)}
+.pill{display:inline-block;padding:2px 9px;border-radius:2px;font-size:.72rem;font-weight:800}
+.pill.ok{background:var(--pill-ok-bg);color:var(--verde)}
+.pill.med{background:var(--pill-med-bg);color:var(--ambar)}
+.pill.mal{background:var(--pill-mal-bg);color:var(--rojo)}
+.gris{color:var(--gris)}
+.pend{color:var(--gris);font-style:italic;text-align:left}
+td .barrita{margin:0;min-width:120px;height:8px}
+
+/* Reparto otras líneas / Bigott */
+.cintas{display:flex;height:14px;border-radius:2px;overflow:hidden;margin:6px 0 14px;background:var(--azul-claro)}
+.cintas span{display:block;height:100%}
+.lineas{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.lineas.una{grid-template-columns:1fr}
+.lin{border-radius:3px;background:var(--zebra);border:1px solid var(--linea);padding:12px 14px}
+.lin .nom{color:var(--tinta);display:flex;align-items:center;gap:8px;font-weight:800;font-size:.84rem;margin:0}
+.lin .punto{width:10px;height:10px;border-radius:1px}
+.lin .cifra{color:var(--tinta);font-size:1.5rem;font-weight:800;letter-spacing:-.02em;margin:4px 0 2px}
+.lin .cifra small{font-size:.8rem;color:var(--gris);font-weight:700;margin-left:6px}
+.lin p{margin:2px 0 0;font-size:.76rem;color:var(--gris);line-height:1.5}
+.lin p b{color:var(--tinta)}
+.lin .desg{border-top:1px dashed var(--linea);margin-top:8px;padding-top:6px}
+.leyenda{display:flex;flex-wrap:wrap;gap:4px 16px;margin-top:10px;font-size:.72rem;color:var(--gris)}
+.leyenda span{display:inline-flex;align-items:center;gap:6px}
+.leyenda i{width:18px;height:8px;border-radius:2px;display:inline-block}
+
+/* Equipos y alertas */
+.sup-cab{display:flex;align-items:center;gap:16px;margin-bottom:14px}
+.dona{flex:0 0 auto}
+.dona text{font-family:Arial,Helvetica,sans-serif;font-weight:700}
+.sup-cab .nom{font-size:1.02rem;font-weight:800;margin:0;line-height:1.2}
+.sup-cab .cifra{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;margin:2px 0 0}
+.sup-cab .cifra small{font-size:.72rem;font-weight:700;color:var(--gris);display:block;letter-spacing:0;line-height:1.5}
+.equipo{list-style:none;margin:0;padding:0}
+.equipo li{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:3px;font-size:.84rem;border:1px solid transparent}
+.equipo li+li{margin-top:4px}
+.equipo li.bajo{background:var(--bajo-bg);border-color:var(--bajo-borde)}
+.equipo li[data-vend]{cursor:pointer}
+.equipo .punto{width:9px;height:9px;border-radius:1px;flex:0 0 auto}
+.equipo .quien{flex:1;font-weight:700;min-width:0}
+.equipo .quien small{display:block;font-weight:500;color:var(--gris);font-size:.74rem}
+.equipo .par{font-family:Arial,Helvetica,sans-serif;color:var(--gris);white-space:nowrap;font-size:.8rem}
+.equipo .par b{color:var(--tinta)}
+.equipo .tanto{font-weight:800;min-width:52px;text-align:right}
+.t-ok{color:var(--verde)} .t-med{color:var(--ambar)} .t-mal{color:var(--rojo)}
+.cintas.fina{height:9px}
+.alerta-roja{border-left:5px solid var(--rojo)}
+.alerta-ambar{border-left:5px solid var(--ambar)}
+.alerta-azul{border-left:5px solid var(--azul-med)}
+.notas{font-size:.72rem;color:var(--gris);line-height:1.55;margin:8px 0 0}
+.vacio{padding:18px;border:1.5px dashed var(--linea);border-radius:3px;color:var(--gris);font-size:.82rem;text-align:center;background:var(--zebra)}
+
+/* Acceso administrativo */
+.acceso{min-height:380px;display:grid;place-items:center;padding:28px 0}
+.caja{width:100%;max-width:420px;background:var(--blanco);border:1px solid var(--linea);border-radius:4px;box-shadow:var(--sombra);padding:30px}
+.caja img{width:76px;display:block;margin:0 auto 14px;border-radius:3px}
+.caja h2{margin:0 0 4px;text-align:center;font-size:1.12rem}
+.caja p.ay{margin:0 0 20px;text-align:center;font-size:.8rem;color:var(--gris)}
+.caja input{width:100%;font-size:1rem;text-align:center;letter-spacing:.12em}
+.caja .btn{width:100%;margin-top:14px;padding:12px;justify-content:center}
+.err{color:var(--rojo);font-size:.8rem;text-align:center;margin:10px 0 0;min-height:18px;font-weight:700}
+.zona-carga{border:2px dashed var(--linea);border-radius:4px;padding:26px;text-align:center;background:var(--zebra);transition:border-color .15s,background .15s}
+.zona-carga.activa{border-color:var(--azul-med);background:var(--azul-claro)}
+.zona-carga p{margin:6px 0 0;font-size:.8rem;color:var(--gris)}
+.ok-msg{background:var(--pill-ok-bg);color:var(--verde);border-radius:3px;padding:10px 14px;font-size:.82rem;font-weight:700}
+.ok-msg.local{background:var(--pill-med-bg);color:var(--ambar)}
+.ok-msg.nada{background:var(--pill-mal-bg);color:var(--rojo)}
+.fila-btns{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ed td input,.ed td select{min-width:0;padding:5px 7px;font-size:.8rem;border:1.5px solid var(--linea);border-radius:3px;background:var(--blanco);color:var(--tinta)}
+.ed td input.num{width:100px;text-align:right}
+.ed td input.cod{width:84px} .ed td input.ci{width:108px}
+.ed td{padding:5px 8px}
+.ed-cab{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:flex-end;margin-bottom:12px}
+.sucio{color:var(--ambar);font-size:.8rem;font-weight:700}
+
+/* Pie */
+.pie-doc{margin-top:26px;padding-top:14px;border-top:2px solid var(--linea);font-size:.72rem;color:var(--gris);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* Modal de detalle */
+.modal{position:fixed;inset:0;z-index:50;background:rgba(11,25,58,.55);display:none;align-items:flex-start;justify-content:center;padding:max(24px,env(safe-area-inset-top,0px)) 14px max(24px,env(safe-area-inset-bottom,0px));overflow-y:auto}
+.modal.abierto{display:flex}
+.modal-panel{background:var(--blanco);border-radius:4px;width:100%;max-width:980px;box-shadow:0 30px 80px rgba(11,42,138,.35);overflow:hidden}
+.modal-cab{background:var(--azul);color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.modal-cab .ident{display:flex;align-items:center;gap:12px;min-width:0}
+.modal-cab .logo{width:44px;height:44px;border-radius:3px;box-shadow:none}
+.modal-cab h3{margin:0;font-size:1.05rem;font-weight:800}
+.modal-cab p{margin:2px 0 0;font-size:.76rem;color:#C9D6FF}
+.modal-cue{padding:18px 20px}
+.modal-pie{display:flex;justify-content:flex-end;gap:8px;padding:12px 20px;border-top:1px solid var(--linea)}
+.btn-x{font-family:inherit;width:30px;height:30px;border-radius:1px;border:1.5px solid rgba(255,255,255,.45);background:rgba(255,255,255,.12);color:#fff;font-weight:800;font-size:1rem;cursor:pointer;line-height:1;flex:none}
+.btn-x:hover{background:var(--rojo);border-color:var(--rojo)}
+.det-kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:14px}
+.det-kpis .tarjeta{padding:12px 14px;box-shadow:none}
+.det-kpis .val{font-size:1.2rem}
+.preview img{border:1px solid var(--linea);border-radius:3px;display:block}
+
+.toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--azul);color:#fff;padding:10px 16px;border-radius:3px;font-size:.84rem;font-weight:700;max-width:min(92vw,560px);z-index:80;opacity:0;pointer-events:none;transition:opacity .2s;box-shadow:0 8px 24px rgba(11,42,138,.3)}
+.toast.ver{opacity:1}
+
+@media (min-width:900px){
+  .cab-in{flex-wrap:nowrap}
+  .tit{flex:1 1 auto}
+  .tit p{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+}
+@media (max-width:1280px){ #selloArchivo{display:none} }
+@media (max-width:1080px){ #selloCom{display:none} .det-kpis{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:899px){
+  .logo-der{position:absolute;top:18px;right:18px;width:52px;height:52px;margin:0}
+  .tit{padding-right:64px}
+  .sello{margin-left:0}
+}
+@media (max-width:640px){
+  .cab-in{padding:14px 16px;gap:12px}
+  .logo{width:46px;height:46px}
+  .filtros{padding:10px 16px;gap:8px}
+  .campo{min-width:calc(50% - 4px);flex:1}
+  .campo select{min-width:0;width:100%}
+  .filtros .btn{flex:1;justify-content:center}
+  .estado{display:none}
+  main{padding:14px 12px 36px}
+  .lineas{grid-template-columns:1fr}
+  .kpi .val{font-size:1.6rem}
+  .sup-cab .cifra{font-size:1.25rem}
+  .equipo .par{display:none}
+  .pest{padding:10px 12px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .animar .cintas.grande span{animation:crecer .7s cubic-bezier(.2,.7,.2,1) both;transform-origin:left center}
+}
+@keyframes crecer{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* Ajustes para la imagen descargada */
+.capturando #captura{width:1440px}
+.capturando .filtros{display:none}
+.capturando .cab-in{flex-wrap:nowrap}
+.capturando .tit p{white-space:normal}
+.capturando .tw{overflow:visible}
+.capturando .cintas span{animation:none !important;transform:none !important}
+.capturando .c3{grid-column:span 3} .capturando .c4{grid-column:span 4} .capturando .c6{grid-column:span 6}
+.capturando #selloArchivo,.capturando #selloCom{display:flex}
+.capturando .modal.abierto{position:absolute;inset:auto;top:0;left:0;padding:0;display:block;background:transparent;overflow:visible}
+.capturando .modal-panel{box-shadow:none;width:980px;max-width:none}
+.capturando .det-kpis{grid-template-columns:repeat(5,1fr)}
+.tit-sec{margin:6px 0 -4px}
+.tit-sec h3{margin:0;font-size:.95rem;font-weight:800}
+.tit-sec p{margin:2px 0 0;font-size:.74rem;color:var(--gris)}
+
+.kpi.mini .val.vacia{font-size:1.05rem;color:var(--gris);font-weight:700}
+.pc{margin-top:14px;border-top:1px solid var(--linea);padding-top:10px}
+.pc h4{margin:0 0 6px;font-size:.8rem;font-weight:800}
+.pc-fila{display:grid;grid-template-columns:160px 1fr 112px;gap:10px;align-items:center;padding:4px 0;font-size:.8rem}
+.pc-nom{font-weight:700}
+.pc-bar{display:flex;height:9px;border-radius:2px;overflow:hidden;background:var(--azul-claro)}
+.pc-bar span{display:block;height:100%}
+.pc-val{text-align:right;font-weight:800}
+.pc-val small{display:block;font-weight:600;color:var(--gris);font-size:.7rem}
+@media (max-width:640px){
+  .cab-deco{width:170px;height:170px;right:-60px;top:-50px}
+  .pc-fila{grid-template-columns:104px 1fr 96px}
+}
+
+.chk{width:18px;height:18px;accent-color:var(--rojo);cursor:pointer;vertical-align:middle}
+#dTabla td:first-child,#dTabla th:first-child{width:44px;text-align:center}
+#dTabla td.desc{white-space:normal;color:var(--gris);min-width:260px}
+
+/* Balance vencido / por vencer */
+.bal{margin-top:10px}
+.bal-bar{display:flex;height:18px;border-radius:2px;overflow:hidden;background:var(--azul-claro)}
+.bal-bar.alto{height:26px;border-radius:3px}
+.bal-bar span{display:flex;align-items:center;justify-content:center;height:100%;font-size:.68rem;font-weight:800;color:#fff;white-space:nowrap;overflow:hidden;line-height:1}
+.bal-bar.alto span{font-size:.78rem}
+.bal-ley{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:6px;font-size:.74rem;color:var(--gris);line-height:1.4}
+.bal-ley span{display:inline-flex;align-items:center;gap:6px}
+.bal-ley i{width:10px;height:10px;border-radius:3px;display:inline-block;flex:none}
+.bal-ley b{color:var(--tinta)}
+.ley4{display:grid;grid-template-columns:1fr 1fr;gap:4px 16px}
+.equipo .tanto small{display:block;font-size:.62rem;color:var(--gris);font-weight:700;line-height:1}
+.dist{display:flex;align-items:center;gap:10px}
+.dist .barrita{flex:1;margin:0}
+.dist b{min-width:48px;text-align:right}
+.pc-fila{grid-template-columns:190px 1fr 120px}
+.pc-nom small{display:block;font-weight:600;color:var(--gris);font-size:.7rem}
+.pc-ley{display:flex;gap:14px;font-size:.72rem;color:var(--gris);margin:0 0 6px}
+.pc-ley span{display:inline-flex;align-items:center;gap:6px}
+.pc-ley i{width:10px;height:10px;border-radius:3px;display:inline-block}
+@media (max-width:640px){ .ley4{grid-template-columns:1fr} .pc-fila{grid-template-columns:120px 1fr 96px} }
+
+.chk-lbl{display:flex;align-items:center;gap:8px;font-size:.8rem;color:var(--tinta);cursor:pointer}
+.tasa-val{font-size:1.7rem;font-weight:800;letter-spacing:-.02em;margin:2px 0 0}
+.tasa-val small{font-size:.8rem;color:var(--gris);font-weight:700;margin-left:6px}
+.tasa-meta{font-size:.76rem;color:var(--gris);margin:4px 0 10px;line-height:1.5}
+.tasa-meta b{color:var(--tinta)}
+.mini-tabla{width:auto;min-width:260px;margin-bottom:10px}
+.mini-tabla th,.mini-tabla td{padding:5px 10px}
+.bs .kpi .val{font-size:1.5rem}
+.sello.sin{background:rgba(229,20,43,.35);border-color:rgba(255,255,255,.45)}
+@media (max-width:1280px){ #selloTasa{display:flex} }
+@media (max-width:1500px){ #selloArchivo{display:none} }
+
+/* ---------- Impresión / PDF ---------- */
+@media print{
+  @page{size:A4 landscape;margin:7mm}
+  html,body{background:#fff !important}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .filtros,.pestanas,.toast,.modal,.acceso,[data-html2canvas-ignore]{display:none !important}
+  main{padding:10px 0 0;max-width:none}
+  #captura{zoom:.74}
+  .c3{grid-column:span 3}.c4{grid-column:span 4}.c6{grid-column:span 6}.c12{grid-column:span 12}
+  .lineas{grid-template-columns:1fr 1fr}.lineas.una{grid-template-columns:1fr}
+  .tw{overflow:visible}
+  .tarjeta,.lin,.pc-fila,.sup-cab,.equipo li,tr{break-inside:avoid;page-break-inside:avoid}
+  .tarjeta.c12{break-inside:auto;page-break-inside:auto}
+  thead{display:table-header-group}
+  tfoot{display:table-row-group}
+  .tarjeta{box-shadow:none}
+  .cintas span,.bal-bar span{animation:none !important;transform:none !important}
+}
+
+/* Estilo corporativo: esquinas rectas y bordes definidos */
+.btn{letter-spacing:.02em;border-radius:2px}
+.btn.linea{border:1px solid var(--azul-texto)}
+select,input[type=text],input[type=password],input[type=date]{border-width:1px;border-color:var(--linea-fuerte);border-radius:2px}
+.tarjeta{border-radius:3px;border-color:var(--borde-tarjeta)}
+.tarjeta h3{letter-spacing:.01em}
+.modal-panel{border-radius:3px}
+.pill{border-radius:2px;letter-spacing:.02em}
+.sello{border-radius:2px;text-transform:uppercase;letter-spacing:.04em;font-size:.68rem}
+.btn-x{border-radius:2px}
+
+.cli{white-space:normal !important;min-width:220px;max-width:420px}
+#dtTabla td,#dtTabla th{padding:6px 10px}
+
+.kpis{display:flex;flex-wrap:wrap;gap:8px 34px}
+.dato small{display:block;color:var(--gris);font-size:.72rem;font-weight:700}
+.dato b{font-size:1.2rem;font-weight:800;letter-spacing:-.01em}
+
+.gh-grid{display:grid;grid-template-columns:1.5fr .7fr .9fr 1.6fr;gap:12px}
+@media (max-width:900px){.gh-grid{grid-template-columns:1fr 1fr}}
+.gh-estado{background:#0F1A3A;color:#EAF0FF;font-family:Consolas,"Liberation Mono",monospace;font-size:.78rem;line-height:1.55;padding:14px 16px;border-radius:3px;margin-bottom:10px;word-break:break-word}
+.gh-estado b{color:#fff}
+code{font-family:Consolas,"Liberation Mono",monospace;background:var(--azul-claro);padding:1px 5px;border-radius:2px;font-size:.92em}
+.aviso-vacio{margin:0 0 16px;padding:12px 16px;border-radius:3px;background:var(--azul-claro);color:var(--tinta);border-left:5px solid var(--azul-med);font-weight:600;font-size:.88rem}
+.aviso-vacio.warn{background:var(--pill-med-bg);border-left-color:var(--ambar)}
+</style>
+</head>
+<body>
+<div id="captura" class="animar">
+
+<header class="cab">
+  <img class="cab-deco" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNjAgMjYwIiB3aWR0aD0iMjYwIiBoZWlnaHQ9IjI2MCI+PHBvbHlnb24gcG9pbnRzPSIxNTAsMCAyNjAsMCAyNjAsMjYwIDQwLDI2MCIgZmlsbD0iI0U1MTQyQiIgb3BhY2l0eT0iLjkyIi8+PC9zdmc+" alt="">
+  <div class="cab-in">
+    <img class="logo" id="logoVJ" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAEEAQQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD7LooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig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XzbPPP20JEbUfDCBwWEVwSM84LIBXu+seH9O8TeEW0TVoPOtLm3RHXOCpwMMD2IPINeDeDfhZ468ZeM4PEnxLeWOGBlYxTspklCnKxhV+VEz19a+l4l2rgfpXFhYupOpUlGylbR+R9NntenhMLhMDRqKU6XM3KLuk5NNJPytufMuo/s7eKbW+nh0DxTb/wBnTHDCZpYnK+jBMq9b3g/4C3nhfxZ4d12312G7NlP5l7G8JQHggeXjPr0avf8AApGAx0qll1BO9vx2MqvGeb1aTpymrNNP3VeSatq7XZ43+0JD4I1efQvDviG5uLXV72fZp1zAgY24YhS0mSB5ZbAx1z06V5+P2efGPnDTpPFVgNKDZx5kxA/7Zfdz+Nem/Hv4Xt47tLe+0yeO31iyUrH5hwk0ZOdhPbB5B7ZPrXlbaX+0RLY/8I1J/an2QjyvNM0XKdMedndjH41yYunH2zdSDfZrr5M93h/E1o5fCODxcISTfNGpb3ddJQuu34h+zKkul/GjWNHsLo3dgltcRPMBxII5FCP7c5/OvUfjH8G7DxzcjV7G6Gm6yFCNKU3RTqOm8DnI7MP1qf4D/DFfAWnz3WoTRXGs3igTvGPkiQciNe555J7mvVByK6MLhF9X9nVW+tux5OfcQyec/XMDU1ilHm/maVm2tmmfMGn/ALPfjLUb2GPxL4otzZQnCmOaW4cL6KHAC17hB4Yk8N+AJdA8FLBaXMVuyWb3GSolP8bkDJOck8V19Fb0cHSo3cd316nk5jxDjsxUY12uWLuopJRv3aW58vXfwQ+KupyONV8XWs8UzZm8y9nkB5z9zaAfpXuPwr8E2fgTwvFo1rK9xIXMtxOy4Msh6nHYcYA9K7DA9KKKODp0Zc6u35srMeIsbj6Cw8+WME72jFRTa723Ciiiuo8IKKKKACiiigAooooAKKKKACiiigAooooAKa/Q+tOoIzQB8B/tN+DLnwj8U9QkWBk0zVpGvbFwPlO45kQe6sTx6EV5b71+lfjzwdoHjTQpNG8Qael5bN8yc7Xifs6MOVYeor591n9kmN7sto/jKSK2J4S7sw7qPTcpAP5Cvt8q4hoRoKliHZrTumeHisvqOo5U9Uz5W4AJJwAMk19x/sh+Crrwt8NDf6lbtBf61OLto3XDJEFAiUjscZbH+1VX4Zfs2eE/C+pQ6prV3N4hvIWDRJPGI7dGHRvLGdxH+0SPavdFVVGAMVwZ5ndPF0/YUPh6v/I6MDgpUnzz3FowPQUUV8ueoGB6UUUUAFFFFABgelGB6CiigAwPQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAARRiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=" alt="Venejugos">
+    <div class="tit">
+      <h1>GLOBAL KPI</h1>
+      <p><b class="panel">CxC y comisiones</b> <span id="subtit"></span></p>
+    </div>
+    <div class="sello" id="selloCorte">CxC</div>
+    <div class="sello" id="selloTasa">Tasa BCV</div>
+    <div class="sello" id="selloArchivo">archivo</div>
+    <div class="sello" id="selloCom">Comisiones</div>
+    <img class="logo-der" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiI+PGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdhIiB4MT0iMCIgeTE9IjAuMzciIHgyPSIxIiB5Mj0iMC42MyI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMEIyQThBIi8+PHN0b3Agb2Zmc2V0PSIuNTgiIHN0b3AtY29sb3I9IiMxNzQwQzQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyQzU2RTAiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGNsaXBQYXRoIGlkPSJ0YSI+PHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiLz48L2NsaXBQYXRoPgogICAgPGNsaXBQYXRoIGlkPSJjYSI+PHBvbHlnb24gcG9pbnRzPSIyNTAsNDYgNjQwLC0xNDAgNjQwLDMwMCAyNTAsMzAwIi8+PC9jbGlwUGF0aD4KICAgIDxjbGlwUGF0aCBpZD0ib2EiPjxjaXJjbGUgY3g9IjIyNiIgY3k9IjMwMCIgcj0iMTM2Ii8+PC9jbGlwUGF0aD4KICA8L2RlZnM+CiAgPGcgY2xpcC1wYXRoPSJ1cmwoI3RhKSI+CiAgICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnYSkiLz4KICAgIDxjaXJjbGUgY3g9IjQ1MiIgY3k9IjU4IiByPSIxOTYiIGZpbGw9IiNFNTE0MkIiIGNsaXAtcGF0aD0idXJsKCNjYSkiLz4KICAgIDxnIGZpbGw9IiNmZmYiPgogICAgICA8cmVjdCB4PSIxNDgiIHk9IjMxOCIgd2lkdGg9IjQ0IiBoZWlnaHQ9Ijc4IiByeD0iMTEiIG9wYWNpdHk9Ii42Ii8+CiAgICAgIDxyZWN0IHg9IjIwNCIgeT0iMjcwIiB3aWR0aD0iNDQiIGhlaWdodD0iMTI2IiByeD0iMTEiIG9wYWNpdHk9Ii44MiIvPgogICAgICA8cmVjdCB4PSIyNjAiIHk9IjIxNCIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjE4MiIgcng9IjExIi8+CiAgICA8L2c+CiAgICA8Y2lyY2xlIGN4PSIyMjYiIGN5PSIzMDAiIHI9IjEzNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIyIi8+CiAgICA8cGF0aCBkPSJNMzMwIDE3NiBMNDAyIDEwNCIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICAgIDxwYXRoIGQ9Ik0zNTYgOTggSDQwOCBWMTUwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDwvZz48L3N2Zz4=" alt="GLOBAL KPI">
+  </div>
+</header>
+
+<section class="filtros" data-html2canvas-ignore="true" aria-label="Filtros">
+  <div class="campo"><label for="fLinea">Línea</label>
+    <select id="fLinea"><option value="todas">Todas las líneas</option><option value="otras">Otras líneas</option><option value="bigott">Bigott</option></select></div>
+  <div class="campo"><label for="fCanal">Canal</label><select id="fCanal"></select></div>
+  <div class="campo"><label for="fTipo">Tipo de empleado</label><select id="fTipo"></select></div>
+  <div class="campo"><label for="fSup">Supervisor</label><select id="fSup"></select></div>
+  <div class="campo"><label for="fCoord">Analista</label><select id="fCoord"></select></div>
+  <div class="campo"><label for="fVend">Vendedor</label><select id="fVend"></select></div>
+  <div class="campo"><label for="fMoneda">Moneda</label><select id="fMoneda"></select></div>
+  <button class="btn linea" type="button" id="bLimpiar">Quitar filtros</button>
+  <button class="btn" type="button" id="bImagen">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg>
+    Descargar imagen
+  </button>
+  <button class="btn azul" type="button" id="bPdf">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-2"/><rect x="6" y="14" width="12" height="7" rx="1"/></svg>
+    Imprimir / PDF
+  </button>
+  <span class="estado" id="estado"></span>
+</section>
+
+<main>
+  <div class="aviso-vacio" id="vacioAviso" hidden data-html2canvas-ignore="true"></div>
+  <div class="rej" id="resumen"></div>
+
+  <div class="pestanas" role="tablist" aria-label="Secciones" data-html2canvas-ignore="true">
+    <button class="pest" role="tab" type="button" id="t-principal" data-tab="principal" aria-controls="v-principal">Panel principal</button>
+    <button class="pest" role="tab" type="button" id="t-cxc" data-tab="cxc" aria-controls="v-cxc">CxC por vendedor</button>
+    <button class="pest" role="tab" type="button" id="t-detalle" data-tab="detalle" aria-controls="v-detalle">Detalle de CxC</button>
+    <button class="pest" role="tab" type="button" id="t-comisiones" data-tab="comisiones" aria-controls="v-comisiones">Comisiones</button>
+    <button class="pest" role="tab" type="button" id="t-descargas" data-tab="descargas" aria-controls="v-descargas">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M4 20h16"/></svg>
+      Descargas
+    </button>
+    <button class="pest" role="tab" type="button" id="t-admin" data-tab="admin" aria-controls="v-admin">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+      Administración
+    </button>
+  </div>
+
+  <!-- Panel principal -->
+  <div class="vista" id="v-principal" role="tabpanel" aria-labelledby="t-principal">
+    <div class="rej">
+      <div class="tarjeta c6 alerta-azul" id="reparto"></div>
+      <div class="tarjeta c6 alerta-roja" id="alerta"></div>
+      <div class="tarjeta c12" id="antiguedad"></div>
+      <div class="tarjeta c12" id="porCanal"></div>
+    </div>
+    <div class="rej" id="equipos" style="margin-top:16px"></div>
+  </div>
+
+  <!-- CxC por vendedor -->
+  <div class="vista" id="v-cxc" role="tabpanel" aria-labelledby="t-cxc" hidden>
+    <div class="rej"><div class="tarjeta c12" id="tablaCxc"></div></div>
+  </div>
+
+  <!-- Detalle de CxC por vendedor -->
+  <div class="vista" id="v-detalle" role="tabpanel" aria-labelledby="t-detalle" hidden>
+    <div class="rej">
+      <div class="tarjeta c12">
+        <h3>Detalle de cuentas por cobrar por vendedor</h3>
+        <p class="sub" id="dtSub"></p>
+        <div class="ed-cab" data-html2canvas-ignore="true">
+          <div class="campo" style="flex:1;min-width:240px"><label for="dtBuscar">Buscar cliente o documento</label><input type="text" id="dtBuscar" placeholder="Nombre del cliente o número de documento" style="width:100%" autocomplete="off"></div>
+          <div class="campo"><label for="dtEstado">Estado</label><select id="dtEstado"><option value="todos">Todos</option><option value="vencidos">Solo vencidos</option><option value="porvencer">Solo por vencer</option></select></div>
+        </div>
+        <div id="dtResumen"></div>
+        <div class="tw" id="dtTabla"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comisiones -->
+  <div class="vista" id="v-comisiones" role="tabpanel" aria-labelledby="t-comisiones" hidden>
+    <div class="rej" style="margin-bottom:16px" data-html2canvas-ignore="true"><div class="tarjeta c12" id="comAcceso"></div></div>
+    <div class="rej" id="comKpis"></div>
+    <div class="rej" style="margin-top:16px"><div class="tarjeta c12" id="tablaCom"></div></div>
+  </div>
+
+  <!-- Descargas -->
+  <div class="vista" id="v-descargas" role="tabpanel" aria-labelledby="t-descargas" hidden>
+    <div class="rej">
+      <div class="tarjeta c12">
+        <h3>Descargar la CxC procesada</h3>
+        <p class="sub">Un Excel con una hoja por tabla, ya clasificado por línea, canal, supervisor y analista. Los montos van como números para que puedas filtrar y sumar.</p>
+        <div class="ed-cab">
+          <div class="campo"><label for="dAlcance">Qué incluir</label>
+            <select id="dAlcance"><option value="filtros">Con los filtros actuales</option><option value="todo">Todo el corte, sin filtros</option></select></div>
+          <p class="sub" id="dDesc" style="margin:0 0 9px;flex:1;min-width:220px"></p>
+          <button class="btn" type="button" id="bExcel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M4 20h16"/></svg>
+            Descargar Excel
+          </button>
+        </div>
+        <div class="tw"><table id="dTabla"></table></div>
+        <p class="notas" id="dNota"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Administración -->
+  <div class="vista" id="v-admin" role="tabpanel" aria-labelledby="t-admin" hidden>
+    <div class="acceso" id="acceso">
+      <form class="caja" id="formClave" autocomplete="off">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAEEAQQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD7LooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAqlf6jZWERnv7y3tYh/HNIEX8ycU7VLtLHT7i8mOIreJpXI/uqCT/Kvg74geL9W8a6/Pq2q3Dujsfs8BP7uCPPyqq9OnU9Sa4sdjY4SCbV2z6fhjhetn9eUIS5Yx3e++1l3Pu7TdU07UoTNp9/a3kYOC0EyuB+RNXUORX58eEvEWr+Fdah1fRLpra5iOSFOElXurj+IGvvPwlq0Wu+HNP1iFSkd7bpOF/u7hnH4VGBx8cWmrWaN+KuEa3D84Nz54SvZ7a9matFFFegfIhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAVNWtI77TrmxmJ8u5heJ/oy4P86+CPHHhfU/B/iC40XVYHieJiIpCMJPHn5XU9wR+VfoA7AAVzHjC78ESxiy8U3WhlQciK/kjOPwbkV5+PwccTFXdmj63hHiarkWIk40+eM90t9Nmj4c8NaHqniPWINI0e2e5u522qqjIUd2Y9lHUmvvTwXpCaD4X03RkbetlbJDu/vYHWsLwnqPw4s7lNN8MX3h2Kec4WGxkjDyYGcYXk9K7OPpU5dgY4ZN3u2dHGPFVbPJwg6bhCOqT3bfVjqKKK9I+KCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApNy5xnmhs44r4p/aC8XfErwZ8V9X0q08aa7Bp8zLd2SLcfKsUgztHHRWDL+FduAwM8bV9lBpO19TGvXjQjzS2PtbevTNAINfAvhf4+/E/Q7tJZPELatCDloNRiWUN/wIYYfga+q/gh8X9E+Jdk8MMZ07WLZQ1zYyPk7f78bfxJnjpkd+xPRjslxWCjzzV491+vYyoY2lWdloz1CikWlryjrCmu2AaVulcL8cfEbeGPhrq+oxyGO5ki+zWxB582T5Rj3AJP4VM5qEXJ7I2w9CeIrRowWsmkvm7HjHx4+M+oXOo3PhnwlePa2UDGK5vomxJO46rGw+6o6ZHJ9hXgkrtLK0srNJIxyzudzE+5PJpPb0o7+1fE4nF1MRNyb0P6iyHh3CZNho06UVzdZdW/U9w/ZD8Om+8Y3viKRB5OmweVGcf8tZP8FB/Ovq1eleYfs0+Hf7C+F1hLIm241Im8lyOcN9wf98hfzr1AV9Vl1H2OHinu9T+f+Msy/tHOKs4/DF8q9Fp+d2FFFFdx8uFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFAOabJ93n1rzP9nrXb3XfCupXGoXs13PHrV3GGlcsVTflV56ADoKhzSko9zop4aU6M6y2ja/zv/kenV8yft0eF2n0fQvF1vFua0laxumA6JJ80ZPsGBH/AhX03XJfF7w2PF3w41zw+FBlurR/Iz2lUboz/AN9AV35fiXhsTCr2f4dThxFP2lNxPzerb8E+JdQ8I+KtO8RaY7Lc2MwkAB++vR0Psy5H41iurq5WRSjg4ZT1U9waQda/VpwhVg4vVM+VUnCV1uj9QNB1C21bR7TVLNw9tdwpPCw7qygj+dXq8T/Y48THWvhJFpk8oa40W4ezIzz5Z+aMn8CR/wABr2yvyXF4d4avOi/sto+so1FUgpLqIxwpNfM37Y3iIS3+jeF4ZOIla9uFB7t8kefw3mvpeYgIc9K+Dfiv4gPif4iazrCuWhkuDHb57RJ8i/oM/jXh5vW9nh7Ld6H6B4d5Z9czdVZL3aa5vnsvzv8AI5atjwXosniHxZpeiRAk3tykTY7LnLH8FBrHr3H9kTw8t94v1DX549yabbiOLI482TOT9QoP518zg6Ptq0Ydz9y4jzJZbllbE9UtPV6L8T6msIIrWzhtoVCxRIsaL6KBgD8hU9eZftB+MfEngHwXF4k8PWdleLBeJFeR3SsVWN8gMCpBHzbQTz96t74ZeN7Hxp8PbLxZEv2WOaNzcRs2fIeMkSKT6Ag8+mK+/wDYTVJVbe7e3zP5OdVSm4t67nX0V4f8Efi9rvxM8f61a2+lWVn4b0+HekhLNPIWcrHk52jcAzYA4x1qH42ftA2fgvW38NeHNNTW9biYLcb3YQwMeifL8zvg/dHT1zxW6wGIdb2Kj729u3r2I+sU+Tnvoe7UV8raF+054l03WIIPHngr7HZTdZLaOaKVFJ+8Ek4cD2INexfFT4ijw/8ACKTx74aFnqkRFvJbeaWEc0cjqucjkHBP0NOtl2IozjCcfi0QoYinNNp7Ho9FfJt/+094u1S6K+EfA0UkMUStMJhLcyZxycR4Cr1wTz9K9L+A3xxsPiJdvompWK6Vr0aNIsCSF4rhF+8UJwQR3U/UZrStlWLo03UnDRb7aChiqU5cqZ7PSZ5rz/4zfFDRPhro0d1qCSXV9dblsrKJsPMR1JP8KDIy3vxk14PH+018Qo4hqs3gSxOkFvvqlwFI9piNv44xUYbLcTiY89OOnrYKmJp03aTPrmiuJ+EfxH0P4kaAdU0cyQywuI7u0m/1kDkZAPYgjow4P4V21clSnKnJwmrNG0ZKS5lsFFFFQUFFFFABRRRQAUUUUAFFFFADZDgD6189fsw6qum+N/GHhC4bbJ9skuYVJ6lHZHH5bTX0LINy4r5H+My3/wAO/j3/AMJLpqbRcOuoQgnCybhtljP1IP8A30K8/HT9k4Vez19GfW8K4ZZgsTgPtVIXj/ii01+p9cgg96GUH8Kw/BfiPTvFHh201rSplktrlNw5+ZG7ow7EHg1u13xakro+Vq050punNWadmvM/Pf8AaR8MHwt8YdbtI022t3L9vtcDjZL8xA+jbhXnNfWn7c/hjz9D0XxbAnz2czWVyw/55yfMhP0YEf8AAq+SiQK/UMkxX1jBQb3Wj+R8rjaXsqzS2Pdf2MPEp0n4nzaLNLtt9atDEAennR/Oh+uN4/Kvtgeua/MDw5rc/h/xDput2bFZ7C6juUI6kowOPxAI/Gv0y0XULfVtGtNUtHD213Ak8TDurqGH6Gvl+KMOoYiNaO0lr6o9TLKjdNxfQ5P45eJf+EZ+GesX8Um26ki+y23/AF0k+UEfQEn8K+HMYwB2GK91/a48WrqHiKz8KWcoaHTh591tPHnuPlX/AICv6tXhWea/LM4r+0r8i2if0p4a5Q8JlrxFRWlVd/8At1bf5h9enevs79mvw+ND+F9g8sWy51HN7Lnrh/uj/vkD86+TPAmhS+JvF2maFErH7ZcKjkfwx5y5/BQa++7K2itraK3hG2OJAiAdlAwB+QroyOheUqr6aHkeKmactKlgYvd8z9Fovvf5GN8QvD0XinwVrPh+bBW/s5IQT/C5HyH8Gwa+MPh78RLjwp8GvHfgy4LwajPIkdpGT8yPKfKuB7bQufxr7sk4U+1fJHxf+AHizWfixe6j4dtbU6Lq04uHnadU+ys2PN3KeTzlhtznNff5PWoNToYh2i7P5r/M/BsZCatOmtdvvPSf2PvDP9h/CQaw0IW71uZ7occ+WuUiH04J/wCBV80/Dnx7F4I8Wa54lvtDXWfEMjyLZm5bEdvK0jeZI38RboBjnryK+9tC0220fRbHSbNdltZW6QQgDoqKFH6Cvnj4zfAXXn8ZP42+Gt5Fb30k/wBpks2kETJP1MkTn5eTyVPc8elb4LH0auJrOvoqny67XIr4ecaUFBfCef6t4b+I/wARbM+Nfinr48O+GrX94s13HsCKxAAgthzk8AFuT716D8RtQ8LX37IVzB4Olu5dG0+S3soZLmFo3cxzLuOD1ySeenWual+FXx1+It7bWnj3VntNMt33Frm4jfaem5YouGbGcFvWvW/ip8OZR8AG+H/gqxM8kRt0gjeRUL4lVndmPGTyxNa4jE0lKlBzWkk0o/Cl3b6sinTk1NpPVbvdjf2QNOs7X4J6beQW6Rz3s08tzIBhpWEjKCT7KoArybxra2+j/tsaMNMiW1W4vLOWVYxtDNJGyyHj+93r6H+C/ha48EfDjSPDN3cR3FzaxMZ3j+7vdy7AZ7AtgH2rzr4k/DDxBf8A7Q3hn4gaUkd3p0VxbC/TeFe3ERPzgH7ykEdOQRXLRxUHjq03L3ZKX/ANZ0n7CCS1Vjyn9qPUIIP2ibObxDaTX2j2VtaP9lVsedENzugzx8z5B9qkn174v/HRX0nw7pyaJ4XH7po4iYbRUGPlklIzJjj5VGPavbv2hfhDB8S9Pt7uwuYrHXrFWSCaQExzRk5Mb45AzyCOhJ7GvG18BftKf2SPB4vZo9GCeSCuoQrEI+mN4HmbcdsfhXdhMTh6mFp2cVUgre83ZeaXVmNanUjVle9n2/I9C/ZXj8CeG9S1fwl4e8RTeINddRcahdR2rJaqIzs2Rt0IDMecnPPpX0DXlnwA+FNp8MtEmE10l5rN9tN5Oi4jUKPljjB52jJOTySc+1eo7x6ivBzCpCriJShJy831O/DQcaaTVh1FFFcRuFFFFABRRRQAUUUUAFFFFAAa8q/aQ8DSeLvBbXVhD5mq6WTPbqo+aVCP3kY9yACPda9VprgFTxWdWlGrBwlszrwGNq4DEwxNL4oO6/rz2Phz4UfEfV/AGrNJbg3emzsPtdkzYDEcblP8Lj179D7fXfgLx74a8Z2AudEv0kkAzLbP8s0R9GTr+I4rw79on4QzQXVx4u8L2he3kJkv7KJfmRu8qAdQe4HTrXgVnc3NncJd2dzNbzIcpLDIUYH2I5r52GKrZdP2c1eJ+yYnI8s4zw6x+En7Ot9r17SX5PsfdXxb8NJ4x+G+ueHiMvd2jeT6rKvzRkf8CAr8zp5nSRkcFHU7WU9QRwR+dfRmhfHL4j6VEsJ1mHUI16C+txIf++hg/rXkniPR7LWvEGoaxKGtnvrl7h4bbCxIzncwUHJAyTxmvqsn4rwuEjKM20nrsfA4/wALs7nNckYy81L/ADs/wOGa4OfWvrD4L/HG10H9nu106Qm58QafLLZWcDg4MY+ZJGP91Q23324rwK08OaRbsG+zmVh3lct+laqgKgRQFUdABgCubO+LaeLp+zoxbfd9D6Dh3wnxFOqqmYzSj/LHW/z6E9/d3F/fT3t5M89zcSNLLI5yXZjkk/jUNFdh8MfBFx4u1SR7iX7Folipm1K/fhIYlGWGf7xAP0618NTpzr1FGKu2ftGKxeGyvCurUajCC/pHr/7Ivgx1W78aXkeN4NtYBh1XPzuPqcL+Br6PHQVx/wAJZorzwTZX9patZ2FyvmWFuV2+Va/dhBHqUAc+712A6V9thsN9Wpql1W/qfy9n2cTznHTxctnsuyWyPHP2lPiFrXgqy0yz0ExQ3eos5a5dA5jRMcKDxklupqP9oLx14h8FaP4X1PRriMNcTN9qikjDJOoiDbT3HOeRiuR/bR/4/wDwv/uXH80q9+1zazS+BPDNykZMUNwUkbspeHC/mRXDiK9ROtZ7JWPqcoyvBzhljqQT9rOopX62skme6+Hr8arodhqixmNbu2jnCE8qHUNj9a8m8WfETXYv2gdH8DWDx22mrLH9q+QFrguhbGT90DjpXefCbV7DVPhxoVzZTpKiWEUUmD9x1QKyt6EEdDXgd7qtlrP7XFpe6fKs9ut/FAJF5DMkO1sHuMgj8K2xNZxp03F7tfM8vI8rp1cbiqdWF1ThUevRrRf8A9V+OfxSj8AWcFlY28V3rV2peKOQ/JDGOPMbHJ54A78+leUN4x/aAjtP+Ehe0vv7PC+YVOnR+Xs652Y37cd6d8cWg0/9pDTNQ19C2kgWUvzjK+UpIb8A2SRX0y97pqaa2oS3MC2Ij8wzsR5ezGc7umMVl+8xNWa53FR7fmd3NhMlwGGqfVo1pVlzNy1S1tyrs133PEv2afFvibxh4i1u+1/xNJciGJPL03aqoNx/1igDgDG3qevNWvjT8Yr/AEHXv+ER8H2kd1q2VWaZkMgjduRGiD7z4IJzwM1xn7N2y7+Oeu6ho6FNI8u6YAcARvMPLH6ZHtUfwzmtNL/ab1dfErJHPJd3aW8k54ErNlOT6pkD61hDEVfYRipauTVz1cVlGC/tWtWlSTjTpKoqa01stHbtux0/xB+OPhHy9W8SadNLp7MNy3dmix89i0fKE+9e06R8SNJ1P4XXfjq3iYRWlu73FsT88ciDmMn6459CDV/4s3ujWHw81yTWjELR7KWIo/BkYqQqqD1YtjFePfsr6J/bfw98WaXqiu2nahIkDY4y3l4cg+2V/EV0R9pQrKkp83Mnv0seNUWCzTLJ46VBUnSlFPkvaUZPVWfVbmLpHjH47eNvtGreG2lFmspj2W0cKxxt12gyckgEc17z8JbHxla+GVfxvqYvdUllLlcL+5TgBMqACeMk+9eCav8ADr4p/DO1vdU8Oa87aRbgzyvb3GwlR1Z4WG0nHXGa9q+Afje88ceChfakka39rOba4aMbVkIAIcDtkEZHrmowMpKpy1XLn89vkdPE9GjPBe2wEKToJpXivfWmilfv5HotFFFeufn4UUUUAFFFFABRRRQAUUUUAFB6UUUARsgbsa8d+KXwJ0PxRNNqmhyLo2qv8z7UzbzN6so+6T6r+VezUVlWowrR5Zq6O7LsyxWW1vbYWbjLy6+q2Z8LeLfhZ458NOxv9BuZ7df+XizHnxn3+XkfiBXFyKY3KONjA4KtwR+Br9GivBHrWffaNo93lrzTLK4PUmW3Rv5ivGq5HB6wlY/S8D4q4inFLFUFJ907fg7n555H95fzrT0XQNb1qZYdJ0i/vnbp5EDMPzxgV9Uz/FD4EabK+NV0BZY2KssGnlmBBwRxH6iub8T/ALUPgnTLdofDWj6hq02MJlBaw/iTlvyWujD8J4mq1ZN/J/mzTF+L8Ix/dUEn5y/RI5fwL+z9q9yRqHjK7j0ewjG94ElBmKjrub7qD35NY/xM8bad4o1DSvg18MY1t9AuLyO1ubmEYF2Sw3AHqYwMsWPLEenXz74o/GTxn8QA1pqN2tjpRP8AyD7MlI3/AN8n5n/Hj2rrP2L/AA62r/FSXWpo91vo1m0gYjjzpDsQflvP4V9tl3DVLKKEsTWXvJaLfXpf59D8rz/jLMOIayp1Z+7fZaJf13d2faWmWkNhZQWVsu2C3jWKNfRVGB+gqzuHqKBwK8r+NWvfEqwuLPT/AADoEtyskZkuL0QrLsOcCNQxAzjJJ+lfOVanJFyeoYLCSxdaNGDSb6t2XzbPPP20JEbUfDCBwWEVwSM84LIBXu+seH9O8TeEW0TVoPOtLm3RHXOCpwMMD2IPINeDeDfhZ468ZeM4PEnxLeWOGBlYxTspklCnKxhV+VEz19a+l4l2rgfpXFhYupOpUlGylbR+R9NntenhMLhMDRqKU6XM3KLuk5NNJPytufMuo/s7eKbW+nh0DxTb/wBnTHDCZpYnK+jBMq9b3g/4C3nhfxZ4d12312G7NlP5l7G8JQHggeXjPr0avf8AApGAx0qll1BO9vx2MqvGeb1aTpymrNNP3VeSatq7XZ43+0JD4I1efQvDviG5uLXV72fZp1zAgY24YhS0mSB5ZbAx1z06V5+P2efGPnDTpPFVgNKDZx5kxA/7Zfdz+Nem/Hv4Xt47tLe+0yeO31iyUrH5hwk0ZOdhPbB5B7ZPrXlbaX+0RLY/8I1J/an2QjyvNM0XKdMedndjH41yYunH2zdSDfZrr5M93h/E1o5fCODxcISTfNGpb3ddJQuu34h+zKkul/GjWNHsLo3dgltcRPMBxII5FCP7c5/OvUfjH8G7DxzcjV7G6Gm6yFCNKU3RTqOm8DnI7MP1qf4D/DFfAWnz3WoTRXGs3igTvGPkiQciNe555J7mvVByK6MLhF9X9nVW+tux5OfcQyec/XMDU1ilHm/maVm2tmmfMGn/ALPfjLUb2GPxL4otzZQnCmOaW4cL6KHAC17hB4Yk8N+AJdA8FLBaXMVuyWb3GSolP8bkDJOck8V19Fb0cHSo3cd316nk5jxDjsxUY12uWLuopJRv3aW58vXfwQ+KupyONV8XWs8UzZm8y9nkB5z9zaAfpXuPwr8E2fgTwvFo1rK9xIXMtxOy4Msh6nHYcYA9K7DA9KKKODp0Zc6u35srMeIsbj6Cw8+WME72jFRTa723Ciiiuo8IKKKKACiiigAooooAKKKKACiiigAooooAKa/Q+tOoIzQB8B/tN+DLnwj8U9QkWBk0zVpGvbFwPlO45kQe6sTx6EV5b71+lfjzwdoHjTQpNG8Qael5bN8yc7Xifs6MOVYeor591n9kmN7sto/jKSK2J4S7sw7qPTcpAP5Cvt8q4hoRoKliHZrTumeHisvqOo5U9Uz5W4AJJwAMk19x/sh+Crrwt8NDf6lbtBf61OLto3XDJEFAiUjscZbH+1VX4Zfs2eE/C+pQ6prV3N4hvIWDRJPGI7dGHRvLGdxH+0SPavdFVVGAMVwZ5ndPF0/YUPh6v/I6MDgpUnzz3FowPQUUV8ueoGB6UUUUAFFFFABgelGB6CiigAwPQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAARRiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA/9k=" alt="Venejugos">
+        <h2>Panel administrativo</h2>
+        <p class="ay">Ingresa la contraseña para cargar la CxC y editar canales y comisiones.</p>
+        <input type="password" id="clave" aria-label="Contraseña" placeholder="Contraseña">
+        <button class="btn azul" type="submit">Entrar</button>
+        <p class="err" id="claveErr" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div id="adminCont" hidden>
+      <div class="rej">
+        <div class="tarjeta c6">
+          <h3>Cargar CxC</h3>
+          <p class="sub" id="admCxcInfo"></p>
+          <div class="zona-carga" id="zonaCarga">
+            <button class="btn azul" type="button" id="bCargar">Elegir Excel de CxC</button>
+            <p>O arrastra el archivo aquí. Columnas necesarias: asesor actual, cliente, deuda, SECTOR y Dias de vencimiento. Si trae HOY, supervisor, Analista, MÓDULOS, fecha emi y vcto, también se usan.</p>
+          </div>
+          <input type="file" id="archivo" accept=".xlsx,.xls,.xlsm" hidden>
+          <div id="cxcResultado" style="margin-top:12px"></div>
+        </div>
+        <div class="tarjeta c6">
+          <h3>Cargar comisiones</h3>
+          <p class="sub" id="admComInfo"></p>
+          <div class="zona-carga" id="zonaCom">
+            <button class="btn azul" type="button" id="bCargarCom">Elegir Excel de comisiones</button>
+            <p>O arrastra el archivo aquí. Lee cada bloque con encabezado COD · TRADICIONAL, FOODSERVICE o BIGOTT · CI · TOTAL COBRADO TRADICIONAL · COMISION ACUMULADA · TOTAL COBRADO BIGOT · comision bigot · COBRADO GENERAL · TOTAL COMISIONES.</p>
+          </div>
+          <input type="file" id="archivoCom" accept=".xlsx,.xls,.xlsm" hidden>
+          <div class="ed-cab" style="margin:12px 0 0">
+            <div class="campo"><label for="comFecha">Cobranza al</label><input type="date" id="comFecha"></div>
+            <div class="campo" style="flex:1;min-width:200px"><label for="comModo">Al cargar</label>
+              <select id="comModo"><option value="reemplazar">Reemplazar todas las comisiones</option><option value="actualizar">Actualizar solo los vendedores del archivo</option></select></div>
+          </div>
+          <div class="fila-btns" style="margin-top:10px"><button class="btn linea" type="button" id="bPlantillaCom">Descargar plantilla con los datos actuales</button></div>
+          <div id="comResultado" style="margin-top:12px"></div>
+        </div>
+        <div class="tarjeta c12">
+          <h3>Claves por empleado</h3>
+          <p class="sub" id="admClavesInfo"></p>
+          <div class="tw"><table id="admClavesTabla"></table></div>
+          <p class="notas">Cada clave desbloquea solo la comisión de su empleado; la clave de Administración desbloquea todas. Las claves van guardadas en el panel como huella y no se pueden leer: para agregar un empleado o cambiar una clave hay que publicar el panel con la clave nueva.</p>
+        </div>
+        <div class="tarjeta c12">
+          <h3>Tasa BCV</h3>
+          <p class="sub">Dólar de referencia del Banco Central de Venezuela. Con esta tasa el panel muestra la CxC y las comisiones en bolívares.</p>
+          <div class="rej" style="gap:14px">
+            <div class="c6" id="tasaInfo"></div>
+            <div class="c6">
+              <div class="ed-cab" style="margin-bottom:8px">
+                <div class="campo"><label for="tasaMan">Tasa manual (Bs. por US$)</label><input type="text" id="tasaMan" inputmode="decimal" placeholder="Ej. según publique el BCV"></div>
+                <div class="campo"><label for="tasaFecha">Fecha valor</label><input type="date" id="tasaFecha"></div>
+              </div>
+              <label class="chk-lbl"><input type="checkbox" class="chk" id="tasaForzar"> Usar la tasa manual aunque haya conexión con el BCV</label>
+              <div class="fila-btns" style="margin-top:12px">
+                <button class="btn azul" type="button" id="bTasaGuardar">Guardar tasa manual</button>
+                <button class="btn linea" type="button" id="bTasaQuitar">Quitar tasa manual</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tarjeta c12" id="cardPublicar">
+          <h3>Publicar en GitHub</h3>
+          <p class="sub">Escribe el archivo <code>dataset.json</code> en el repositorio para que todo el equipo vea la información actualizada al abrir el panel.</p>
+          <div class="gh-grid">
+            <div class="campo"><label for="ghRepo">Repositorio</label><input type="text" id="ghRepo" placeholder="usuario/repositorio" autocomplete="off" style="width:100%"></div>
+            <div class="campo"><label for="ghRama">Rama</label><input type="text" id="ghRama" placeholder="main" autocomplete="off" style="width:100%"></div>
+            <div class="campo"><label for="ghRuta">Ruta del archivo</label><input type="text" id="ghRuta" placeholder="dataset.json" autocomplete="off" style="width:100%"></div>
+            <div class="campo"><label for="ghToken">Token de acceso</label><input type="password" id="ghToken" autocomplete="new-password" style="width:100%"></div>
+          </div>
+          <div class="fila-btns" style="margin:14px 0">
+            <button class="btn azul" type="button" id="bGhGuardar">Guardar conexión</button>
+            <button class="btn" type="button" id="bGhPublicar">Publicar dataset.json</button>
+            <button class="btn linea" type="button" id="bGhProbar">Probar conexión</button>
+            <button class="btn linea" type="button" id="bGhOlvidar">Olvidar token</button>
+          </div>
+          <div class="gh-estado" id="ghEstado" aria-live="polite"></div>
+          <p class="notas">Usa un token de acceso personal de alcance fino, limitado a este repositorio y con permiso <b>Contents: Read and write</b>. El token se guarda solo en este navegador y nunca viaja al panel visual; puedes revocarlo en cualquier momento desde GitHub. Si el repositorio es público, cualquiera puede ver el <code>dataset.json</code> publicado.</p>
+        </div>
+        <div class="tarjeta c12">
+          <h3>Estado de los datos</h3>
+          <p class="sub" id="estadoDatos"></p>
+          <div class="fila-btns">
+            <button class="btn linea" type="button" id="bReset">Recargar lo publicado</button>
+            <button class="btn azul" type="button" id="bSalir">Cerrar sesión</button>
+          </div>
+        </div>
+        <div class="tarjeta c12">
+          <h3>Canales y comisiones</h3>
+          <p class="sub">Montos en US$. El total de comisión se calcula al guardar.</p>
+          <div class="ed-cab">
+            <div class="campo"><label for="edFecha">Cobranza al</label><input type="date" id="edFecha"></div>
+            <div class="campo" style="flex:1;min-width:220px"><label for="edNuevo">Vendedor nuevo</label><input type="text" id="edNuevo" placeholder="Nombre del vendedor"></div>
+            <button class="btn linea" type="button" id="edAgregar">Agregar vendedor</button>
+          </div>
+          <div class="tw"><table class="ed" id="edTabla"></table></div>
+          <div class="fila-btns" style="margin-top:14px;justify-content:flex-end">
+            <span class="sucio" id="edSucio" hidden>Tienes cambios sin guardar</span>
+            <button class="btn linea" type="button" id="edDescartar">Descartar cambios</button>
+            <button class="btn" type="button" id="edGuardar">Guardar cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pie-doc">
+    <span id="pieArchivo"></span>
+    <span>Venejugos C.A. · Ventas 0412 501-6394 · @Venejugos</span>
+  </div>
+</main>
+</div>
+
+<div class="modal" id="mDetalle" role="dialog" aria-modal="true" aria-labelledby="detTit">
+  <div class="modal-panel" id="detPanel">
+    <div class="modal-cab">
+      <div class="ident"><img class="logo" id="logoDet" alt="Venejugos"><div><h3 id="detTit"></h3><p id="detSub"></p></div></div>
+      <div class="fila-btns" data-html2canvas-ignore="true">
+        <button class="btn azul" type="button" id="bVerDocs">Ver documentos</button>
+        <button class="btn" type="button" id="bImagenDet">Descargar imagen</button>
+        <button class="btn-x" type="button" data-cerrar aria-label="Cerrar">×</button>
+      </div>
+    </div>
+    <div class="modal-cue" id="detCue"></div>
+  </div>
+</div>
+
+<div class="modal" id="mClave" role="dialog" aria-modal="true" aria-labelledby="clTit">
+  <div class="modal-panel" style="max-width:440px">
+    <div class="modal-cab">
+      <div><h3 id="clTit">Acceso por tipo de empleado</h3><p>Elige tu tipo de empleado, tu nombre y escribe tu clave.</p></div>
+      <button class="btn-x" type="button" data-cerrar aria-label="Cerrar">×</button>
+    </div>
+    <form class="modal-cue" id="formClaveTipo" autocomplete="off">
+      <div class="campo" style="margin-bottom:12px"><label for="clTipo">Tipo de empleado</label><select id="clTipo" style="width:100%"></select></div>
+      <div class="campo" style="margin-bottom:12px"><label for="clEmp">Empleado</label><select id="clEmp" style="width:100%"></select></div>
+      <div class="campo"><label for="clPass">Clave</label><input type="password" id="clPass" style="width:100%" autocomplete="off"></div>
+      <p class="err" id="clErr" aria-live="polite"></p>
+      <div class="fila-btns" style="justify-content:flex-end"><button class="btn linea" type="button" data-cerrar>Cancelar</button><button class="btn azul" type="submit">Desbloquear</button></div>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="mPreview" role="dialog" aria-modal="true" aria-labelledby="pvTit">
+  <div class="modal-panel">
+    <div class="modal-cab">
+      <div><h3 id="pvTit">Imagen lista</h3><p>Si la descarga no arranca, haz clic derecho sobre la imagen (o mantenla presionada) y elige guardar.</p></div>
+      <button class="btn-x" type="button" data-cerrar aria-label="Cerrar">×</button>
+    </div>
+    <div class="modal-cue preview"><img id="pvImg" alt="Vista previa de la imagen"></div>
+    <div class="modal-pie"><a class="btn" id="pvLink" download="cxc venejugos.png">Descargar</a></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------- Datos base (corte 07/10/2026) ---------- */
+const BASE_CXC = {fecha:"", archivo:"", stride:13, asesores:[], supervisores:[], clientes:[], rifs:[], sectores:[], coordinadores:[], modulos:[], sectoresTxt:[], filas:[]};
+const BASE_COMISIONES = {fecha:"", archivo:"", vendedores:[]};
+
+const CANALES = [
+  {id:"tradicional", nombre:"Tradicional",            kpi:"",      comisiona:true},
+  {id:"foodservice", nombre:"Foodservice",            kpi:"verde", comisiona:true},
+  {id:"bigott",      nombre:"Vendedor Bigott",        kpi:"rojo",  comisiona:true},
+  {id:"oficina",     nombre:"Oficina y recuperación", kpi:"ambar", comisiona:false}
+];
+const CANAL_DEFECTO = {
+  "LISBETH FERRER":"foodservice", "MARY SUAREZ":"foodservice",
+  "LILIANA ROMERO":"bigott",
+  "DIRECTO OFICINA":"oficina", "RECUPERACION":"oficina", "VENEJUGOS EMPLEADOS":"oficina", "SIN ASESOR":"oficina"
+};
+/* Tipos de empleado: cada uno tiene su clave para ver sus comisiones */
+const TIPOS = [
+  {id:"tradicional", nombre:"Vendedor tradicional"},
+  {id:"foodservice", nombre:"Vendedor foodservice"},
+  {id:"bigott",      nombre:"Vendedor Bigott"},
+  {id:"supervisor",  nombre:"Supervisor"}
+];
+const CLAVES_EMP = {};   /* se llena desde claves.json (solo huellas, no las claves) */
+const TABS = {principal:"Panel principal", cxc:"CxC por vendedor", detalle:"Detalle de CxC", comisiones:"Comisiones", descargas:"Descargas", admin:"Administración"};
+const LINEA_TXT = {todas:"todas las líneas", otras:"otras líneas", bigott:"línea Bigott"};
+const BUCKET_CLAVES = ["NO VENCIDA","0 A 2","3 A 6","7 A 10","11 A 15","16 A 20","21 A 30","MAS DE 30"];
+const BUCKET_TXT = ["No vencida","0 a 2 días","3 a 6 días","7 a 10 días","11 a 15 días","16 a 20 días","21 a 30 días","Más de 30 días"];
+const BUCKET_COLOR = ["var(--verde)","var(--azul-med)","var(--azul-med)","var(--azul-med)","var(--ambar)","var(--ambar)","var(--ambar)","var(--rojo)"];
+const C_OTRAS = "#1740C4", C_BIG = "#E5142B", C_VEN = "#E5142B", C_XV = "#128C5A";
+const URL_H2C = "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js";
+const URL_XLSX = "https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js";
+const NOMBRE_IMAGEN = "cxc venejugos";
+const URL_JSPDF = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js";
+const CLAVE_HASH = 88906674012447;
+const LS_ESTADO = "venejugos_cxc_estado", LS_CXC = "venejugos_cxc_datos", SS_ADMIN = "venejugos_cxc_admin", LS_MONEDA = "venejugos_cxc_moneda", LS_GH = "venejugos_cxc_gh", LS_GH_TOK = "venejugos_cxc_gh_tok", SS_TIPOS = "venejugos_cxc_pers", SS_MAESTRA = "venejugos_cxc_maestra";
+/* Tasa BCV: primero el archivo que actualiza el robot del repositorio (lee bcv.org.ve), luego una fuente alterna */
+const FUENTES_TASA = [
+  {url:"tasa_bcv.json", nombre:"tasa_bcv.json del sitio"},
+  {url:"https://raw.githubusercontent.com/venejugosserver/VENEJUGOS-CXC-COMISIONES/main/tasa_bcv.json", nombre:"repositorio VENEJUGOS-CXC-COMISIONES"},
+  {url:"https://raw.githubusercontent.com/venejugosserver/KPI-GLOBAL/main/tasa_bcv.json", nombre:"repositorio KPI-GLOBAL"},
+  {url:"https://ve.dolarapi.com/v1/dolares/oficial", nombre:"DolarApi (oficial BCV)"}
+];
+const MONEDAS_BCV = [["eur","Euro (EUR)"],["cny","Yuan (CNY)"],["try","Lira turca (TRY)"],["rub","Rublo (RUB)"]];
+
+/* ---------- Estado ---------- */
+const est = {
+  cxc: BASE_CXC, filas: null, canales: {}, comisiones: clonar(BASE_COMISIONES),
+  f: {linea:"todas", canal:"todos", tipo:"todos", sup:"todos", coord:"todos", vend:"todos"},
+  claves: new Set(clavesGuardadas()), maestra: sessionStorage.getItem("venejugos_cxc_maestra") === "1",
+  tab: "principal", vendTodos: [], vendedores: [], admin: false, sucio: false, origen: "vacio", publicado: "", sinPublicar: false, cargando: true, datasetError: "", ghMsg: "",
+  moneda: "usd", tasaAuto: null, tasaManual: null, tasaEstado: "", _t: null
+};
+let db = null, puedeEscribir = null, lsOk = false;
+
+function clavesGuardadas(){ try { const l = JSON.parse(sessionStorage.getItem("venejugos_cxc_pers") || "[]"); return Array.isArray(l) ? l.filter(n => typeof n === "string") : []; } catch (e) { return []; } }
+
+/* ---------- Utilidades ---------- */
+function clonar(o){ return JSON.parse(JSON.stringify(o)); }
+const $ = s => document.querySelector(s);
+function esc(s){ return String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function miles(v, dec){
+  const neg = v < 0; const p = Math.abs(v).toFixed(dec).split(".");
+  const ent = p[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  return (neg ? "-" : "") + ent + (dec ? "," + p[1] : "");
+}
+function usd(v){
+  v = v || 0;
+  const t = est._t;
+  if (t){ const b = v * t.usd; return (b < 0 ? "-" : "") + "Bs. " + miles(Math.abs(b), 2); }
+  return (v < 0 ? "-$" : "$") + miles(Math.abs(v), 2);
+}
+const usdFijo = v => (v < 0 ? "-$" : "$") + miles(Math.abs(v || 0), 2);
+const f0 = v => miles(v || 0, 0);
+const pctN = (a, b) => b > 0 ? a / b * 100 : null;
+const fp = p => p == null ? "—" : p.toFixed(1).replace(".", ",") + "%";
+const pct = (a, b) => fp(pctN(a, b));
+const pct2 = (a, b) => b > 0 ? (a / b * 100).toFixed(2).replace(".", ",") + "%" : "—";
+function sem(p){ return p == null ? "ok" : p < 30 ? "ok" : p < 50 ? "med" : "mal"; }
+function colorSem(p){ return {ok:"#128C5A", med:"#E08A00", mal:"#E5142B"}[sem(p)]; }
+function fechaTxt(iso){ if(!iso) return "—"; const p = String(iso).slice(0,10).split("-"); return p.length === 3 ? p[2] + "/" + p[1] + "/" + p[0] : iso; }
+function sinAcentos(s){ return String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
+function normNombre(s){ return s == null ? "" : String(s).replace(/_x000D_/gi, "").replace(/\s+/g, " ").trim().toUpperCase(); }
+function canalDe(n){ return est.canales[n] || CANAL_DEFECTO[n] || "tradicional"; }
+function canalInfo(id){ return CANALES.find(c => c.id === id) || CANALES[0]; }
+function unir(l){ return l.length > 1 ? l.slice(0, -1).join(", ") + " y " + l[l.length - 1] : (l[0] || "nadie asignado"); }
+function cyrb53(str, seed){
+  let h1 = 0xdeadbeef ^ seed, h2 = 0x41c6ce57 ^ seed;
+  for (let i = 0, ch; i < str.length; i++){ ch = str.charCodeAt(i); h1 = Math.imul(h1 ^ ch, 2654435761); h2 = Math.imul(h2 ^ ch, 1597334677); }
+  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507); h1 ^= Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+  h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507); h2 ^= Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+  return 4294967296 * (2097151 & h2) + (h1 >>> 0);
+}
+let tToast;
+function aviso(msg, ms){ const t = $("#toast"); t.textContent = msg; t.classList.add("ver"); clearTimeout(tToast); tToast = setTimeout(() => t.classList.remove("ver"), ms || 3800); }
+const cargados = {};
+function cargarScript(src){
+  if (!cargados[src]) cargados[src] = new Promise((ok, mal) => {
+    const s = document.createElement("script"); s.src = src; s.async = true;
+    s.onload = ok; s.onerror = () => { delete cargados[src]; mal(new Error("No se pudo cargar una librería. Revisa tu conexión a internet.")); };
+    document.head.appendChild(s);
+  });
+  return cargados[src];
+}
+const enClaude = !!(window.claude && typeof window.claude.use === "function");
+function capacidad(nombre){ try { if (enClaude) return window.claude.use(nombre).catch(() => null); } catch (e) {} return Promise.resolve(null); }
+function lsLeer(k){ try { return localStorage.getItem(k); } catch (e) { return null; } }
+function lsPoner(k, v){ try { localStorage.setItem(k, v); return true; } catch (e) { return false; } }
+function lsQuitar(k){ try { localStorage.removeItem(k); } catch (e) {} }
+function ssLeer(k){ try { return sessionStorage.getItem(k); } catch (e) { return null; } }
+function ssPoner(k, v){ try { if (v == null) sessionStorage.removeItem(k); else sessionStorage.setItem(k, v); } catch (e) {} }
+try { localStorage.setItem("__vj", "1"); localStorage.removeItem("__vj"); lsOk = true; } catch (e) { lsOk = false; }
+
+/* ---------- Cálculos ---------- */
+function decodificar(c){
+  const f = c.filas, out = [], st = c.stride || (Array.isArray(c.coordinadores) ? 7 : 6);
+  for (let i = 0; i + st - 1 < f.length; i += st) out.push({a:f[i], s:f[i+1], c:f[i+2], sec:f[i+3], b:f[i+4], d:+f[i+5] || 0, k:st >= 7 ? f[i+6] : -1, doc:st >= 9 ? f[i+7] : null, dias:st >= 9 ? f[i+8] : null, mod:st >= 13 ? f[i+9] : -1, emi:st >= 13 ? f[i+10] : null, vcto:st >= 13 ? f[i+11] : null, sn:st >= 13 ? f[i+12] : -1});
+  return out;
+}
+function nuevoAcum(){ return {docs:0, lin:[0,0], ven:[0,0], m30:[0,0], aging:Array.from({length:9}, () => [0,0]), clientes:new Set(), cliVen:new Set(), sinSector:[0,0], otrasNom:0}; }
+function sumarFila(a, r){
+  const L = r.sec === 1 ? 1 : 0;
+  a.docs++; a.lin[L] += r.d; a.clientes.add(r.c);
+  if (r.b >= 1 && r.b <= 7){ a.ven[L] += r.d; if (r.d > 0) a.cliVen.add(r.c); }
+  if (r.b === 7) a.m30[L] += r.d;
+  a.aging[r.b][L] += r.d;
+  if (r.sec === 2){ a.sinSector[0]++; a.sinSector[1] += r.d; }
+  if (r.sec === 3) a.otrasNom++;
+}
+function cerrar(a){ a.total = a.lin[0] + a.lin[1]; a.vencido = a.ven[0] + a.ven[1]; a.mas30 = a.m30[0] + a.m30[1]; a.pv = pctN(a.vencido, a.total); return a; }
+function calcular(linea){
+  const c = est.cxc, porVend = new Map();
+  for (const r of est.filas){
+    if (linea === "otras" && r.sec === 1) continue;
+    if (linea === "bigott" && r.sec !== 1) continue;
+    let v = porVend.get(r.a);
+    if (!v){ const n = c.asesores[r.a]; v = Object.assign(nuevoAcum(), {nombre:n, canal:canalDe(n), sup:{}, coo:{}, filas:[]}); porVend.set(r.a, v); }
+    sumarFila(v, r); v.sup[r.s] = (v.sup[r.s] || 0) + 1; v.coo[r.k] = (v.coo[r.k] || 0) + 1; v.filas.push(r);
+  }
+  const mayor = o => { let best = null, bn = -1; for (const k in o) if (o[k] > bn){ bn = o[k]; best = k; } return best; };
+  return [...porVend.values()].map(v => {
+    v.supervisor = c.supervisores[mayor(v.sup)] || "SIN SUPERVISOR";
+    v.coordinador = (c.coordinadores || [])[mayor(v.coo)] || "SIN ANALISTA";
+    return cerrar(v);
+  });
+}
+function combinar(lista){
+  const t = nuevoAcum();
+  for (const v of lista){
+    t.docs += v.docs;
+    for (let L = 0; L < 2; L++){ t.lin[L] += v.lin[L]; t.ven[L] += v.ven[L]; t.m30[L] += v.m30[L]; }
+    for (let b = 0; b < 9; b++){ t.aging[b][0] += v.aging[b][0]; t.aging[b][1] += v.aging[b][1]; }
+    v.clientes.forEach(x => t.clientes.add(x)); v.cliVen.forEach(x => t.cliVen.add(x));
+    t.sinSector[0] += v.sinSector[0]; t.sinSector[1] += v.sinSector[1]; t.otrasNom += v.otrasNom;
+  }
+  return cerrar(t);
+}
+function recalcular(){
+  est.vendTodos = calcular("todas");
+  est.vendedores = est.f.linea === "todas" ? est.vendTodos : calcular(est.f.linea);
+  const base = new Map(est.vendTodos.map(v => [v.nombre, v]));
+  est.vendedores.forEach(v => { const b = base.get(v.nombre); if (b){ v.supervisor = b.supervisor; v.coordinador = b.coordinador; } });
+}
+const infoDe = n => est.vendTodos.find(x => x.nombre === n) || null;
+function pasaPersona(nombre, sup, coord){
+  return (est.f.sup === "todos" || sup === est.f.sup) && (est.f.coord === "todos" || coord === est.f.coord) && (est.f.vend === "todos" || nombre === est.f.vend);
+}
+const pasaVend = n => { const i = infoDe(n); return pasaPersona(n, i ? i.supervisor : null, i ? i.coordinador : null); };
+const visibles = (sinCanal) => est.vendedores.filter(v => (sinCanal || est.f.canal === "todos" || v.canal === est.f.canal) && (est.f.tipo === "todos" || est.f.tipo === "supervisor" || v.canal === est.f.tipo) && pasaPersona(v.nombre, v.supervisor, v.coordinador));
+const verO = () => est.f.linea !== "bigott", verB = () => est.f.linea !== "otras";
+const filtrosActivos = () => est.f.canal !== "todos" || est.f.tipo !== "todos" || est.f.sup !== "todos" || est.f.coord !== "todos" || est.f.vend !== "todos";
+const TIPO_NOM = id => (TIPOS.find(t => t.id === id) || {nombre:id}).nombre;
+const hashClave = v => cyrb53(String(v).trim().toUpperCase(), 2026);
+const desbloqueadoPers = n => est.admin || est.maestra || est.claves.has(n);
+function pasaSup(nombre){ return est.f.canal === "todos" && est.f.coord === "todos" && est.f.vend === "todos" && (est.f.sup === "todos" || nombre === est.f.sup); }
+
+/* ---------- Comisiones ---------- */
+function mapaComisiones(){ return new Map((est.comisiones.vendedores || []).map(c => [c.nombre, c])); }
+function tieneMontos(d){ return !!d && ["cobOtras","comOtras","cobBig","comBig"].some(k => typeof d[k] === "number"); }
+function totalCom(d){ return typeof d.total === "number" ? d.total : (d.comOtras || 0) + (d.comBig || 0); }
+function comLinea(d){ return est.f.linea === "todas" ? totalCom(d) : (est.f.linea === "otras" ? (d.comOtras || 0) : (d.comBig || 0)); }
+function cobLinea(d){ return (verO() ? (d.cobOtras || 0) : 0) + (verB() ? (d.cobBig || 0) : 0); }
+const esSup = d => !!d && d.tipo === "supervisor";
+function nombresCanal(canalId){
+  const nombres = new Set();
+  est.vendTodos.forEach(v => { if (v.canal === canalId) nombres.add(v.nombre); });
+  (est.comisiones.vendedores || []).forEach(c => { if (!esSup(c) && canalDe(c.nombre) === canalId) nombres.add(c.nombre); });
+  return [...nombres].filter(pasaVend);
+}
+function filasComision(canalId){
+  const m = mapaComisiones();
+  return nombresCanal(canalId).map(n => ({nombre:n, d:m.get(n) || null, bloq:!desbloqueadoPers(n)}))
+    .sort((a, b) => (tieneMontos(a.d) ? 0 : 1) - (tieneMontos(b.d) ? 0 : 1) || a.nombre.localeCompare(b.nombre, "es"));
+}
+const listaSupervisores = () => (est.comisiones.vendedores || []).filter(c => esSup(c) && pasaSup(c.nombre));
+function filasSupervisores(){
+  return listaSupervisores().map(c => ({nombre:c.nombre, d:c, bloq:!desbloqueadoPers(c.nombre)})).sort((a, b) => a.nombre.localeCompare(b.nombre, "es"));
+}
+function sumarComisiones(filas){
+  const s = {cobO:0, comO:0, cobB:0, comB:0, tot:0, n:filas.length, conDatos:0, bloq:0};
+  for (const f of filas){
+    if (f.bloq){ s.bloq++; continue; }
+    if (!tieneMontos(f.d)) continue;
+    const d = f.d; s.conDatos++;
+    s.cobO += d.cobOtras || 0; s.comO += d.comOtras || 0; s.cobB += d.cobBig || 0; s.comB += d.comBig || 0; s.tot += comLinea(d);
+  }
+  s.cob = (verO() ? s.cobO : 0) + (verB() ? s.cobB : 0);
+  return s;
+}
+/* grupos de comisión visibles según canal y tipo de empleado: cada canal de vendedores, más los supervisores */
+function gruposCom(){
+  const g = CANALES.filter(c => c.comisiona && (est.f.canal === "todos" || c.id === est.f.canal) && (est.f.tipo === "todos" || est.f.tipo === c.id))
+    .map(c => ({id:c.id, nombre:c.nombre, kpi:c.kpi, sup:false}));
+  if (est.f.canal === "todos" && (est.f.tipo === "todos" || est.f.tipo === "supervisor")) g.push({id:"supervisor", nombre:"Supervisores", kpi:"ambar", sup:true});
+  return g;
+}
+const filasGrupo = g => g.sup ? filasSupervisores() : filasComision(g.id);
+const nGrupo = g => g.sup ? listaSupervisores().length : nombresCanal(g.id).length;
+function comisionesFiltradas(){
+  const g = {cobO:0, comO:0, cobB:0, comB:0, tot:0, totV:0, totS:0, n:0, conDatos:0, cob:0, bloq:0};
+  gruposCom().forEach(x => {
+    const s = sumarComisiones(filasGrupo(x));
+    g.n += s.n; g.bloq += s.bloq; g.conDatos += s.conDatos; g.tot += s.tot;
+    if (x.sup) g.totS += s.tot;
+    else { g.totV += s.tot; g.cobO += s.cobO; g.comO += s.comO; g.cobB += s.cobB; g.comB += s.comB; g.cob += s.cob; }
+  });
+  return g;
+}
+/* empleados que cobran comisión: nombre -> tipo (canal o "supervisor") */
+function personasComision(){
+  const out = new Map();
+  (est.comisiones.vendedores || []).forEach(c => out.set(c.nombre, esSup(c) ? "supervisor" : canalDe(c.nombre)));
+  est.vendTodos.forEach(v => { if (v.canal !== "oficina" && !out.has(v.nombre)) out.set(v.nombre, v.canal); });
+  return out;
+}
+
+/* ---------- Render general ---------- */
+function tasaActiva(){
+  const m = est.tasaManual;
+  if (m && m.usd > 0 && (m.forzar || !est.tasaAuto)) return {usd:m.usd, fecha:m.fecha || "", fuente:"tasa manual", origen:"manual", otras:{}};
+  return est.tasaAuto ? Object.assign({origen:"automática"}, est.tasaAuto) : null;
+}
+const tasaTxt = t => miles(t.usd, 2);
+function render(){
+  const ta = tasaActiva();
+  if (est.moneda === "bs" && !ta) est.moneda = "usd";
+  est._t = est.moneda === "bs" ? ta : null;
+  $("#captura").classList.toggle("bs", !!est._t);
+  recalcular();
+  llenarFiltros();
+  const lista = visibles(), t = combinar(lista);
+  renderCab(lista);
+  renderTabs();
+  renderResumen(t, lista);
+  renderReparto(t, lista);
+  renderAlerta(lista);
+  renderAntiguedad(t);
+  renderPorCanal();
+  renderEquipos(lista);
+  renderTablaCxC(lista);
+  renderDetalleDocs(lista);
+  renderComisiones();
+  renderAvisoVacio();
+  renderAdminInfo();
+  renderClavesAdmin();
+  renderTasa();
+  renderDescargas();
+  renderPie();
+}
+function opciones(sel, ops, actual){
+  const html = ops.map(o => `<option value="${esc(o[0])}"${o[0] === actual ? " selected" : ""}>${esc(o[1])}</option>`).join("");
+  if (sel.dataset.ops !== html){ sel.innerHTML = html; sel.dataset.ops = html; }
+  sel.value = actual;
+}
+function llenarFiltros(){
+  opciones($("#fCanal"), [["todos","Todos los canales"]].concat(CANALES.map(c => [c.id, c.nombre])), est.f.canal);
+  const enCanal = est.vendTodos.filter(v => est.f.canal === "todos" || v.canal === est.f.canal);
+  const okSup = v => est.f.sup === "todos" || v.supervisor === est.f.sup, okCoo = v => est.f.coord === "todos" || v.coordinador === est.f.coord;
+  const ordenar = l => [...new Set(l)].sort((a, b) => a.localeCompare(b, "es"));
+  const sups = ordenar(enCanal.filter(okCoo).map(v => v.supervisor));
+  if (est.f.sup !== "todos" && !sups.includes(est.f.sup)) est.f.sup = "todos";
+  const coos = ordenar(enCanal.filter(okSup).map(v => v.coordinador));
+  if (est.f.coord !== "todos" && !coos.includes(est.f.coord)) est.f.coord = "todos";
+  opciones($("#fSup"), [["todos","Todos los supervisores"]].concat(sups.map(s => [s, s])), est.f.sup);
+  opciones($("#fCoord"), [["todos","Todos los analistas"]].concat(coos.map(s => [s, s])), est.f.coord);
+  const vends = enCanal.filter(v => okSup(v) && okCoo(v)).map(v => v.nombre).sort((a, b) => a.localeCompare(b, "es"));
+  if (est.f.vend !== "todos" && !vends.includes(est.f.vend)) est.f.vend = "todos";
+  opciones($("#fVend"), [["todos","Todos los vendedores"]].concat(vends.map(n => [n, n])), est.f.vend);
+  $("#fLinea").value = est.f.linea;
+  opciones($("#fTipo"), [["todos","Todos los tipos"]].concat(TIPOS.map(t => [t.id, t.nombre])), est.f.tipo);
+  const ta = tasaActiva();
+  opciones($("#fMoneda"), [["usd","US$ (dólar referencia BCV)"], ["bs", ta ? "Bs. a tasa BCV " + tasaTxt(ta) : "Bs. (falta la tasa BCV)"]], est.moneda);
+  $("#fMoneda").querySelector('option[value="bs"]').disabled = !ta;
+}
+function renderCab(lista){
+  const partes = [TABS[est.tab]];
+  if (est.tab !== "admin"){
+    partes.push(LINEA_TXT[est.f.linea]);
+    partes.push(est.f.canal === "todos" ? "todos los canales" : "canal " + canalInfo(est.f.canal).nombre.toLowerCase());
+    if (est.f.tipo !== "todos") partes.push("tipo " + TIPO_NOM(est.f.tipo).toLowerCase());
+    if (est.f.sup !== "todos") partes.push("supervisor " + est.f.sup);
+    if (est.f.coord !== "todos") partes.push("analista " + est.f.coord);
+    if (est.f.vend !== "todos") partes.push(est.f.vend);
+    else partes.push(lista.length + " vendedores");
+    if (est._t) partes.push("montos en Bs. a tasa BCV " + tasaTxt(est._t));
+  }
+  $("#subtit").textContent = "· " + partes.join(" · ");
+  $("#selloCorte").textContent = "CxC al " + fechaTxt(est.cxc.fecha);
+  $("#selloArchivo").textContent = est.cxc.archivo || "sin archivo";
+  $("#selloCom").textContent = "Comisiones al " + fechaTxt(est.comisiones.fecha);
+  const ta = tasaActiva(), st = $("#selloTasa");
+  st.textContent = ta ? `Tasa BCV Bs. ${tasaTxt(ta)}${ta.fecha ? " · " + fechaTxt(ta.fecha) : ""}` : "Tasa BCV sin cargar";
+  st.title = ta ? `Fuente: ${ta.fuente} (${ta.origen})` : "Carga la tasa en Administración o conecta el panel al BCV";
+  st.classList.toggle("sin", !ta);
+  const origen = est.origen === "publicado" ? "dataset.json · " + fechaHoraTxt(est.publicado) : est.origen === "borrador" ? "borrador sin publicar" : "sin datos publicados";
+  $("#estado").innerHTML = `Origen: <b>${origen}</b>`;
+}
+function renderTabs(){
+  document.querySelectorAll(".pest").forEach(b => { const on = b.dataset.tab === est.tab; b.setAttribute("aria-selected", String(on)); b.tabIndex = on ? 0 : -1; });
+  document.querySelectorAll(".vista").forEach(v => { v.hidden = v.id !== "v-" + est.tab; });
+  const adm = est.tab === "admin";
+  $("#resumen").hidden = adm;
+  ["#fLinea","#fCanal","#fTipo","#fSup","#fCoord","#fVend","#fMoneda","#bLimpiar"].forEach(s => { $(s).disabled = adm; });
+  $("#bImagen").disabled = adm || est.tab === "descargas" || est.tab === "detalle";
+  $("#bPdf").disabled = adm || est.tab === "descargas";
+  $("#acceso").hidden = est.admin;
+  $("#adminCont").hidden = !est.admin;
+}
+
+/* ---------- KPI ---------- */
+function renderResumen(t, lista){
+  const pv = t.pv;
+  let k3;
+  if (verB()){
+    const todosB = est.f.linea === "todas" ? t.lin[1] : t.total;
+    let pie = `<b>${pct(Math.max(t.lin[1],0), Math.max(t.lin[0],0) + Math.max(t.lin[1],0))}</b> de la cartera · vencido <b>${usd(t.ven[1])}</b>`;
+    if (!filtrosActivos()){
+      const vb = est.vendedores.filter(v => v.canal === "bigott").reduce((a, v) => a + v.lin[1], 0);
+      const nb = unir(est.vendTodos.filter(v => v.canal === "bigott").map(v => v.nombre));
+      pie = `${esc(nb)} <b>${usd(vb)}</b> (${pct(vb, todosB)})<br>Resto de vendedores <b>${usd(todosB - vb)}</b> (${pct(todosB - vb, todosB)})`;
+    }
+    k3 = `<div class="tarjeta kpi ambar c3"><p class="rot">Línea Bigott</p><p class="val">${usd(t.lin[1])}</p><p class="pie">${pie}</p></div>`;
+  } else {
+    k3 = `<div class="tarjeta kpi ambar c3"><p class="rot">Más de 30 días</p><p class="val">${usd(t.mas30)}</p><p class="pie"><b>${pct(t.mas30, t.total)}</b> de la cartera de otras líneas</p></div>`;
+  }
+  const g = comisionesFiltradas();
+  let k4;
+  if (est.f.canal === "oficina") k4 = `<div class="tarjeta kpi verde c3"><p class="rot">Comisiones</p><p class="val" style="font-size:1.15rem">No comisiona</p><p class="pie">Oficina y recuperación no genera comisiones</p></div>`;
+  else if (g.n && g.bloq === g.n) k4 = `<div class="tarjeta kpi verde c3"><p class="rot">Comisiones</p><p class="val" style="font-size:1.15rem;color:var(--gris)">🔒 Bloqueadas</p><p class="pie">Cada empleado ve su comisión con su propia clave.<br><button class="btn linea" type="button" data-abrir-clave data-html2canvas-ignore="true" style="margin-top:8px;padding:6px 12px">Ingresar clave</button></p></div>`;
+  else k4 = `<div class="tarjeta kpi verde c3"><p class="rot">Comisiones${est.f.linea === "todas" ? "" : " " + (est.f.linea === "bigott" ? "Bigott" : "otras líneas")}</p><p class="val">${usd(g.tot)}</p>
+       <p class="pie">${g.cob ? `Cobrado <b>${usd(g.cob)}</b> · ` : ""}cobranza al ${fechaTxt(est.comisiones.fecha)}${g.totS ? `<br>Vendedores <b>${usd(g.totV)}</b> · supervisores <b>${usd(g.totS)}</b>` : ""}<br><b>${g.conDatos}</b> de ${g.n} con cobranza cargada${g.bloq ? `<br>🔒 ${g.bloq} ${g.bloq === 1 ? "empleado bloqueado" : "empleados bloqueados"}, sin sumar` : ""}</p></div>`;
+  $("#resumen").innerHTML = `
+    <div class="tarjeta kpi c3"><p class="rot">Total por cobrar</p><p class="val">${usd(t.total)}</p>
+      ${balance(t.vencido, t.total, {montos:false})}
+      <p class="pie"><b>${f0(t.docs)}</b> documentos · <b>${f0(t.clientes.size)}</b> clientes${est.f.linea === "todas" ? `<br>Otras líneas ${usd(t.lin[0])} · Bigott ${usd(t.lin[1])}` : ""}${est._t ? `<br>Equivale a <b>${usdFijo(t.total)}</b> a tasa BCV ${tasaTxt(est._t)}` : ""}</p></div>
+    <div class="tarjeta kpi rojo c3"><p class="rot">Cartera vencida</p><p class="val">${usd(t.vencido)}<small>${fp(pv)}</small></p>
+      <p class="pie">Por vencer <b>${usd(t.total - t.vencido)}</b> · <b>${t.total > 0 ? fp(100 - pv) : "—"}</b><br>Más de 30 días <b>${usd(t.mas30)}</b> · <b>${pct(t.mas30, t.total)}</b> del total<br><b>${f0(t.cliVen.size)}</b> clientes con deuda vencida</p></div>
+    ${k3}${k4}`;
+}
+
+/* ---------- Balance vencido / por vencer ---------- */
+function balance(venc, total, o){
+  o = o || {};
+  const cV = o.cV || C_VEN, cN = o.cN || C_XV, tN = o.tN || "#fff";
+  const hay = total > 0, pv = hay ? Math.max(0, Math.min(100, venc / total * 100)) : 0, pn = hay ? 100 - pv : 0;
+  const et = p => p >= (o.min || 9) ? fp(p) : "";
+  const montos = o.montos !== false;
+  const ley = o.ley === false ? "" : `<div class="bal-ley">
+      <span><i style="background:${cN}"></i>${o.ln || "Por vencer"} ${montos ? `<b>${usd(total - venc)}</b> · ` : ""}<b>${hay ? fp(pn) : "—"}</b></span>
+      <span><i style="background:${cV}"></i>${o.lv || "Vencido"} ${montos ? `<b>${usd(venc)}</b> · ` : ""}<b>${hay ? fp(pv) : "—"}</b></span>${o.nota ? `<span>· ${o.nota}</span>` : ""}</div>`;
+  return `<div class="bal"><div class="bal-bar${o.alto ? " alto" : ""}" role="img" aria-label="Por vencer ${fp(pn)}, vencido ${fp(pv)}"><span style="width:${pn.toFixed(2)}%;background:${cN};color:${tN}">${et(pn)}</span><span style="width:${pv.toFixed(2)}%;background:${cV}">${et(pv)}</span></div>${ley}</div>`;
+}
+
+/* ---------- Panel principal ---------- */
+function renderReparto(t){
+  const tot = Math.max(t.lin[0], 0) + Math.max(t.lin[1], 0) || 1;
+  const segs = [];
+  if (verO()) segs.push({v:t.lin[0] - t.ven[0], c:"var(--azul-tinte)", tc:"var(--txt-claro)", n:"Otras líneas por vencer"});
+  if (verB()) segs.push({v:t.lin[1] - t.ven[1], c:"var(--rojo-claro)", tc:"var(--txt-claro)", n:"Bigott por vencer"});
+  if (verO()) segs.push({v:t.ven[0], c:C_OTRAS, tc:"#fff", n:"Otras líneas vencido"});
+  if (verB()) segs.push({v:t.ven[1], c:C_BIG, tc:"#fff", n:"Bigott vencido"});
+  const cint = segs.map(s => { const p = Math.max(s.v, 0) / tot * 100; return `<span style="width:${p.toFixed(3)}%;background:${s.c};color:${s.tc}">${p >= 8 ? fp(p) : ""}</span>`; }).join("");
+  const ley4 = segs.map(s => `<span><i style="background:${s.c}"></i>${s.n} <b>${usd(s.v)}</b> · <b>${fp(Math.max(s.v, 0) / tot * 100)}</b></span>`).join("");
+  let desg = "";
+  if (verB() && !filtrosActivos()){
+    const vb = est.vendedores.filter(v => v.canal === "bigott").reduce((a, v) => a + v.lin[1], 0), resto = t.lin[1] - vb;
+    const nb = unir(est.vendTodos.filter(v => v.canal === "bigott").map(v => v.nombre));
+    desg = `<p class="desg">${esc(nb)} <b>${usd(vb)}</b> · ${pct(vb, t.lin[1])}<br>Resto de vendedores <b>${usd(resto)}</b> · ${pct(resto, t.lin[1])}</p>`;
+  }
+  const lin = (L, nombre, color, extra) => `<div class="lin">
+      <p class="nom"><span class="punto" style="background:${color}"></span>${nombre}</p>
+      <p class="cifra">${usd(t.lin[L])}${est.f.linea === "todas" ? `<small>${pct(Math.max(t.lin[L],0), tot)}</small>` : ""}</p>
+      ${balance(t.ven[L], t.lin[L], {cV:color, cN:L ? "var(--rojo-claro)" : "var(--azul-tinte)", tN:"var(--txt-claro)", nota:"% sobre la línea"})}
+      <p>Más de 30 días <b>${usd(t.m30[L])}</b> · <b>${pct(t.m30[L], t.lin[L])}</b> de la línea</p>${extra || ""}</div>`;
+  $("#reparto").innerHTML = `
+    <h3>Otras líneas y Bigott</h3>
+    <p class="sub">Cuentas por cobrar separadas por línea, cada una en vencido y por vencer · los % de la barra son sobre el total</p>
+    <div class="bal-bar alto cintas grande" style="margin:6px 0 8px">${cint}</div>
+    <div class="bal-ley ley4" style="margin:0 0 14px">${ley4}</div>
+    <div class="lineas${est.f.linea === "todas" ? "" : " una"}">${verO() ? lin(0, "Otras líneas", C_OTRAS) : ""}${verB() ? lin(1, "Bigott", C_BIG, desg) : ""}</div>
+    ${repartoCanal()}`;
+}
+function repartoCanal(){
+  const base = visibles(true);
+  const filas = CANALES.map(c => { const t = combinar(base.filter(v => v.canal === c.id)); return {c, t}; }).filter(x => x.t.docs);
+  if (!filas.length) return "";
+  const T = filas.reduce((a, x) => a + x.t.total, 0);
+  const tit = est.f.linea === "bigott" ? "Bigott por canal: vencido y por vencer" : est.f.linea === "otras" ? "Otras líneas por canal: vencido y por vencer" : "Balance por canal: vencido y por vencer";
+  return `<div class="pc"><h4>${tit}</h4>
+    <div class="pc-ley"><span><i style="background:${C_XV}"></i>Por vencer</span><span><i style="background:${C_VEN}"></i>Vencido</span><span>· % sobre la cartera de cada canal</span></div>
+    ${filas.map(({c, t}) => `<div class="pc-fila">
+      <span class="pc-nom">${esc(c.nombre)}<small>Vencido ${fp(t.pv)} · por vencer ${t.total > 0 ? fp(100 - t.pv) : "—"}</small></span>
+      ${balance(t.vencido, t.total, {ley:false}).replace('<div class="bal">', '<div class="bal" style="margin:0">')}
+      <span class="pc-val">${usd(t.total)}<small>${pct(t.total, T)} del total</small></span></div>`).join("")}</div>`;
+}
+function renderAlerta(lista){
+  const malos = lista.filter(v => sem(v.pv) === "mal").length;
+  const top = lista.filter(v => v.vencido > 0).sort((a, b) => b.vencido - a.vencido).slice(0, 8);
+  const items = top.map(v => `<li class="${sem(v.pv) === "mal" ? "bajo" : ""}" data-vend="${esc(v.nombre)}" tabindex="0">
+      <span class="punto" style="background:${colorSem(v.pv)}"></span>
+      <span class="quien">${esc(v.nombre)}<small>${esc(v.supervisor)} · analista ${esc(v.coordinador)} · ${esc(canalInfo(v.canal).nombre)}</small></span>
+      <span class="par">vencido <b>${usd(v.vencido)}</b> · +30 <b>${usd(v.mas30)}</b></span>
+      <span class="tanto t-${sem(v.pv)}">${fp(v.pv)}<small>vencido</small></span></li>`).join("");
+  $("#alerta").innerHTML = `<h3>Alerta de cartera vencida</h3>
+    <p class="sub">${malos} de ${lista.length} vendedores con 50% o más de su cartera vencida · ordenados por monto vencido · el % es la parte vencida de su cartera</p>
+    ${items ? `<ul class="equipo">${items}</ul>` : `<p class="notas">Ningún vendedor con deuda vencida en esta selección.</p>`}`;
+}
+function renderAntiguedad(t){
+  let max = 0; for (let b = 0; b < 8; b++) max = Math.max(max, t.aging[b][0] + t.aging[b][1]);
+  const filas = BUCKET_TXT.map((txt, b) => {
+    const a = t.aging[b], tot = a[0] + a[1], w = max > 0 ? Math.max(tot, 0) / max * 100 : 0;
+    return `<tr class="${b === 7 ? "foco" : ""}"><td class="izq"><b>${txt}</b></td>${verO() ? `<td>${a[0] ? usd(a[0]) : "—"}</td>` : ""}${verB() ? `<td>${a[1] ? usd(a[1]) : "—"}</td>` : ""}<td><b>${usd(tot)}</b></td><td class="izq"><div class="dist"><div class="barrita"><span style="width:${w.toFixed(2)}%;background:${BUCKET_COLOR[b]}"></span></div><b>${pct(tot, t.total)}</b></div></td></tr>`;
+  }).join("");
+  $("#antiguedad").innerHTML = `<h3>Antigüedad de la deuda</h3>
+    <p class="sub">Monto por días de vencimiento · corte ${fechaTxt(est.cxc.fecha)} · ${LINEA_TXT[est.f.linea]}</p>
+    ${balance(t.vencido, t.total, {alto:true})}
+    <div class="tw" style="margin-top:14px"><table>
+      <thead><tr><th class="izq">Días de vencimiento</th>${verO() ? '<th class="l-otras">Otras líneas</th>' : ""}${verB() ? '<th class="l-big">Bigott</th>' : ""}<th>Total</th><th class="izq">% del total</th></tr></thead>
+      <tbody>${filas}</tbody>
+      <tfoot><tr><td class="izq">Total</td>${verO() ? `<td>${usd(t.lin[0])}</td>` : ""}${verB() ? `<td>${usd(t.lin[1])}</td>` : ""}<td>${usd(t.total)}</td><td class="izq">Vencido ${fp(t.pv)} · por vencer ${t.total > 0 ? fp(100 - t.pv) : "—"}</td></tr></tfoot>
+    </table></div>`;
+}
+function renderPorCanal(){
+  const base = visibles(true);
+  let todos = [];
+  const filas = CANALES.map(c => {
+    const vs = base.filter(v => v.canal === c.id); todos = todos.concat(vs);
+    const t = combinar(vs);
+    let com = "—";
+    if (c.comisiona){ const s = sumarComisiones(filasComision(c.id)); com = s.n && s.bloq === s.n ? '<span class="gris">🔒 bloqueado</span>' : (s.conDatos ? usd(s.tot) + (s.bloq ? ` <span class="gris">+🔒${s.bloq}</span>` : "") : '<span class="gris">sin cobranza</span>'); }
+    else com = '<span class="gris">no comisiona</span>';
+    return `<tr class="fila${est.f.canal === c.id ? " foco" : ""}" data-canal="${c.id}" tabindex="0"><td class="izq"><b>${esc(c.nombre)}</b></td><td>${vs.length}</td><td>${f0(t.clientes.size)}</td>${verO() ? `<td>${usd(t.lin[0])}</td>` : ""}${verB() ? `<td>${usd(t.lin[1])}</td>` : ""}<td><b>${usd(t.total)}</b></td><td>${usd(t.vencido)}</td><td><span class="pill ${sem(t.pv)}">${fp(t.pv)}</span></td><td>${usd(t.total - t.vencido)}</td><td>${t.total > 0 ? fp(100 - t.pv) : "—"}</td><td>${usd(t.mas30)}</td><td>${com}</td></tr>`;
+  }).join("");
+  const T = combinar(todos), g = (() => { const x = {tot:0, conDatos:0}; CANALES.filter(c => c.comisiona).forEach(c => { const s = sumarComisiones(filasComision(c.id)); x.tot += s.tot; x.conDatos += s.conDatos; }); return x; })();
+  $("#porCanal").innerHTML = `<h3>Resumen por canal</h3>
+    <p class="sub">Foodservice: Lisbeth y Mary · Vendedor Bigott: la cartera de quien vende solo Bigott · la línea Bigott la facturan todos los vendedores<span data-html2canvas-ignore="true"> · toca un canal para filtrar</span></p>
+    <div class="tw"><table>
+      <thead><tr><th class="izq">Canal</th><th>Vendedores</th><th>Clientes</th>${verO() ? '<th class="l-otras">Otras líneas</th>' : ""}${verB() ? '<th class="l-big">Bigott</th>' : ""}<th>Total CxC</th><th>Vencido</th><th>% vencido</th><th>Por vencer</th><th>% por vencer</th><th>Más de 30 días</th><th>Comisión</th></tr></thead>
+      <tbody>${filas}</tbody>
+      <tfoot><tr><td class="izq">Total</td><td>${todos.length}</td><td>${f0(T.clientes.size)}</td>${verO() ? `<td>${usd(T.lin[0])}</td>` : ""}${verB() ? `<td>${usd(T.lin[1])}</td>` : ""}<td>${usd(T.total)}</td><td>${usd(T.vencido)}</td><td><span class="pill ${sem(T.pv)}">${fp(T.pv)}</span></td><td>${usd(T.total - T.vencido)}</td><td>${T.total > 0 ? fp(100 - T.pv) : "—"}</td><td>${usd(T.mas30)}</td><td>${g.conDatos ? usd(g.tot) : "—"}</td></tr></tfoot>
+    </table></div>`;
+}
+function dona(p, tam, col){
+  const v = Math.max(0, Math.min(100, p || 0)), R = (tam / 2) - 6, C = 2 * Math.PI * R;
+  return `<svg class="dona" width="${tam}" height="${tam}" viewBox="0 0 ${tam} ${tam}" aria-hidden="true">
+    <circle cx="${tam/2}" cy="${tam/2}" r="${R}" fill="none" stroke="#E8EDFB" stroke-width="9"></circle>
+    <circle cx="${tam/2}" cy="${tam/2}" r="${R}" fill="none" stroke="${col}" stroke-width="9" stroke-linecap="butt" stroke-dasharray="${(C*v/100).toFixed(1)} ${C.toFixed(1)}" transform="rotate(-90 ${tam/2} ${tam/2})"></circle>
+    <text x="50%" y="50%" text-anchor="middle" dy=".35em" font-size="${tam*0.23}" fill="${col}">${p == null ? "—" : Math.round(p) + "%"}</text></svg>`;
+}
+function renderEquipos(lista){
+  const porSup = new Map();
+  lista.forEach(v => { if (!porSup.has(v.supervisor)) porSup.set(v.supervisor, []); porSup.get(v.supervisor).push(v); });
+  const sups = [...porSup.entries()].map(([s, vs]) => ({s, vs:vs.sort((a, b) => b.total - a.total), t:combinar(vs)})).sort((a, b) => b.t.total - a.t.total);
+  if (!sups.length){ $("#equipos").innerHTML = ""; return; }
+  $("#equipos").innerHTML = `<div class="c12 tit-sec"><h3>Cartera por supervisor</h3><p>La dona y la barra muestran el % vencido y el % por vencer de cada equipo · semáforo de % vencido: verde menos de 30%, ámbar de 30% a 50%, rojo 50% o más</p></div>` +
+    sups.map(({s, vs, t}) => {
+      return `<div class="tarjeta c6">
+        <div class="sup-cab">${dona(t.pv, 74, colorSem(t.pv))}
+          <div><p class="nom">${esc(s)}</p><p class="cifra">${usd(t.total)}<small>cartera · más de 30 días ${usd(t.mas30)} (${pct(t.mas30, t.total)}) · ${vs.length} ${vs.length === 1 ? "vendedor" : "vendedores"} · ${f0(t.clientes.size)} clientes</small></p></div>
+        </div>
+        ${balance(t.vencido, t.total, {nota:"% sobre la cartera del equipo"}).replace('<div class="bal">', '<div class="bal" style="margin:0 0 14px">')}
+        <ul class="equipo">${vs.map(v => `<li class="${sem(v.pv) === "mal" ? "bajo" : ""}" data-vend="${esc(v.nombre)}" tabindex="0">
+          <span class="punto" style="background:${colorSem(v.pv)}"></span>
+          <span class="quien">${esc(v.nombre)}</span>
+          <span class="par"><b>${usd(v.total)}</b> · vencido <b>${usd(v.vencido)}</b> · por vencer <b>${usd(v.total - v.vencido)}</b></span>
+          <span class="tanto t-${sem(v.pv)}">${fp(v.pv)}<small>vencido</small></span></li>`).join("")}</ul>
+      </div>`;
+    }).join("");
+}
+
+/* ---------- CxC por vendedor ---------- */
+function celdasVend(v, b){
+  return `${verO() ? `<td>${v.lin[0] ? usd(v.lin[0]) : "—"}</td>` : ""}${verB() ? `<td>${v.lin[1] ? usd(v.lin[1]) : "—"}</td>` : ""}<td>${b ? "<b>" : ""}${usd(v.total)}${b ? "</b>" : ""}</td><td>${usd(v.vencido)}</td><td><span class="pill ${sem(v.pv)}">${fp(v.pv)}</span></td><td>${usd(v.total - v.vencido)}</td><td>${v.total > 0 ? fp(100 - v.pv) : "—"}</td><td>${v.mas30 ? usd(v.mas30) : "—"}</td>`;
+}
+function renderTablaCxC(lista){
+  const nCols = 5 + (verO() ? 1 : 0) + (verB() ? 1 : 0) + 6;
+  let cuerpo = "";
+  const grupos = est.f.canal === "todos" ? CANALES : [canalInfo(est.f.canal)];
+  for (const c of grupos){
+    const vs = lista.filter(v => v.canal === c.id).sort((a, b) => b.total - a.total);
+    if (!vs.length) continue;
+    const t = combinar(vs);
+    cuerpo += `<tr class="grupo"><td colspan="${nCols}">${esc(c.nombre)}<small>${vs.length} ${vs.length === 1 ? "vendedor" : "vendedores"}</small></td></tr>`;
+    cuerpo += vs.map(v => `<tr class="fila" data-vend="${esc(v.nombre)}" tabindex="0"><td class="izq"><b>${esc(v.nombre)}</b></td><td class="izq">${esc(v.supervisor)}</td><td class="izq">${esc(v.coordinador)}</td><td>${f0(v.clientes.size)}</td><td>${f0(v.docs)}</td>${celdasVend(v, true)}</tr>`).join("");
+    if (grupos.length > 1) cuerpo += `<tr class="subtotal"><td class="izq" colspan="3">Subtotal ${esc(c.nombre)}</td><td>${f0(t.clientes.size)}</td><td>${f0(t.docs)}</td>${celdasVend(t, false)}</tr>`;
+  }
+  const T = combinar(lista);
+  $("#tablaCxc").innerHTML = `<h3>CxC por vendedor</h3>
+    <p class="sub">${LINEA_TXT[est.f.linea]} · agrupado por canal · semáforo de % vencido: verde menos de 30%, ámbar de 30% a 50%, rojo 50% o más<span data-html2canvas-ignore="true"> · toca un vendedor para ver sus clientes</span></p>
+    ${cuerpo ? `<div class="tw"><table>
+      <thead><tr><th class="izq">Vendedor</th><th class="izq">Supervisor</th><th class="izq">Analista</th><th>Clientes</th><th>Docs.</th>${verO() ? '<th class="l-otras">Otras líneas</th>' : ""}${verB() ? '<th class="l-big">Bigott</th>' : ""}<th>Total CxC</th><th>Vencido</th><th>% vencido</th><th>Por vencer</th><th>% por vencer</th><th>Más de 30 días</th></tr></thead>
+      <tbody>${cuerpo}</tbody>
+      <tfoot><tr><td class="izq" colspan="3">Total</td><td>${f0(T.clientes.size)}</td><td>${f0(T.docs)}</td>${celdasVend(T, false)}</tr></tfoot>
+    </table></div>` : `<div class="vacio">No hay documentos para esta selección en la CxC cargada.</div>`}
+    ${notaLineas(T)}`;
+}
+function notaLineas(t){
+  const partes = [];
+  if (verO() && (t.otrasNom || t.sinSector[0])){
+    const secs = est.cxc.sectores || [], inc = [];
+    if (t.otrasNom) inc.push(`${secs.length ? secs.join(", ") : "otras marcas"} (${f0(t.otrasNom)} documentos)`);
+    if (t.sinSector[0]) inc.push(`${f0(t.sinSector[0])} documentos sin sector asignado por ${usd(t.sinSector[1])}`);
+    partes.push(`Otras líneas incluye ${inc.join(" y ")}.`);
+  }
+  partes.push(`Vencido = documentos con días de vencimiento distintos a "no vencida". Los montos negativos (notas de crédito o saldos a favor) restan del total.`);
+  return `<p class="notas">${esc(partes.join(" "))}</p>`;
+}
+
+/* ---------- Comisiones ---------- */
+function renderAcceso(){
+  const pers = personasComision(), total = pers.size;
+  const desb = [...pers.keys()].filter(desbloqueadoPers);
+  const chips = total && desb.length === total ? `<span class="pill ok">🔓 Todos los empleados</span>` : desb.map(n => `<span class="pill ok">🔓 ${esc(n)}</span>`).join(" ");
+  $("#comAcceso").innerHTML = `<h3>Acceso por tipo de empleado</h3>
+    <p class="sub">Elige el tipo de empleado, el empleado y escribe su clave: con ella ve su comisión; sin ella queda oculta. La CxC se ve completa. ${desb.length} de ${total} empleados desbloqueados.</p>
+    <div class="fila-btns">${chips}<button class="btn azul" type="button" data-abrir-clave>Ingresar clave</button>${(est.claves.size || est.maestra) ? '<button class="btn linea" type="button" id="bBloquear">Bloquear todo</button>' : ""}</div>`;
+}
+function renderComisiones(){
+  renderAcceso();
+  const grupos = gruposCom();
+  if (!grupos.length){
+    $("#comKpis").innerHTML = "";
+    $("#tablaCom").innerHTML = `<h3>Comisiones</h3><div class="vacio">${est.f.canal === "oficina" ? "Oficina y recuperación no genera comisiones." : "No hay comisiones para esta selección."}</div>`;
+    return;
+  }
+  const pers = (n, sup) => sup ? (n === 1 ? "persona" : "personas") : (n === 1 ? "vendedor" : "vendedores");
+  $("#comKpis").innerHTML = grupos.map(c => {
+    const cls = `tarjeta kpi mini ${c.kpi} c4`;
+    const filas = filasGrupo(c), s = sumarComisiones(filas), nombres = unir(filas.map(f => f.nombre));
+    if (s.n && s.bloq === s.n) return `<div class="${cls}"><p class="rot">${esc(c.nombre)}</p><p class="val vacia">🔒 Bloqueado</p><p class="pie">${s.n} ${pers(s.n, c.sup)} · cada uno con su clave<br><button class="btn linea" type="button" data-abrir-clave data-html2canvas-ignore="true" style="margin-top:6px;padding:5px 12px">Ingresar clave</button></p></div>`;
+    const extra = s.bloq ? `<br>🔒 ${s.bloq} ${s.bloq === 1 ? "bloqueado" : "bloqueados"}, sin sumar` : "";
+    return s.conDatos
+      ? `<div class="${cls}"><p class="rot">${esc(c.nombre)}</p><p class="val">${usd(s.tot)}</p><p class="pie">${c.sup ? "Cobrado de su equipo" : "Cobrado"} <b>${usd(s.cob)}</b> · ${pct2(s.tot, s.cob)} efectivo<br><b>${s.conDatos}</b> de ${s.n} ${pers(s.n, c.sup)} con cobranza${extra}</p></div>`
+      : `<div class="${cls}"><p class="rot">${esc(c.nombre)}</p><p class="val vacia">Sin cobranza cargada</p><p class="pie">${esc(s.n <= 3 ? nombres : s.n + " " + pers(s.n, c.sup))} · carga sus montos en Administración</p></div>`;
+  }).join("");
+  const nCol = est.f.linea === "todas" ? 11 : 8;
+  const gV = {cobO:0, comO:0, cobB:0, comB:0, tot:0}, gS = {cobO:0, comO:0, cobB:0, comB:0, tot:0};
+  let cuerpo = "", hayV = false, hayS = false, hayBloq = false;
+  for (const c of grupos){
+    const filas = filasGrupo(c);
+    if (!filas.length) continue;
+    const s = sumarComisiones(filas), libres = filas.length - s.bloq;
+    if (s.bloq) hayBloq = true;
+    cuerpo += `<tr class="grupo"><td colspan="${nCol}">${esc(c.nombre)}<small>${filas.length} ${pers(filas.length, c.sup)}${s.bloq ? ` · 🔒 ${s.bloq} bloqueados` : ""}</small></td></tr>`;
+    for (const f of filas){
+      const d = f.d || {};
+      if (f.bloq){ cuerpo += `<tr class="fila"><td class="izq"></td><td class="izq"><b>${esc(f.nombre)}</b></td><td class="izq"></td><td colspan="${nCol - 3}" class="pend">🔒 Comisión bloqueada · requiere la clave de este empleado</td></tr>`; continue; }
+      if (!tieneMontos(d)){ cuerpo += `<tr class="fila"><td class="izq">${esc(d.cod || "")}</td><td class="izq"><b>${esc(f.nombre)}</b></td><td class="izq">${esc(d.ci || "")}</td><td colspan="${nCol - 3}" class="pend">Sin cobranza cargada</td></tr>`; continue; }
+      const cobO = d.cobOtras || 0, comO = d.comOtras || 0, cobB = d.cobBig || 0, comB = d.comBig || 0;
+      cuerpo += `<tr class="fila"><td class="izq">${esc(d.cod || "")}</td><td class="izq"><b>${esc(f.nombre)}</b></td><td class="izq">${esc(d.ci || "")}</td>
+        ${verO() ? `<td>${cobO ? usd(cobO) : "—"}</td><td>${comO ? usd(comO) : "—"}</td><td class="gris">${pct2(comO, cobO)}</td>` : ""}
+        ${verB() ? `<td>${cobB ? usd(cobB) : "—"}</td><td>${comB ? usd(comB) : "—"}</td><td class="gris">${pct2(comB, cobB)}</td>` : ""}
+        <td>${usd(cobLinea(d))}</td><td><b>${usd(comLinea(d))}</b></td></tr>`;
+    }
+    if (libres){
+      const acc = c.sup ? gS : gV; for (const k in acc) acc[k] += s[k];
+      if (c.sup) hayS = true; else hayV = true;
+      if (grupos.length > 1) cuerpo += sumaCom("Subtotal " + c.nombre, s, "subtotal");
+    }
+  }
+  const cab = `<thead><tr><th class="izq">Cód.</th><th class="izq">Empleado</th><th class="izq">CI</th>
+    ${verO() ? '<th class="l-otras">Cobrado otras líneas</th><th class="l-otras">Comisión</th><th class="l-otras">%</th>' : ""}
+    ${verB() ? '<th class="l-big">Cobrado Bigott</th><th class="l-big">Comisión</th><th class="l-big">%</th>' : ""}
+    <th>${est.f.linea === "todas" ? "Cobrado general" : "Cobrado"}</th><th>${est.f.linea === "todas" ? "Comisión total" : "Comisión"}</th></tr></thead>`;
+  const pies = [];
+  if (hayV) pies.push(sumaCom(hayS ? "Total vendedores" : "Total", gV, "").replace(/^<tr class="">/, "<tr>"));
+  if (hayS) pies.push(sumaCom(hayV ? "Total supervisores" : "Total", gS, "").replace(/^<tr class="">/, "<tr>"));
+  if (hayV && hayS) pies.push(`<tr><td class="izq" colspan="${nCol - 1}">Total comisiones (vendedores + supervisores)</td><td>${usd(gV.tot + gS.tot)}</td></tr>`);
+  $("#tablaCom").innerHTML = `<h3>Comisiones por empleado</h3>
+    <p class="sub">Cobranza al ${fechaTxt(est.comisiones.fecha)} · ${LINEA_TXT[est.f.linea]} · % = comisión ÷ cobrado, por eso varía según el empleado</p>
+    ${cuerpo ? `<div class="tw"><table>${cab}<tbody>${cuerpo}</tbody><tfoot>${pies.join("")}</tfoot></table></div>` : `<div class="vacio">No hay empleados para esta selección.</div>`}
+    <p class="notas">Fuente: ${esc(est.comisiones.archivo || "carga manual")} · las comisiones se cargan en Administración con el Excel de comisiones. La línea Bigott la cobran todos los vendedores; su comisión aparece en las columnas de Bigott de cada uno.${hayS ? " En supervisores, lo cobrado es el de su equipo: no se suma al de los vendedores." : ""}${hayBloq ? " Los totales incluyen solo a los empleados desbloqueados." : ""}</p>`;
+}
+function sumaCom(etq, s, clase){
+  const o = verO() ? `<td>${usd(s.cobO)}</td><td>${usd(s.comO)}</td><td class="gris">${pct2(s.comO, s.cobO)}</td>` : "";
+  const b = verB() ? `<td>${usd(s.cobB)}</td><td>${usd(s.comB)}</td><td class="gris">${pct2(s.comB, s.cobB)}</td>` : "";
+  return `<tr class="${clase}"><td class="izq" colspan="3">${esc(etq)}</td>${o}${b}<td>${usd((verO() ? s.cobO : 0) + (verB() ? s.cobB : 0))}</td><td>${usd(s.tot)}</td></tr>`;
+}
+function renderPie(){
+  const ta = tasaActiva();
+  $("#pieArchivo").textContent = `Fuente: ${est.cxc.archivo || "sin archivo"} · corte de CxC ${fechaTxt(est.cxc.fecha)} · comisiones al ${fechaTxt(est.comisiones.fecha)}${est.comisiones.archivo ? " (" + est.comisiones.archivo + ")" : ""} · ${ta ? `tasa BCV Bs. ${tasaTxt(ta)} por US$ (${ta.fuente}${ta.fecha ? ", fecha valor " + fechaTxt(ta.fecha) : ""})` : "sin tasa BCV"} · montos en ${est._t ? "Bs." : "US$"} · página abierta el ${new Date().toLocaleString("es-VE")}`;
+}
+
+/* ---------- Tasa BCV ---------- */
+function leerTasa(d){
+  if (d && d.tasas && +d.tasas.usd > 0){
+    const otras = {}; MONEDAS_BCV.forEach(([k]) => { if (+d.tasas[k] > 0) otras[k] = +d.tasas[k]; });
+    return {usd:+d.tasas.usd, otras, fecha:String(d.fecha_valor || "").slice(0, 10), fuente:d.fuente || "BCV", actualizado:d.actualizado || ""};
+  }
+  const v = d && (+d.promedio || +d.venta || +d.compra);
+  if (v > 0) return {usd:v, otras:{}, fecha:String(d.fechaActualizacion || "").slice(0, 10), fuente:"BCV vía DolarApi", actualizado:d.fechaActualizacion || ""};
+  return null;
+}
+let cargandoTasa = false;
+async function cargarTasaAuto(avisar){
+  if (enClaude){
+    est.tasaEstado = "Dentro de claude.ai el panel no puede conectarse a sitios externos. Aquí usa la tasa manual; en el panel publicado en GitHub la tasa se toma sola del BCV.";
+    render(); if (avisar) aviso("En claude.ai la tasa se carga a mano.", 5000); return false;
+  }
+  if (cargandoTasa) return false;
+  cargandoTasa = true; est.tasaEstado = "Conectando con el BCV…"; renderTasa();
+  try {
+    for (const f of FUENTES_TASA.filter(x => location.protocol !== "file:" || /^https?:/.test(x.url))){
+      try {
+        const ctl = new AbortController(), to = setTimeout(() => ctl.abort(), 8000);
+        const r = await fetch(f.url + (f.url.includes("?") ? "&" : "?") + "t=" + Date.now(), {signal:ctl.signal, cache:"no-store"});
+        clearTimeout(to);
+        if (!r.ok) continue;
+        const t = leerTasa(await r.json());
+        if (t){ est.tasaAuto = t; est.tasaEstado = "Conectado: " + t.fuente + " (vía " + f.nombre + ")."; render(); if (avisar) aviso("Tasa BCV actualizada: Bs. " + tasaTxt(t)); return true; }
+      } catch (e) {}
+    }
+    est.tasaEstado = "No se pudo conectar con el BCV ni con la fuente alterna." + (est.tasaManual ? " Se usa la tasa manual." : " Carga una tasa manual.");
+    render(); if (avisar) aviso("No se pudo conectar con el BCV.", 5000); return false;
+  } finally { cargandoTasa = false; }
+}
+function renderTasa(){
+  if (!est.admin) return;
+  const ta = tasaActiva();
+  const otras = ta && ta.otras ? MONEDAS_BCV.filter(([k]) => ta.otras[k]) : [];
+  $("#tasaInfo").innerHTML = ta ? `
+      <p class="rot" style="font-size:.72rem;font-weight:700;color:var(--gris);margin:0">Tasa en uso</p>
+      <p class="tasa-val">Bs. ${miles(ta.usd, 4)}<small>por US$</small></p>
+      <p class="tasa-meta">Fecha valor <b>${ta.fecha ? fechaTxt(ta.fecha) : "sin fecha"}</b> · fuente <b>${esc(ta.fuente)}</b> · tasa <b>${ta.origen}</b></p>
+      ${otras.length ? `<table class="mini-tabla"><thead><tr><th class="izq">Moneda (BCV)</th><th>Bs. por unidad</th></tr></thead><tbody>${otras.map(([k, n]) => `<tr><td class="izq">${n}</td><td>${miles(ta.otras[k], 4)}</td></tr>`).join("")}</tbody></table>` : ""}
+      <p class="tasa-meta">${esc(est.tasaEstado || "")}</p>
+      <button class="btn linea" type="button" id="bTasaAuto">Actualizar desde el BCV</button>`
+    : `<div class="vacio" style="text-align:left">Todavía no hay tasa BCV. ${esc(est.tasaEstado || "")}</div>
+      <div style="margin-top:10px"><button class="btn linea" type="button" id="bTasaAuto">Conectar con el BCV</button></div>`;
+}
+function llenarFormTasa(){
+  const m = est.tasaManual;
+  $("#tasaMan").value = m ? String(m.usd).replace(".", ",") : "";
+  $("#tasaFecha").value = m ? (m.fecha || "") : "";
+  $("#tasaForzar").checked = !!(m && m.forzar);
+}
+function guardarTasaManual(){
+  let s = String($("#tasaMan").value || "").trim().replace(/[^\d.,]/g, "");
+  if (s.includes(",")) s = s.replace(/\./g, "").replace(",", ".");
+  const v = parseFloat(s);
+  if (!isFinite(v) || v <= 0){ aviso("Escribe la tasa en bolívares por dólar, con coma decimal.", 5000); return; }
+  est.tasaManual = {usd:v, fecha:$("#tasaFecha").value || new Date().toISOString().slice(0, 10), forzar:$("#tasaForzar").checked};
+  render(); guardarEstado();
+}
+function quitarTasaManual(){ est.tasaManual = null; llenarFormTasa(); render(); guardarEstado(); }
+
+/* ---------- Carga del Excel de comisiones ---------- */
+function numFlex(v){
+  if (v == null || v === "") return null;
+  if (typeof v === "number") return isFinite(v) ? v : null;
+  let s = String(v).trim().replace(/[$\s]|Bs\.?/gi, "");
+  if (!s || s === "-") return null;
+  if (s.includes(",")) s = s.replace(/\./g, "").replace(",", ".");
+  const n = parseFloat(s); return isFinite(n) ? n : null;
+}
+const normCab = s => sinAcentos(String(s == null ? "" : s)).toLowerCase().replace(/\s+/g, " ").trim();
+function canalDeBloque(txt){
+  const t = normCab(txt);
+  if (t.includes("food")) return "foodservice";
+  if (t.includes("bigot")) return "bigott";
+  if (t.includes("oficina") || t.includes("recuper")) return "oficina";
+  if (t.includes("tradic")) return "tradicional";
+  return null;
+}
+function mapaCabecera(fila){
+  const m = {};
+  fila.forEach((v, i) => {
+    const t = normCab(v); if (!t) return;
+    if (t === "cod" || t === "codigo" || t === "cod.") m.cod = i;
+    else if (t === "ci" || t === "c.i." || t.includes("cedula")) m.ci = i;
+    else if (t.includes("tipo") && (t.includes("emple") || t.includes("empel"))) m.tipo = i;
+    else if (t.includes("total comision")) m.total = i;
+    else if (t.includes("cobrado") && t.includes("general")) m.cobGen = i;
+    else if (t.includes("cobrado") && t.includes("bigot")) m.cobBig = i;
+    else if (t.includes("comision") && t.includes("bigot")) m.comBig = i;
+    else if (t.includes("cobrado")) m.cobOtras = i;
+    else if (t.includes("comision")) m.comOtras = i;
+  });
+  if (m.cod == null || m.ci == null) return null;
+  // la columna del nombre es la que trae el canal en el encabezado (TRADICIONAL, FOODSERVICE, BIGOTT...)
+  const usadas = new Set(Object.values(m));
+  for (let i = m.cod + 1; i < fila.length; i++){ if (!usadas.has(i) && normCab(fila[i])){ m.nombre = i; break; } }
+  if (m.nombre == null) return null;
+  m.bloque = String(fila[m.nombre]).trim();
+  m.canal = canalDeBloque(fila[m.nombre]);
+  return m;
+}
+function clasificarTipo(txt){
+  const t = normCab(txt); if (!t) return null;
+  if (t.includes("supervis")) return {sup:true, canal:null};
+  const c = canalDeBloque(t);
+  return c ? {sup:false, canal:c} : {raro:true};
+}
+const sinNoAplica = s => /^no aplica$/i.test(String(s == null ? "" : s).trim()) ? "" : String(s == null ? "" : s).trim();
+async function procesarExcelComisiones(file){
+  await cargarScript(URL_XLSX);
+  const wb = XLSX.read(await file.arrayBuffer(), {type:"array"});
+  const vendedores = [], bloques = [], omitidas = [], tiposRaros = new Set();
+  wb.SheetNames.forEach(hoja => {
+    const filas = XLSX.utils.sheet_to_json(wb.Sheets[hoja], {header:1, defval:null, raw:true, blankrows:true});
+    let cab = null, bloque = null;
+    filas.forEach((fila, idx) => {
+      fila = fila || [];
+      const m = mapaCabecera(fila);
+      if (m){ cab = m; bloque = {nombre:m.bloque, canal:m.canal, hoja, n:0, tot:0}; bloques.push(bloque); return; }
+      if (!cab) return;
+      const nombre = normNombre(fila[cab.nombre]), cod = sinNoAplica(fila[cab.cod]);
+      if (!nombre && !cod){ cab = null; return; }           // fila en blanco: termina el bloque
+      if (!nombre){ omitidas.push(`${hoja} fila ${idx + 1}`); return; }
+      const val = k => cab[k] == null ? null : numFlex(fila[cab[k]]);
+      const tipoTxt = cab.tipo != null && fila[cab.tipo] != null ? String(fila[cab.tipo]).trim() : "";
+      const tp = clasificarTipo(tipoTxt);
+      if (tp && tp.raro) tiposRaros.add(tipoTxt);
+      const d = {nombre, cod, ci: sinNoAplica(fila[cab.ci]), _canal: tp && !tp.raro ? tp.canal : cab.canal, _sup: !!(tp && tp.sup), _tipoTxt: tipoTxt, _bloque: cab.bloque};
+      ["cobOtras","comOtras","cobBig","comBig"].forEach(k => { const x = val(k); d[k] = x == null ? 0 : x; });
+      const t = val("total");
+      d.total = t == null ? (d.comOtras || 0) + (d.comBig || 0) : t;
+      vendedores.push(d); bloque.n++; bloque.tot += d.total;
+    });
+  });
+  if (!vendedores.length) throw new Error("No encontré bloques de comisiones. Cada bloque necesita un encabezado con COD, el canal (TRADICIONAL, FOODSERVICE o BIGOTT) y CI.");
+  return {vendedores, bloques, omitidas, tiposRaros:[...tiposRaros]};
+}
+function fechaDeNombre(n){
+  let m = String(n).match(/(\d{1,2})[-_.](\d{1,2})[-_.](\d{4})/);
+  if (m) return `${m[3]}-${m[2].padStart(2, "0")}-${m[1].padStart(2, "0")}`;
+  m = String(n).match(/(?:^|[^\d])(\d{1,2})[-_.](\d{1,2})(?=[^\d]|$)/);
+  if (m && +m[1] >= 1 && +m[1] <= 31 && +m[2] >= 1 && +m[2] <= 12){
+    const y = String(est.cxc.fecha || new Date().toISOString()).slice(0, 4);
+    return `${y}-${m[2].padStart(2, "0")}-${m[1].padStart(2, "0")}`;
+  }
+  return null;
+}
+async function cargarArchivoCom(f){
+  if (!f) return;
+  if (!/\.(xlsx|xls|xlsm)$/i.test(f.name)){ aviso("Elige un archivo de Excel (.xlsx, .xls o .xlsm).", 5000); return; }
+  if (est.sucio && !confirm("Tienes cambios sin guardar en la tabla de canales y comisiones. Si cargas el archivo se reemplazan. ¿Continuar?")) return;
+  const btn = $("#bCargarCom"); btn.disabled = true; aviso("Leyendo " + f.name + "…", 15000);
+  try {
+    const {vendedores, bloques, omitidas, tiposRaros} = await procesarExcelComisiones(f);
+    const modo = $("#comModo").value, previo = mapaComisiones();
+    const fecha = fechaDeNombre(f.name) || $("#comFecha").value || new Date().toISOString().slice(0, 10);
+    const cambiosCanal = [], nuevos = [], supNuevos = [];
+    const enCxC = new Set(est.vendTodos.map(v => v.nombre)), supCxC = new Set(est.cxc.supervisores || []);
+    vendedores.forEach(d => {
+      if (d._sup){ delete est.canales[d.nombre]; if (!supCxC.has(d.nombre)) supNuevos.push(d.nombre); return; }
+      if (d._canal){
+        const antes = canalDe(d.nombre);
+        if (d._canal !== (CANAL_DEFECTO[d.nombre] || "tradicional")) est.canales[d.nombre] = d._canal; else delete est.canales[d.nombre];
+        if (antes !== d._canal) cambiosCanal.push(`${d.nombre}: ${canalInfo(antes).nombre} → ${canalInfo(d._canal).nombre}`);
+      }
+      if (!enCxC.has(d.nombre)) nuevos.push(d.nombre);
+    });
+    const limpio = d => {
+      const vacio = !d.cobOtras && !d.comOtras && !d.cobBig && !d.comBig && !d.total;   // fila de la plantilla sin montos
+      const x = vacio ? {nombre:d.nombre, cod:d.cod, ci:d.ci} : {nombre:d.nombre, cod:d.cod, ci:d.ci, cobOtras:d.cobOtras, comOtras:d.comOtras, cobBig:d.cobBig, comBig:d.comBig, total:d.total};
+      if (d._sup) x.tipo = "supervisor";
+      return x;
+    };
+    const mapa = new Map();
+    if (modo === "actualizar") previo.forEach((v, k) => mapa.set(k, v));
+    else previo.forEach((v, k) => { if (v.cod || v.ci) mapa.set(k, Object.assign({nombre:k, cod:v.cod || "", ci:v.ci || ""}, esSup(v) ? {tipo:"supervisor"} : {})); });  // conserva código y CI de quien no viene
+    vendedores.forEach(d => mapa.set(d.nombre, limpio(d)));
+    est.comisiones = {fecha, archivo:f.name, vendedores:[...mapa.values()]};
+    $("#comFecha").value = fecha;
+    render(); construirEdicion();
+    const tot = vendedores.reduce((a, d) => a + d.total, 0), conMontos = vendedores.filter(d => d.cobOtras || d.comOtras || d.cobBig || d.comBig || d.total).length;
+    const gr = new Map();
+    vendedores.forEach(d => {
+      const k = d._tipoTxt || d._bloque; let g = gr.get(k);
+      if (!g){ g = {nombre:k, dest:d._sup ? "Supervisores" : (d._canal ? canalInfo(d._canal).nombre : ""), n:0, tot:0}; gr.set(k, g); }
+      g.n++; g.tot += d.total;
+    });
+    $("#comResultado").innerHTML = `<div class="ok-msg">Se cargaron ${conMontos} personas con comisión${conMontos < vendedores.length ? ` (y ${vendedores.length - conMontos} sin montos)` : ""} de ${esc(f.name)} · comisión total ${usdFijo(tot)} · cobranza al ${fechaTxt(fecha)}</div>
+      <table class="mini-tabla" style="margin-top:10px"><thead><tr><th class="izq">Tipo de empleado (o bloque) del archivo</th><th class="izq">Destino en el panel</th><th>Personas</th><th>Comisión</th></tr></thead>
+      <tbody>${[...gr.values()].map(b => `<tr><td class="izq">${esc(b.nombre)}</td><td class="izq">${b.dest ? esc(b.dest) : '<span class="gris">se mantiene el de cada vendedor</span>'}</td><td>${b.n}</td><td>${usdFijo(b.tot)}</td></tr>`).join("")}</tbody></table>
+      ${tiposRaros.length ? `<p class="notas" style="color:var(--ambar)">Tipo de empleado que no reconozco (se usó el canal del bloque): ${esc(tiposRaros.join(", "))}.</p>` : ""}
+      ${supNuevos.length ? `<p class="notas" style="color:var(--ambar)">Supervisores que no aparecen en la CxC cargada (se agregan igual): ${esc(supNuevos.join(", "))}.</p>` : ""}
+      ${cambiosCanal.length ? `<p class="notas">Cambio de canal según el archivo: ${esc(cambiosCanal.join("; "))}.</p>` : ""}
+      ${nuevos.length ? `<p class="notas" style="color:var(--ambar)">No están en la CxC cargada (se agregan igual): ${esc(nuevos.join(", "))}.</p>` : ""}
+      ${omitidas.length ? `<p class="notas">Filas sin nombre que no se cargaron: ${esc(omitidas.slice(0, 8).join(", "))}${omitidas.length > 8 ? "…" : ""}.</p>` : ""}
+      <p class="notas">${modo === "actualizar" ? "Solo se actualizaron los vendedores que vienen en el archivo." : "Se reemplazaron todas las comisiones; quien no viene en el archivo queda sin cobranza cargada."}</p>`;
+    await guardarEstado();
+  } catch (err){ aviso(err && err.message ? err.message : "No se pudo leer el archivo de comisiones.", 6500); }
+  finally { btn.disabled = false; }
+}
+async function bajarBlob(blob, nombre, etiqueta){
+  if (!enClaude){
+    const url = URL.createObjectURL(blob), a = document.createElement("a");
+    a.href = url; a.download = nombre; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000); aviso(etiqueta + " descargado: " + nombre); return;
+  }
+  const dl = await promDownloads;
+  if (!dl){ aviso("Las descargas de archivos no están disponibles en esta vista. Abre el panel desde claude.ai o usa la copia del ZIP.", 6500); return; }
+  try { await dl.save({filename: nombre, data: blob}); aviso(etiqueta + " guardado: " + nombre); }
+  catch (e){
+    const c = e && e.code;
+    if (c === "declined") aviso("Descarga cancelada");
+    else if (c === "rate_limited") aviso("Ya hay una descarga esperando tu confirmación.");
+    else if (c === "extension_not_enabled") aviso("Esta vista no permite descargar archivos de Excel. Usa la copia del ZIP para bajarlo.", 6500);
+    else aviso("No se pudo descargar el archivo. Intenta de nuevo.", 5000);
+  }
+}
+async function plantillaComisiones(){
+  const btn = $("#bPlantillaCom"); btn.disabled = true;
+  try {
+    await cargarScript(URL_XLSX);
+    const m = mapaComisiones(), formulas = [];
+    const sups = new Set([...m.values()].filter(esSup).map(d => d.nombre));
+    (est.cxc.supervisores || []).forEach(s => { if (s && s !== "DIRECTO OFICINA" && s !== "SIN SUPERVISOR") sups.add(s); });
+    const aoa = [["COD","TRADICIONAL","TIPO DE EMPLEADO","CI","TOTAL COBRADO TRADICIONAL","COMISION ACUMULADA","TOTAL COBRADO BIGOT","comision bigot","COBRADO GENERAL","TOTAL COMISIONES"]];
+    [["tradicional","VENDEDOR TRADICIONAL"], ["supervisor","SUPERVISOR"], ["foodservice","VENDEDOR FOODSERVICE"], ["bigott","VENDEDOR BIGOTT"]].forEach(([id, etq]) => {
+      let nombres;
+      if (id === "supervisor") nombres = [...sups];
+      else {
+        const s = new Set();
+        est.vendTodos.forEach(v => { if (v.canal === id) s.add(v.nombre); });
+        m.forEach((d, k) => { if (!esSup(d) && canalDe(k) === id) s.add(k); });
+        nombres = [...s];
+      }
+      nombres.sort((a, b) => a.localeCompare(b, "es")).forEach(n => {
+        const d = m.get(n) || {}, R = aoa.length + 1;
+        if (id === "supervisor") aoa.push(["NO APLICA", n, etq, "NO APLICA", d.cobOtras || 0, d.comOtras || 0, "NO APLICA", "NO APLICA", null, null]);
+        else aoa.push([d.cod || "", n, etq, d.ci || "", d.cobOtras || 0, d.comOtras || 0, d.cobBig || 0, d.comBig || 0, null, null]);
+        formulas.push([R, id === "supervisor"]);
+      });
+    });
+    const ws = XLSX.utils.aoa_to_sheet(aoa);
+    formulas.forEach(([R, sup]) => {
+      ws["I" + R] = {t:"n", f: sup ? `E${R}` : `E${R}+G${R}`, z:"#,##0.00"};
+      ws["J" + R] = {t:"n", f: sup ? `F${R}` : `F${R}+H${R}`, z:"#,##0.00"};
+      ["E","F","G","H"].forEach(c => { if (ws[c + R] && ws[c + R].t === "n") ws[c + R].z = "#,##0.00"; });
+    });
+    ws["!cols"] = [{wch:11},{wch:26},{wch:24},{wch:12},{wch:24},{wch:20},{wch:20},{wch:16},{wch:18},{wch:18}];
+    const wb = XLSX.utils.book_new(); XLSX.utils.book_append_sheet(wb, ws, "Hoja1");
+    const blob = new Blob([XLSX.write(wb, {bookType:"xlsx", type:"array", compression:true})], {type:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"});
+    await bajarBlob(blob, `plantilla comisiones venejugos ${fechaTxt(est.comisiones.fecha).replace(/\//g, "-")}.xlsx`, "Plantilla");
+  } catch (err){ aviso("No se pudo armar la plantilla. " + (err && err.message ? err.message : ""), 6000); }
+  finally { btn.disabled = false; }
+}
+
+/* ---------- Descargas ---------- */
+const HOJAS = [
+  {id:"resumen",     nombre:"Resumen",         desc:"Corte, filtros aplicados y totales en US$ y, si hay tasa BCV, también en Bs.: CxC, vencido, por vencer, más de 30 días y comisiones."},
+  {id:"vendedor",    nombre:"Por vendedor",    desc:"Una fila por vendedor con canal, supervisor, analista, montos por línea, vencido y antigüedad por tramo."},
+  {id:"cliente",     nombre:"Por cliente",     desc:"Una fila por cliente y vendedor, con RIF, documentos, montos por línea, vencido y más de 30 días."},
+  {id:"documentos",  nombre:"Documentos",      desc:"El detalle procesado: cada documento con su línea, tramo de vencimiento, días en la calle, canal, supervisor y analista."},
+  {id:"antiguedad",  nombre:"Antigüedad",      desc:"Monto por tramo de días de vencimiento, separado en otras líneas y Bigott."},
+  {id:"canal",       nombre:"Por canal",       desc:"Tradicional, Foodservice, Vendedor Bigott y Oficina y recuperación, con su comisión."},
+  {id:"supervisor",  nombre:"Por supervisor",  desc:"Cartera, vencido y más de 30 días de cada supervisor."},
+  {id:"coordinador", nombre:"Por analista", desc:"Cartera, vencido y más de 30 días de cada analista."},
+  {id:"comisiones",  nombre:"Comisiones",      desc:"Cobrado y comisión por vendedor en otras líneas y Bigott, con el % efectivo."}
+];
+const hojasMarcadas = new Set(HOJAS.map(h => h.id));
+const F_TODO = () => ({linea:"todas", canal:"todos", tipo:"todos", sup:"todos", coord:"todos", vend:"todos"});
+function conAlcance(todo, fn){
+  if (!todo) return fn();
+  const prev = est.f; est.f = F_TODO(); recalcular();
+  try { return fn(); } finally { est.f = prev; recalcular(); }
+}
+function textoFiltros(){
+  if (!filtrosActivos() && est.f.linea === "todas") return "Sin filtros: todo el corte.";
+  const p = [LINEA_TXT[est.f.linea]];
+  if (est.f.canal !== "todos") p.push("canal " + canalInfo(est.f.canal).nombre);
+  if (est.f.tipo !== "todos") p.push("tipo de empleado " + TIPO_NOM(est.f.tipo));
+  if (est.f.sup !== "todos") p.push("supervisor " + est.f.sup);
+  if (est.f.coord !== "todos") p.push("analista " + est.f.coord);
+  if (est.f.vend !== "todos") p.push("vendedor " + est.f.vend);
+  return "Filtros actuales: " + p.join(", ") + ".";
+}
+const serialFecha = n => n ? Math.round(Date.UTC(Math.floor(n / 10000), Math.floor(n / 100) % 100 - 1, n % 100) / 864e5) + 25569 : null;
+const modDe = r => (est.cxc.modulos || [])[r.mod] || "—";
+const sectorDe = r => (est.cxc.sectoresTxt || [])[r.sn] || sectorTxt(r.sec);
+const sectorTxt = sec => sec === 1 ? "BIGOTT" : sec === 0 ? "OTRAS LINEAS" : sec === 2 ? "SIN SECTOR" : ((est.cxc.sectores || []).length === 1 ? est.cxc.sectores[0] : "OTRA MARCA");
+function agrupar(lista, clave){
+  const m = new Map(); lista.forEach(v => { const k = clave(v); if (!m.has(k)) m.set(k, []); m.get(k).push(v); });
+  return [...m.entries()].map(([k, vs]) => ({k, vs, t:combinar(vs)})).sort((a, b) => b.t.total - a.t.total);
+}
+function construirHojas(todo){
+  return conAlcance(todo, () => {
+    const lista = visibles(), T = combinar(lista), r2 = v => Math.round(v * 100) / 100, frac = (a, b) => b > 0 ? a / b : null;
+    const H = {};
+    const g = comisionesFiltradas();
+    const ta = tasaActiva(), bs = v => ta ? r2(v * ta.usd) : null;
+    const res = [
+      ["Corte de CxC", fechaTxt(est.cxc.fecha), "t"], ["Archivo de origen", est.cxc.archivo || "", "t"], ["Cobranza de comisiones al", fechaTxt(est.comisiones.fecha), "t"],
+      ["Alcance", todo ? "Todo el corte, sin filtros" : textoFiltros(), "t"],
+      ["Total por cobrar (US$)", r2(T.total), "m"], ["Otras líneas (US$)", r2(T.lin[0]), "m"], ["Bigott (US$)", r2(T.lin[1]), "m"],
+      ["Vencido (US$)", r2(T.vencido), "m"], ["% vencido", frac(T.vencido, T.total), "p"], ["Por vencer (US$)", r2(T.total - T.vencido), "m"], ["% por vencer", T.total > 0 ? 1 - T.vencido / T.total : null, "p"], ["Más de 30 días (US$)", r2(T.mas30), "m"],
+      ["Documentos", T.docs, "n"], ["Clientes", T.clientes.size, "n"], ["Clientes con deuda vencida", T.cliVen.size, "n"], ["Vendedores", lista.length, "n"],
+      ["Comisión total (US$)", r2(g.tot), "m"], ["Cobrado (US$)", r2(g.cob), "m"], ["Personas con cobranza cargada", g.conDatos + " de " + g.n, "t"]
+    ];
+    if (g.totS) res.splice(res.length - 2, 0, ["Comisión de vendedores (US$)", r2(g.totV), "m"], ["Comisión de supervisores (US$)", r2(g.totS), "m"]);
+    if (g.bloq) res.push(["Comisiones bloqueadas", g.bloq + (g.bloq === 1 ? " empleado no incluido" : " empleados no incluidos") + " (falta su clave)", "t"]);
+    if (ta) res.push(["Tasa BCV (Bs. por US$)", ta.usd, "t4"], ["Fecha valor de la tasa", ta.fecha ? fechaTxt(ta.fecha) : "", "t"], ["Fuente de la tasa", ta.fuente + " (" + ta.origen + ")", "t"],
+      ["Total por cobrar (Bs.)", bs(T.total), "m"], ["Vencido (Bs.)", bs(T.vencido), "m"], ["Por vencer (Bs.)", bs(T.total - T.vencido), "m"], ["Más de 30 días (Bs.)", bs(T.mas30), "m"], ["Comisión total (Bs.)", bs(g.tot), "m"]);
+    else res.push(["Tasa BCV", "sin cargar", "t"]);
+    res.push(["Generado el", new Date().toLocaleString("es-VE"), "t"]);
+    H.resumen = {cab:["Concepto","Valor"], tipos:["t","x"], filas:res.map(x => [x[0], x[1]]), fmtFilas:res.map(x => x[2])};
+    const ordenV = lista.slice().sort((a, b) => CANALES.findIndex(c => c.id === a.canal) - CANALES.findIndex(c => c.id === b.canal) || b.total - a.total);
+    H.vendedor = {cab:["Canal","Vendedor","Supervisor","Analista","Clientes","Documentos","Otras líneas","Bigott","Total CxC","Vencido","% vencido","Por vencer","% por vencer","Más de 30 días"].concat(BUCKET_TXT.map(b => "Tramo " + b.toLowerCase())),
+      tipos:["t","t","t","t","n","n","m","m","m","m","p","m","p","m"].concat(BUCKET_TXT.map(() => "m")),
+      filas: ordenV.map(v => [canalInfo(v.canal).nombre, v.nombre, v.supervisor, v.coordinador, v.clientes.size, v.docs, r2(v.lin[0]), r2(v.lin[1]), r2(v.total), r2(v.vencido), v.pv == null ? null : v.pv / 100, r2(v.total - v.vencido), v.pv == null ? null : 1 - v.pv / 100, r2(v.mas30)].concat(v.aging.slice(0, 8).map(a => r2(a[0] + a[1]))).concat(ta ? [bs(v.total), bs(v.vencido), bs(v.total - v.vencido)] : []))};
+    if (ta){ H.vendedor.cab = H.vendedor.cab.concat(["Total CxC (Bs.)","Vencido (Bs.)","Por vencer (Bs.)"]); H.vendedor.tipos = H.vendedor.tipos.concat(["m","m","m"]); }
+    const filasCli = [], filasDoc = [];
+    ordenV.forEach(v => {
+      const porCli = new Map();
+      v.filas.forEach(r => {
+        let a = porCli.get(r.c); if (!a){ a = nuevoAcum(); porCli.set(r.c, a); } sumarFila(a, r);
+        filasDoc.push([r.doc, est.cxc.clientes[r.c], (est.cxc.rifs || [])[r.c] || "", modDe(r), serialFecha(r.emi), serialFecha(r.vcto), v.nombre, canalInfo(v.canal).nombre, v.supervisor, v.coordinador, r.sec === 1 ? "Bigott" : "Otras líneas", sectorDe(r), r.b < 8 ? BUCKET_TXT[r.b] : "Sin clasificar", r.dias, r2(r.d)].concat(ta ? [bs(r.d)] : []).concat([r.b >= 1 && r.b <= 7 ? "Sí" : "No"]));
+      });
+      [...porCli.entries()].map(([c, a]) => [c, cerrar(a)]).sort((x, y) => y[1].vencido - x[1].vencido || y[1].total - x[1].total).forEach(([c, a]) => {
+        filasCli.push([est.cxc.clientes[c], (est.cxc.rifs || [])[c] || "", v.nombre, canalInfo(v.canal).nombre, v.supervisor, v.coordinador, a.docs, r2(a.lin[0]), r2(a.lin[1]), r2(a.total), r2(a.vencido), r2(a.mas30)]);
+      });
+    });
+    H.cliente = {cab:["Cliente","RIF","Vendedor","Canal","Supervisor","Analista","Documentos","Otras líneas","Bigott","Total","Vencido","Más de 30 días"], tipos:["t","t","t","t","t","t","n","m","m","m","m","m"], filas:filasCli};
+    H.documentos = {cab:["Documento","Cliente","RIF","Módulo","Fecha emisión","Vencimiento","Vendedor","Canal","Supervisor","Analista","Línea","Sector","Rango de vencimiento","Días en la calle","Deuda (US$)"].concat(ta ? ["Deuda (Bs.)"] : []).concat(["Vencido"]),
+      tipos:["x","t","t","t","d","d","t","t","t","t","t","t","t","n","m"].concat(ta ? ["m"] : []).concat(["t"]), filas:filasDoc};
+    H.antiguedad = {cab:["Días de vencimiento","Otras líneas","Bigott","Total","% del total"], tipos:["t","m","m","m","p"],
+      filas: BUCKET_TXT.map((txt, b) => { const a = T.aging[b]; return [txt, r2(a[0]), r2(a[1]), r2(a[0] + a[1]), frac(a[0] + a[1], T.total)]; })
+        .concat([["Total vencido", r2(T.ven[0]), r2(T.ven[1]), r2(T.vencido), frac(T.vencido, T.total)], ["Total por vencer", r2(T.lin[0] - T.ven[0]), r2(T.lin[1] - T.ven[1]), r2(T.total - T.vencido), frac(T.total - T.vencido, T.total)], ["Total", r2(T.lin[0]), r2(T.lin[1]), r2(T.total), T.total ? 1 : null]])};
+    const cabGrupo = n => [n,"Vendedores","Clientes","Otras líneas","Bigott","Total CxC","Vencido","% vencido","Por vencer","% por vencer","Más de 30 días"];
+    const filaGrupo = (nom, vs, t) => [nom, vs.length, t.clientes.size, r2(t.lin[0]), r2(t.lin[1]), r2(t.total), r2(t.vencido), t.pv == null ? null : t.pv / 100, r2(t.total - t.vencido), t.pv == null ? null : 1 - t.pv / 100, r2(t.mas30)];
+    const tiposGrupo = ["t","n","n","m","m","m","m","p","m","p","m"];
+    H.canal = {cab:cabGrupo("Canal").concat(["Comisión"]), tipos:tiposGrupo.concat(["m"]),
+      filas: CANALES.map(c => ({c, vs:lista.filter(v => v.canal === c.id)})).filter(x => x.vs.length).map(({c, vs}) => {
+        const s = c.comisiona ? sumarComisiones(filasComision(c.id)) : null;
+        return filaGrupo(c.nombre, vs, combinar(vs)).concat([s && s.conDatos ? r2(s.tot) : null]);
+      })};
+    H.supervisor = {cab:cabGrupo("Supervisor"), tipos:tiposGrupo, filas: agrupar(lista, v => v.supervisor).map(x => filaGrupo(x.k, x.vs, x.t))};
+    H.coordinador = {cab:cabGrupo("Analista"), tipos:tiposGrupo, filas: agrupar(lista, v => v.coordinador).map(x => filaGrupo(x.k, x.vs, x.t))};
+    const filasCom = [];
+    gruposCom().forEach(c => filasGrupo(c).filter(f => !f.bloq).forEach(f => {
+      const d = f.d || {}, i = c.sup ? {} : (infoDe(f.nombre) || {}), con = tieneMontos(d);
+      filasCom.push([TIPO_NOM(c.id), c.sup ? "" : c.nombre, d.cod || "", f.nombre, d.ci || "", i.supervisor || "", i.coordinador || "",
+        con ? r2(d.cobOtras || 0) : null, con ? r2(d.comOtras || 0) : null, con ? frac(d.comOtras || 0, d.cobOtras || 0) : null,
+        con ? r2(d.cobBig || 0) : null, con ? r2(d.comBig || 0) : null, con ? frac(d.comBig || 0, d.cobBig || 0) : null,
+        con ? r2((d.cobOtras || 0) + (d.cobBig || 0)) : null, con ? r2(totalCom(d)) : null, con ? "Con cobranza" : "Sin cobranza cargada"]);
+    }));
+    H.comisiones = {cab:["Tipo de empleado","Canal","Cód.","Empleado","CI","Supervisor","Analista","Cobrado otras líneas","Comisión otras líneas","% otras líneas","Cobrado Bigott","Comisión Bigott","% Bigott","Cobrado general","Comisión total","Estado"],
+      tipos:["t","t","t","t","t","t","t","m","m","p2","m","m","p2","m","m","t"], filas:filasCom};
+    return H;
+  });
+}
+function renderDescargas(){
+  if (est.tab !== "descargas") return;
+  const todo = $("#dAlcance").value === "todo";
+  $("#dDesc").textContent = todo ? "Se ignoran los filtros de arriba; sale todo el corte." : textoFiltros();
+  const H = construirHojas(todo);
+  const todas = HOJAS.every(h => hojasMarcadas.has(h.id));
+  $("#dTabla").innerHTML = `<thead><tr><th><input type="checkbox" class="chk" id="dTodas" aria-label="Marcar todas las hojas"${todas ? " checked" : ""}></th><th class="izq">Hoja</th><th class="izq">Contenido</th><th>Filas</th></tr></thead>
+    <tbody>${HOJAS.map(h => `<tr><td><input type="checkbox" class="chk" data-hoja="${h.id}" aria-label="Incluir ${esc(h.nombre)}"${hojasMarcadas.has(h.id) ? " checked" : ""}></td><td class="izq"><b>${esc(h.nombre)}</b></td><td class="izq desc">${esc(h.desc)}</td><td>${f0(H[h.id].filas.length)}</td></tr>`).join("")}</tbody>`;
+  $("#dNota").textContent = `El archivo se llama "${nombreExcel()}". Los montos van en US$ como números; los porcentajes como porcentaje de Excel. La hoja Documentos trae las columnas originales que usa el panel (documento, cliente, RIF, vendedor, días y deuda) más la clasificación.`;
+  $("#bExcel").disabled = !hojasMarcadas.size;
+}
+function nombreExcel(){ return `${NOMBRE_IMAGEN} procesado ${fechaTxt(est.cxc.fecha).replace(/\//g, "-")}.xlsx`; }
+function hojaXlsx(h){
+  const ws = XLSX.utils.aoa_to_sheet([h.cab].concat(h.filas));
+  const fmt = {m:"#,##0.00", p:"0.0%", p2:"0.00%", n:"#,##0", t4:"#,##0.0000", d:"dd/mm/yyyy"};
+  for (let R = 1; R <= h.filas.length; R++) h.tipos.forEach((t, C) => {
+    const tt = h.fmtFilas && C === 1 ? h.fmtFilas[R - 1] : t;
+    const cell = ws[XLSX.utils.encode_cell({r:R, c:C})];
+    if (cell && cell.t === "n" && fmt[tt]) cell.z = fmt[tt];
+  });
+  ws["!cols"] = h.cab.map((c, C) => {
+    let w = String(c).length;
+    for (let R = 0; R < Math.min(h.filas.length, 400); R++){ const v = h.filas[R][C]; const l = v == null ? 0 : (typeof v === "number" ? 12 : String(v).length); if (l > w) w = l; }
+    return {wch: Math.min(Math.max(w + 2, 8), 48)};
+  });
+  if (h.filas.length) ws["!autofilter"] = {ref: XLSX.utils.encode_range({s:{r:0, c:0}, e:{r:h.filas.length, c:h.cab.length - 1}})};
+  return ws;
+}
+async function descargarExcel(){
+  const btn = $("#bExcel"); btn.disabled = true; aviso("Armando el Excel…", 15000);
+  try {
+    await cargarScript(URL_XLSX);
+    const H = construirHojas($("#dAlcance").value === "todo");
+    const wb = XLSX.utils.book_new();
+    HOJAS.filter(h => hojasMarcadas.has(h.id)).forEach(h => XLSX.utils.book_append_sheet(wb, hojaXlsx(H[h.id]), h.nombre));
+    const buf = XLSX.write(wb, {bookType:"xlsx", type:"array", compression:true});
+    const blob = new Blob([buf], {type:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"});
+    await bajarBlob(blob, nombreExcel(), "Excel");
+  } catch (err){ aviso("No se pudo armar el Excel. " + (err && err.message ? err.message : ""), 6000); }
+  finally { btn.disabled = !hojasMarcadas.size; }
+}
+
+/* ---------- Detalle de CxC por vendedor ---------- */
+const datoHtml = (etq, val) => `<div class="dato"><small>${etq}</small><b>${val}</b></div>`;
+const dt = {q:"", estado:"todos"};
+function renderDetalleDocs(lista){
+  if (est.tab !== "detalle") return;
+  lista = lista || visibles();
+  const q = normCab(dt.q);
+  const ok = r => (dt.estado === "todos" || (dt.estado === "vencidos" ? r.b >= 1 && r.b <= 7 : r.b === 0))
+    && (!q || normCab(est.cxc.clientes[r.c]).includes(q) || String(r.doc == null ? "" : r.doc).toLowerCase().includes(q));
+  const orden = lista.slice().sort((a, b) => CANALES.findIndex(c => c.id === a.canal) - CANALES.findIndex(c => c.id === b.canal) || a.nombre.localeCompare(b.nombre, "es"));
+  let html = "", nV = 0, nD = 0, tot = 0, ven = 0; const cli = new Set();
+  for (const v of orden){
+    const docs = v.filas.filter(ok);
+    if (!docs.length) continue;
+    docs.sort((a, b) => est.cxc.clientes[a.c].localeCompare(est.cxc.clientes[b.c], "es") || (a.vcto || 0) - (b.vcto || 0) || String(a.doc).localeCompare(String(b.doc)));
+    let t = 0; const cv = new Set();
+    const filas = docs.map(r => {
+      t += r.d; cv.add(r.c); cli.add(r.c);
+      const venc = r.b >= 1 && r.b <= 7; if (venc) ven += r.d;
+      return `<tr class="fila"><td class="izq">${esc(modDe(r))}</td><td class="izq cli">${esc(est.cxc.clientes[r.c])}</td><td>${esc(r.doc == null ? "—" : r.doc)}</td><td>${ymdTxt(r.emi)}</td><td${venc ? ' class="t-mal"' : ""}>${ymdTxt(r.vcto)}</td><td class="izq" style="color:${BUCKET_COLOR[r.b] || "inherit"};font-weight:700">${r.b < 8 ? BUCKET_TXT[r.b] : "Sin clasificar"}</td><td>${usd(r.d)}</td><td class="izq">${esc(sectorDe(r))}</td></tr>`;
+    }).join("");
+    nV++; nD += docs.length; tot += t;
+    html += `<tr class="grupo"><td colspan="8">${esc(v.nombre)}<small>${esc(canalInfo(v.canal).nombre)} · supervisor ${esc(v.supervisor)} · analista ${esc(v.coordinador)} · ${cv.size} clientes · ${docs.length} documentos · ${usd(t)}</small></td></tr>${filas}<tr class="subtotal"><td class="izq" colspan="6">Total ${esc(v.nombre)} · ${docs.length} documentos</td><td>${usd(t)}</td><td></td></tr>`;
+  }
+  const uno = est.f.vend !== "todos";
+  $("#dtSub").textContent = `${LINEA_TXT[est.f.linea]} · ${uno ? est.f.vend : orden.length + " vendedores"} · corte ${fechaTxt(est.cxc.fecha)}${uno ? "" : " · usa el filtro Vendedor para ver solo uno"}`;
+  $("#dtResumen").innerHTML = `<div class="kpis" style="padding:0 0 10px">${datoHtml("Vendedores", f0(nV))}${datoHtml("Clientes", f0(cli.size))}${datoHtml("Documentos", f0(nD))}${datoHtml("Deuda total", usd(tot))}${datoHtml("De la cual vencida", usd(ven) + " (" + pct(ven, tot) + ")")}</div>`
+    + ((est.cxc.stride || 0) < 13 ? `<p class="notas" style="color:var(--ambar)">Esta CxC guardada no trae módulo, fecha de emisión ni vencimiento. Vuelve a cargar el Excel en Administración.</p>` : "");
+  $("#dtTabla").innerHTML = html
+    ? `<table><thead><tr><th class="izq">Módulo</th><th class="izq">Cliente</th><th>Documento</th><th>Fecha emi.</th><th>Vcto.</th><th class="izq">Rango de vencimiento</th><th>Deuda</th><th class="izq">Sector</th></tr></thead><tbody>${html}</tbody><tfoot><tr><td class="izq" colspan="6">Total · ${nV} ${nV === 1 ? "vendedor" : "vendedores"} · ${f0(cli.size)} clientes · ${f0(nD)} documentos</td><td>${usd(tot)}</td><td></td></tr></tfoot></table>
+       <p class="notas">Vcto. en rojo: documento vencido. El rango de vencimiento es la antigüedad del documento (No vencida, 0 a 2 días, 3 a 6 días... más de 30 días). Los montos negativos son notas de crédito o saldos a favor.</p>`
+    : `<div class="vacio">No hay documentos para esta selección.</div>`;
+}
+
+/* ---------- Claves por empleado (vista administrativa) ---------- */
+function renderClavesAdmin(){
+  if (!est.admin) return;
+  const orden = {tradicional:0, supervisor:1, foodservice:2, bigott:3}, m = mapaComisiones();
+  const filas = [...personasComision().entries()].sort((a, b) => (orden[a[1]] ?? 9) - (orden[b[1]] ?? 9) || a[0].localeCompare(b[0], "es"));
+  const sin = filas.filter(([n]) => !CLAVES_EMP[n]).map(([n]) => n);
+  $("#admClavesInfo").textContent = `${filas.length - sin.length} de ${filas.length} empleados tienen clave${sin.length ? ". Sin clave: " + sin.join(", ") : ""}.`;
+  $("#admClavesTabla").innerHTML = `<thead><tr><th class="izq">Cód.</th><th class="izq">Empleado</th><th class="izq">Tipo de empleado</th><th class="izq">Clave</th><th class="izq">En esta sesión</th></tr></thead><tbody>${filas.map(([n, t]) => `<tr class="fila"><td class="izq">${esc((m.get(n) || {}).cod || "")}</td><td class="izq"><b>${esc(n)}</b></td><td class="izq">${t === "supervisor" ? "Supervisor" : esc(TIPO_NOM(t))}</td><td class="izq">${CLAVES_EMP[n] ? "Asignada" : '<span class="t-mal">Sin clave</span>'}</td><td class="izq">${desbloqueadoPers(n) ? "🔓 Desbloqueada" : "🔒 Bloqueada"}</td></tr>`).join("")}</tbody>`;
+}
+
+/* ---------- Detalle por vendedor (ventana) ---------- */
+let detalleActual = null;
+function abrirDetalle(nombre){
+  const v = est.vendedores.find(x => x.nombre === nombre); if (!v) return;
+  detalleActual = v;
+  const porCli = new Map();
+  for (const r of v.filas){ let a = porCli.get(r.c); if (!a){ a = nuevoAcum(); porCli.set(r.c, a); } sumarFila(a, r); }
+  const cls = [...porCli.entries()].map(([c, a]) => ({nombre:est.cxc.clientes[c], a:cerrar(a)})).sort((x, y) => y.a.vencido - x.a.vencido || y.a.total - x.a.total);
+  $("#detTit").textContent = v.nombre;
+  $("#detSub").textContent = `${canalInfo(v.canal).nombre} · supervisor ${v.supervisor} · analista ${v.coordinador} · corte ${fechaTxt(est.cxc.fecha)} · ${LINEA_TXT[est.f.linea]}`;
+  const k = (rot, val, cls) => `<div class="tarjeta kpi ${cls || ""}"><p class="rot">${rot}</p><p class="val">${val}</p></div>`;
+  $("#detCue").innerHTML = `<div class="det-kpis">${k("Total por cobrar", usd(v.total))}${k("Otras líneas", usd(v.lin[0]))}${k("Bigott", usd(v.lin[1]), "rojo")}${k("Vencido " + fp(v.pv), usd(v.vencido), "ambar")}${k("Más de 30 días", usd(v.mas30), "rojo")}</div>
+    <div style="margin:-4px 0 14px">${balance(v.vencido, v.total, {alto:true, nota:"% sobre la cartera del vendedor"})}</div>
+    <div class="tw"><table>
+      <thead><tr><th class="izq">Cliente</th><th>Docs.</th>${verO() ? '<th class="l-otras">Otras líneas</th>' : ""}${verB() ? '<th class="l-big">Bigott</th>' : ""}<th>Vencido</th><th>% vencido</th><th>Por vencer</th><th>Más de 30 días</th><th>Total</th></tr></thead>
+      <tbody>${cls.map(c => `<tr class="fila"><td class="izq"><b>${esc(c.nombre)}</b></td><td>${f0(c.a.docs)}</td>${verO() ? `<td>${c.a.lin[0] ? usd(c.a.lin[0]) : "—"}</td>` : ""}${verB() ? `<td>${c.a.lin[1] ? usd(c.a.lin[1]) : "—"}</td>` : ""}<td>${c.a.vencido ? usd(c.a.vencido) : "—"}</td><td><span class="pill ${sem(c.a.pv)}">${fp(c.a.pv)}</span></td><td>${usd(c.a.total - c.a.vencido)}</td><td>${c.a.mas30 ? usd(c.a.mas30) : "—"}</td><td><b>${usd(c.a.total)}</b></td></tr>`).join("")}</tbody>
+      <tfoot><tr><td class="izq">${cls.length} clientes</td><td>${f0(v.docs)}</td>${verO() ? `<td>${usd(v.lin[0])}</td>` : ""}${verB() ? `<td>${usd(v.lin[1])}</td>` : ""}<td>${usd(v.vencido)}</td><td><span class="pill ${sem(v.pv)}">${fp(v.pv)}</span></td><td>${usd(v.total - v.vencido)}</td><td>${usd(v.mas30)}</td><td>${usd(v.total)}</td></tr></tfoot>
+    </table></div>`;
+  abrirModal("#mDetalle");
+}
+
+/* ---------- Modales ---------- */
+let focoPrevio = null;
+function abrirModal(sel){ focoPrevio = document.activeElement; const m = $(sel); m.classList.add("abierto"); m.scrollTop = 0; const f = m.querySelector("button,input,select,a"); if (f) setTimeout(() => f.focus(), 30); }
+function cerrarModal(m){ m.classList.remove("abierto"); if (focoPrevio && focoPrevio.focus) focoPrevio.focus(); }
+
+/* ---------- Claves por empleado ---------- */
+function empleadosDeTipo(tipo){
+  return [...personasComision().entries()].filter(([, t]) => t === tipo).map(([n]) => n).sort((x, y) => x.localeCompare(y, "es"));
+}
+function llenarEmpleadosClave(preferido){
+  const tipo = $("#clTipo").value, lista = empleadosDeTipo(tipo);
+  $("#clEmp").innerHTML = lista.length
+    ? lista.map(n => `<option value="${esc(n)}">${esc(n)}${desbloqueadoPers(n) ? " (desbloqueado)" : ""}${CLAVES_EMP[n] ? "" : " (sin clave)"}</option>`).join("")
+    : `<option value="">Sin empleados en este tipo</option>`;
+  if (preferido && lista.includes(preferido)) $("#clEmp").value = preferido;
+  else { const libre = lista.find(n => !desbloqueadoPers(n)); if (libre) $("#clEmp").value = libre; }
+}
+function abrirClave(){
+  $("#clTipo").innerHTML = TIPOS.map(t => `<option value="${t.id}">${esc(t.nombre)}</option>`).join("");
+  const conPend = TIPOS.find(t => empleadosDeTipo(t.id).some(n => !desbloqueadoPers(n)));
+  $("#clTipo").value = (conPend || TIPOS[0]).id;
+  llenarEmpleadosClave();
+  $("#clPass").value = ""; $("#clErr").textContent = "";
+  abrirModal("#mClave"); setTimeout(() => $("#clPass").focus(), 60);
+}
+function aplicarTipo(v){
+  est.f.tipo = v;
+  est.f.canal = (v !== "todos" && v !== "supervisor") ? v : "todos";
+  cambioFiltro();
+}
+function ajustarTipoPorCanal(){
+  const t = est.f.tipo;
+  if (t === "todos" || est.f.canal === "todos") return;
+  if (t === "supervisor" || est.f.canal !== t) est.f.tipo = "todos";
+}
+/* tras desbloquear a un empleado, el panel se enfoca en él */
+function alcancePersona(n){
+  est.f.canal = "todos"; est.f.tipo = "todos"; est.f.sup = "todos"; est.f.coord = "todos"; est.f.vend = "todos";
+  if (esSup(mapaComisiones().get(n))) est.f.sup = n; else est.f.vend = n;
+  cambioFiltro();
+}
+function intentarClaveTipo(e){
+  e.preventDefault();
+  const emp = $("#clEmp").value, v = $("#clPass").value.trim().toUpperCase();
+  if (!emp){ $("#clErr").textContent = "Elige el tipo de empleado y el empleado."; return; }
+  if (!v){ $("#clErr").textContent = "Escribe la clave de " + emp + "."; return; }
+  if (cyrb53(v, 2015) === CLAVE_HASH){
+    est.maestra = true; ssPoner(SS_MAESTRA, "1");
+    cerrarModal($("#mClave")); render(); aviso("Comisiones de todos los empleados desbloqueadas"); return;
+  }
+  if (!CLAVES_EMP[emp]){ $("#clErr").textContent = emp + " no tiene clave asignada. Pídela a quien administra el panel."; return; }
+  if (hashClave(v) !== CLAVES_EMP[emp]){ $("#clErr").textContent = "Clave incorrecta para " + emp + "."; $("#clPass").select(); return; }
+  est.claves.add(emp);
+  ssPoner(SS_TIPOS, JSON.stringify([...est.claves]));
+  cerrarModal($("#mClave"));
+  alcancePersona(emp);
+  aviso("Comisión de " + emp + " desbloqueada");
+}
+function bloquearTodo(){
+  est.claves.clear(); est.maestra = false; ssPoner(SS_TIPOS, null); ssPoner(SS_MAESTRA, null);
+  render(); aviso("Comisiones bloqueadas");
+}
+
+/* ---------- Administración ---------- */
+function intentarEntrar(e){
+  e.preventDefault();
+  const v = $("#clave").value.trim().toUpperCase();
+  if (v && cyrb53(v, 2015) === CLAVE_HASH){
+    est.admin = true; ssPoner(SS_ADMIN, "1"); $("#clave").value = ""; $("#claveErr").textContent = "";
+    construirEdicion(); llenarFormTasa(); llenarFormGH(); $("#comFecha").value = est.comisiones.fecha || ""; render(); aviso("Sesión administrativa abierta");
+  } else { $("#claveErr").textContent = "Contraseña incorrecta. Revisa e intenta de nuevo."; $("#clave").select(); }
+}
+function salirAdmin(){
+  if (est.sucio && !confirm("Tienes cambios sin guardar. ¿Cerrar la sesión y descartarlos?")) return;
+  est.admin = false; marcarSucio(false); ssPoner(SS_ADMIN, null); render(); aviso("Sesión administrativa cerrada");
+}
+function renderAdminInfo(){
+  $("#admCxcInfo").textContent = `Corte actual ${fechaTxt(est.cxc.fecha)} · ${f0(est.filas.length)} documentos${est.cxc.archivo ? " · " + est.cxc.archivo : ""}`;
+  const conCob = (est.comisiones.vendedores || []).filter(tieneMontos).length;
+  $("#admComInfo").textContent = `Cobranza actual al ${fechaTxt(est.comisiones.fecha)} · ${conCob} personas con comisión${est.comisiones.archivo ? " · " + est.comisiones.archivo : ""}`;
+  renderPublicar();
+}
+function numTxt(v){ return typeof v === "number" ? v.toFixed(2).replace(".", ",") : ""; }
+function leerNum(s){
+  s = String(s == null ? "" : s).trim().replace(/[$\s]/g, ""); if (!s) return null;
+  if (s.includes(",")) s = s.replace(/\./g, "").replace(",", ".");
+  const n = parseFloat(s); return isFinite(n) ? Math.round(n * 100) / 100 : NaN;
+}
+function filaEdicion(n, d){
+  d = d || {};
+  const sel = esSup(d) ? "supervisor" : canalDe(n);
+  const opts = CANALES.map(c => `<option value="${c.id}"${sel === c.id ? " selected" : ""}>${esc(c.nombre)}</option>`).join("") + `<option value="supervisor"${sel === "supervisor" ? " selected" : ""}>Supervisor</option>`;
+  const nm = esc(n);
+  return `<tr data-nombre="${nm}">
+    <td class="izq"><b>${nm}</b></td>
+    <td class="izq"><select data-k="canal" aria-label="Canal de ${nm}">${opts}</select></td>
+    <td class="izq"><input type="text" class="cod" data-k="cod" value="${esc(d.cod || "")}" aria-label="Código de ${nm}"></td>
+    <td class="izq"><input type="text" class="ci" data-k="ci" value="${esc(d.ci || "")}" aria-label="Cédula de ${nm}"></td>
+    <td><input type="text" class="num" data-k="cobOtras" inputmode="decimal" value="${numTxt(d.cobOtras)}" aria-label="Cobrado otras líneas de ${nm}"></td>
+    <td><input type="text" class="num" data-k="comOtras" inputmode="decimal" value="${numTxt(d.comOtras)}" aria-label="Comisión otras líneas de ${nm}"></td>
+    <td><input type="text" class="num" data-k="cobBig" inputmode="decimal" value="${numTxt(d.cobBig)}" aria-label="Cobrado Bigott de ${nm}"></td>
+    <td><input type="text" class="num" data-k="comBig" inputmode="decimal" value="${numTxt(d.comBig)}" aria-label="Comisión Bigott de ${nm}"></td>
+  </tr>`;
+}
+function construirEdicion(){
+  if (!est.vendTodos.length) recalcular();
+  const m = mapaComisiones(), nombres = new Set();
+  est.vendTodos.forEach(v => nombres.add(v.nombre)); m.forEach((_, k) => nombres.add(k));
+  const orden = n => esSup(m.get(n)) ? CANALES.length : CANALES.findIndex(c => c.id === canalDe(n));
+  const lista = [...nombres].sort((a, b) => orden(a) - orden(b) || a.localeCompare(b, "es"));
+  $("#edFecha").value = est.comisiones.fecha || "";
+  $("#edTabla").innerHTML = `<thead><tr><th class="izq">Empleado</th><th class="izq">Canal o tipo</th><th class="izq">Cód.</th><th class="izq">CI</th><th class="l-otras">Cobrado otras líneas</th><th class="l-otras">Comisión</th><th class="l-big">Cobrado Bigott</th><th class="l-big">Comisión</th></tr></thead><tbody>${lista.map(n => filaEdicion(n, m.get(n))).join("")}</tbody>`;
+  marcarSucio(false);
+}
+function marcarSucio(v){ est.sucio = v; $("#edSucio").hidden = !v; }
+function guardarEdicion(){
+  const previo = mapaComisiones(), canales = {}, vendedores = [];
+  let error = null;
+  $("#edTabla").querySelectorAll("tbody tr").forEach(tr => {
+    const n = tr.dataset.nombre, val = k => tr.querySelector(`[data-k="${k}"]`).value;
+    const canal = val("canal"), esS = canal === "supervisor";
+    if (!esS && canal !== (CANAL_DEFECTO[n] || "tradicional")) canales[n] = canal;
+    const d = {nombre:n, cod:val("cod").trim(), ci:val("ci").trim()};
+    if (esS) d.tipo = "supervisor";
+    const p = previo.get(n);
+    for (const k of ["cobOtras","comOtras","cobBig","comBig"]){
+      const x = leerNum(val(k));
+      if (Number.isNaN(x)) error = error || `Revisa el monto de ${n}: "${val(k)}" no es un número.`;
+      else if (x !== null) d[k] = p && typeof p[k] === "number" && Math.round(p[k] * 100) / 100 === x ? p[k] : x;   // si no lo tocaste, conserva los decimales del archivo
+    }
+    if (!d.cod && !d.ci && !tieneMontos(d)) return;
+    if (tieneMontos(d)){
+      const igual = p && typeof p.total === "number" && (p.comOtras || 0) === (d.comOtras || 0) && (p.comBig || 0) === (d.comBig || 0);
+      d.total = igual ? p.total : Math.round(((d.comOtras || 0) + (d.comBig || 0)) * 100) / 100;
+    }
+    vendedores.push(d);
+  });
+  if (error){ aviso(error, 5500); return; }
+  est.canales = canales;
+  est.comisiones = {fecha: $("#edFecha").value || est.comisiones.fecha, archivo: est.comisiones.archivo || "", vendedores};
+  render(); construirEdicion(); guardarEstado();
+}
+
+/* ---------- Datos publicados (dataset.json) ---------- */
+const REPO_DEFECTO = "Venejugosserver/VENEJUGOS-CXC-COMISIONES";
+const fechaHoraTxt = iso => { if (!iso) return "—"; const d = new Date(iso); return isNaN(d) ? String(iso) : d.toLocaleString("es-VE", {day:"2-digit", month:"2-digit", year:"numeric", hour:"2-digit", minute:"2-digit"}); };
+function ghConf(){
+  let c = {}; try { c = JSON.parse(lsLeer(LS_GH) || "{}") || {}; } catch (e) {}
+  return {repo:c.repo || REPO_DEFECTO, rama:c.rama || "main", ruta:c.ruta || "dataset.json", guardada:!!c.repo};
+}
+const ghToken = () => lsLeer(LS_GH_TOK) || "";
+/* busca un archivo publicado: primero junto al panel, luego directo en el repositorio */
+async function traerArchivo(nombre){
+  const c = ghConf(), t = Date.now();
+  const urls = [nombre + "?t=" + t, `https://raw.githubusercontent.com/${c.repo}/${c.rama}/${nombre}?t=${t}`];
+  for (const url of urls){
+    if (!/^https?:/.test(url) && location.protocol === "file:") continue;
+    try {
+      const ctl = new AbortController(), to = setTimeout(() => ctl.abort(), 15000);
+      const r = await fetch(url, {signal:ctl.signal, cache:"no-store"});
+      clearTimeout(to);
+      if (r.ok) return await r.json();
+    } catch (e) {}
+  }
+  return null;
+}
+function aplicarDataset(d){
+  if (!d || !d.cxc || !Array.isArray(d.cxc.filas) || !Array.isArray(d.cxc.asesores)) return false;
+  est.cxc = d.cxc; est.filas = decodificar(d.cxc);
+  const canales = {};
+  (Array.isArray(d.canales) ? d.canales : []).forEach(x => { if (x && x.nombre && x.canal) canales[x.nombre] = x.canal; });
+  est.canales = canales;
+  est.comisiones = d.comisiones && Array.isArray(d.comisiones.vendedores) ? clonar(d.comisiones) : {fecha:"", archivo:"", vendedores:[]};
+  est.tasaManual = d.tasa && +d.tasa.usd > 0 ? {usd:+d.tasa.usd, fecha:d.tasa.fecha || "", forzar:!!d.tasa.forzar} : null;
+  est.publicado = d.publicado || ""; est.origen = "publicado"; est.sinPublicar = false;
+  return true;
+}
+async function cargarDataset(avisar){
+  est.cargando = true; render();
+  const d = await traerArchivo(ghConf().ruta);
+  est.cargando = false;
+  if (aplicarDataset(d)) est.datasetError = "";
+  else est.datasetError = d ? "El archivo publicado no tiene el formato esperado." : "Todavía no hay datos publicados.";
+  render();
+  if (est.admin && !est.sucio){ construirEdicion(); llenarFormTasa(); $("#comFecha").value = est.comisiones.fecha || ""; }
+  if (avisar) aviso(est.datasetError || "Datos publicados recargados", 4500);
+}
+async function cargarClaves(){
+  const d = await traerArchivo("claves.json");
+  if (d && typeof d === "object" && !Array.isArray(d)){
+    Object.keys(CLAVES_EMP).forEach(k => delete CLAVES_EMP[k]); Object.assign(CLAVES_EMP, d); render();
+  }
+}
+function construirDataset(){
+  return {version:1, publicado:new Date().toISOString(), cxc:est.cxc, comisiones:est.comisiones,
+    canales:Object.entries(est.canales).map(([nombre, canal]) => ({nombre, canal})), tasa:est.tasaManual || null};
+}
+function marcarBorrador(msg){
+  est.sinPublicar = true; est.origen = "borrador"; est.ghMsg = "";
+  renderCab(visibles()); renderAvisoVacio(); renderPublicar(); aviso(msg, 6000);
+}
+async function guardarEstado(){ marcarBorrador("Cambios aplicados. Pulsa «Publicar dataset.json» para que los vea todo el equipo."); }
+async function guardarCxC(){ marcarBorrador(`CxC al ${fechaTxt(est.cxc.fecha)} (${f0(est.filas.length)} documentos) cargada. Pulsa «Publicar dataset.json» para compartirla.`); }
+async function restablecer(){
+  if (est.sinPublicar && !confirm("Tienes cambios sin publicar. Si recargas lo publicado se descartan. ¿Continuar?")) return;
+  await cargarDataset(true);
+}
+
+/* ---------- Publicar en GitHub ---------- */
+const ghValido = f => /^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(f.repo) && f.ruta && !f.ruta.includes("..");
+function ghLeerForm(){
+  return {repo:$("#ghRepo").value.trim().replace(/^https?:\/\/github\.com\//, "").replace(/\.git$/, "").replace(/\/+$/, ""),
+    rama:$("#ghRama").value.trim() || "main", ruta:$("#ghRuta").value.trim().replace(/^\/+/, "") || "dataset.json", token:$("#ghToken").value.trim() || ghToken()};
+}
+function gh(url, token, opts){
+  opts = opts || {};
+  return fetch("https://api.github.com" + url, Object.assign({}, opts, {headers:Object.assign({Authorization:"Bearer " + token, Accept:"application/vnd.github+json", "X-GitHub-Api-Version":"2022-11-28"}, opts.json ? {"Content-Type":"application/json"} : {})}));
+}
+const ghRuta = r => r.split("/").map(encodeURIComponent).join("/");
+function aBase64(texto){
+  const bytes = new TextEncoder().encode(texto); let bin = "";
+  for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+  return btoa(bin);
+}
+function ghErrorHttp(status){
+  if (status === 401) return "El token no es válido o ya venció.";
+  if (status === 403) return "El token no tiene permiso para esto. Necesita Contents: Read and write sobre este repositorio.";
+  if (status === 404) return "No encuentro el repositorio, la rama o el token no tiene acceso a él.";
+  if (status === 409 || status === 422) return "GitHub rechazó el cambio (conflicto de versiones). Intenta de nuevo.";
+  return "GitHub respondió con el error " + status + ".";
+}
+function renderPublicar(){
+  if (!est.admin) return;
+  const c = ghConf(), tok = ghToken();
+  $("#ghEstado").innerHTML = est.ghMsg
+    ? est.ghMsg
+    : (c.guardada ? `Conexión guardada: <b>${esc(c.repo)}</b> · rama <b>${esc(c.rama)}</b> · <b>${esc(c.ruta)}</b>${tok ? " · token guardado en este navegador" : " · falta el token"}` : "Sin conexión guardada. Completa los datos, escribe el token y pulsa «Guardar conexión».");
+  $("#ghToken").placeholder = tok ? "Token guardado en este navegador" : "Pega aquí tu token de GitHub";
+  $("#estadoDatos").innerHTML = est.origen === "publicado" ? `Mostrando lo publicado el <b>${fechaHoraTxt(est.publicado)}</b>.`
+    : est.origen === "borrador" ? `<b>Hay cambios sin publicar.</b> Los demás siguen viendo la versión anterior.` : `Todavía no hay datos publicados.`;
+}
+function llenarFormGH(){
+  const c = ghConf();
+  $("#ghRepo").value = c.repo; $("#ghRama").value = c.rama; $("#ghRuta").value = c.ruta; $("#ghToken").value = "";
+  renderPublicar();
+}
+function ghGuardar(){
+  const f = ghLeerForm();
+  if (!ghValido(f)){ aviso("Revisa el repositorio: debe verse como usuario/repositorio.", 5000); return; }
+  lsPoner(LS_GH, JSON.stringify({repo:f.repo, rama:f.rama, ruta:f.ruta}));
+  if ($("#ghToken").value.trim()) lsPoner(LS_GH_TOK, $("#ghToken").value.trim());
+  $("#ghToken").value = ""; est.ghMsg = ""; renderPublicar(); aviso("Conexión guardada");
+}
+function ghOlvidar(){ lsQuitar(LS_GH_TOK); est.ghMsg = "Token olvidado: ya no queda guardado en este navegador."; renderPublicar(); aviso("Token olvidado"); }
+async function ghProbar(){
+  const f = ghLeerForm();
+  if (!ghValido(f)){ est.ghMsg = "Revisa el repositorio: debe verse como usuario/repositorio."; renderPublicar(); return; }
+  if (!f.token){ est.ghMsg = "Falta el token de acceso."; renderPublicar(); return; }
+  const btn = $("#bGhProbar"); btn.disabled = true; est.ghMsg = "Probando la conexión…"; renderPublicar();
+  try {
+    const r = await gh(`/repos/${f.repo}`, f.token);
+    if (!r.ok){ est.ghMsg = ghErrorHttp(r.status); return; }
+    const info = await r.json();
+    if (info.permissions && info.permissions.push === false){ est.ghMsg = "El token solo puede leer. Necesita el permiso Contents: Read and write."; return; }
+    const rr = await gh(`/repos/${f.repo}/branches/${encodeURIComponent(f.rama)}`, f.token);
+    if (!rr.ok){ est.ghMsg = rr.status === 404 ? `La rama «${esc(f.rama)}» no existe en el repositorio.` : ghErrorHttp(rr.status); return; }
+    const rf = await gh(`/repos/${f.repo}/contents/${ghRuta(f.ruta)}?ref=${encodeURIComponent(f.rama)}`, f.token);
+    est.ghMsg = `Conexión correcta con <b>${esc(f.repo)}</b>. ` + (rf.ok ? `<b>${esc(f.ruta)}</b> ya existe y se reemplazará al publicar.` : `<b>${esc(f.ruta)}</b> aún no existe: se creará al publicar.`)
+      + (info.private === false ? " Ojo: el repositorio es público, cualquiera puede ver el archivo." : "");
+  } catch (e){ est.ghMsg = "No se pudo conectar con GitHub. Revisa tu conexión a internet."; }
+  finally { btn.disabled = false; renderPublicar(); }
+}
+async function ghPublicar(){
+  const f = ghLeerForm();
+  if (!ghValido(f)){ est.ghMsg = "Revisa el repositorio: debe verse como usuario/repositorio."; renderPublicar(); return; }
+  if (!f.token){ est.ghMsg = "Falta el token de acceso."; renderPublicar(); return; }
+  if (!est.filas.length){ est.ghMsg = "No hay datos para publicar: primero carga el Excel de CxC."; renderPublicar(); return; }
+  const btn = $("#bGhPublicar"); btn.disabled = true; est.ghMsg = "Publicando…"; renderPublicar();
+  try {
+    const ds = construirDataset(), contenido = aBase64(JSON.stringify(ds)), url = `/repos/${f.repo}/contents/${ghRuta(f.ruta)}`;
+    const sha = async () => { const r = await gh(`${url}?ref=${encodeURIComponent(f.rama)}`, f.token); if (r.ok) return (await r.json()).sha; if (r.status === 404) return null; throw {http:r.status}; };
+    const poner = async s => gh(url, f.token, {method:"PUT", json:true, body:JSON.stringify(Object.assign({message:`Actualizar ${f.ruta} · CxC al ${fechaTxt(est.cxc.fecha)}`, content:contenido, branch:f.rama}, s ? {sha:s} : {}))});
+    let r = await poner(await sha());
+    if (r.status === 409 || r.status === 422) r = await poner(await sha());
+    if (!r.ok){ est.ghMsg = ghErrorHttp(r.status); return; }
+    const out = await r.json();
+    est.publicado = ds.publicado; est.origen = "publicado"; est.sinPublicar = false;
+    est.ghMsg = `Publicado <b>${esc(f.ruta)}</b> en <b>${esc(f.repo)}</b> · rama <b>${esc(f.rama)}</b> · ${fechaHoraTxt(ds.publicado)}${out && out.commit ? " · commit " + esc(out.commit.sha.slice(0, 7)) : ""}. La página se actualiza en 1 o 2 minutos.`;
+    renderCab(visibles()); renderAvisoVacio(); aviso("Dataset publicado");
+  } catch (e){ est.ghMsg = e && e.http ? ghErrorHttp(e.http) : "No se pudo conectar con GitHub. Revisa tu conexión a internet."; }
+  finally { btn.disabled = false; renderPublicar(); }
+}
+function renderAvisoVacio(){
+  const el = $("#vacioAviso"); let txt = "", warn = false;
+  if (est.cargando) txt = "Cargando los datos publicados…";
+  else if (!est.filas.length) txt = (est.datasetError || "Todavía no hay datos publicados.") + " Quien administra el panel debe cargar los Excel en Administración y publicar dataset.json.";
+  else if (est.sinPublicar && est.admin){ txt = "Tienes cambios sin publicar: los demás siguen viendo la versión anterior. Ve a Administración y pulsa «Publicar dataset.json»."; warn = true; }
+  el.hidden = !txt; el.textContent = txt; el.classList.toggle("warn", warn);
+}
+
+/* ---------- Carga de Excel ---------- */
+const ymd = v => {
+  if (v instanceof Date && !isNaN(v)){   // las celdas traen hora: se toma el día tal cual (sin sumar medio día)
+    let d = new Date(v.getTime());
+    if (d.getHours() === 23 && d.getMinutes() >= 55) d = new Date(d.getTime() + 36e5);
+    return d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
+  }
+  const iso = fechaISO(v); return iso ? +iso.replace(/-/g, "") : null;
+};
+const ymdTxt = n => { if (!n) return "—"; const s = String(n); return s.slice(6, 8) + "/" + s.slice(4, 6) + "/" + s.slice(0, 4); };
+function claveCab(s){ return sinAcentos(String(s)).toLowerCase().replace(/\s+/g, " ").trim(); }
+function fechaISO(v){
+  const f = d => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  if (v instanceof Date && !isNaN(v)) return f(new Date(v.getTime() + 12 * 3600e3));
+  if (typeof v === "number" && v > 30000){ const d = new Date(Math.round((v - 25569) * 864e5) + 12 * 3600e3); return d.getUTCFullYear() + "-" + String(d.getUTCMonth() + 1).padStart(2, "0") + "-" + String(d.getUTCDate()).padStart(2, "0"); }
+  if (typeof v === "string"){ const m = v.match(/(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{4})/); if (m) return m[3] + "-" + m[2].padStart(2, "0") + "-" + m[1].padStart(2, "0"); }
+  return null;
+}
+async function procesarExcel(file){
+  await cargarScript(URL_XLSX);
+  const wb = XLSX.read(await file.arrayBuffer(), {type:"array", cellDates:true});
+  const ws = wb.Sheets[wb.SheetNames[0]];
+  const filas = XLSX.utils.sheet_to_json(ws, {defval:null, raw:true});
+  if (!filas.length) throw new Error("El archivo no tiene filas en la primera hoja.");
+  const mapa = {};
+  for (const r of filas.slice(0, 50)) Object.keys(r).forEach(k => { const c = claveCab(k); if (!mapa[c]) mapa[c] = k; });
+  const col = (...ns) => { for (const n of ns) if (mapa[n]) return mapa[n]; return null; };
+  const kA = col("asesor actual", "asesor"), kD = col("deuda"), kS = col("sector"), kB = col("dias de vencimiento"), kC = col("cliente"), kSup = col("supervisor"), kH = col("hoy"), kCo = col("analista", "coordinador"), kRif = col("rif"), kDoc = col("documento"), kDias = col("dias calle"), kMod = col("modulos", "modulo"), kEmi = col("fecha emi", "fecha emision", "fecha de emision"), kVc = col("vcto");
+  const faltan = [[kA, "asesor actual"], [kD, "deuda"], [kS, "SECTOR"], [kB, "Dias de vencimiento"], [kC, "cliente"]].filter(x => !x[0]).map(x => x[1]);
+  if (faltan.length) throw new Error("Al Excel le faltan estas columnas: " + faltan.join(", ") + ".");
+  const ases = [], sups = [], clis = [], rifs = [], secs = [], coos = [], mods = [], snom = [], ia = {}, is = {}, ic = {}, ik = {}, im = {}, isn = {};
+  const idx = (arr, m, v) => { if (!(v in m)){ m[v] = arr.length; arr.push(v); } return m[v]; };
+  const idxCli = (nom, rif) => { const k = nom + "|" + rif; if (!(k in ic)){ ic[k] = clis.length; clis.push(nom); rifs.push(rif); } return ic[k]; };
+  const docDe = v => v == null || v === "" ? null : (typeof v === "number" && Number.isInteger(v) ? v : normNombre(v));
+  const diasDe = v => { const n = typeof v === "number" ? v : parseFloat(v); return isFinite(n) ? Math.round(n) : null; };
+  const flat = []; let sinClasificar = 0, fecha = null;
+  for (const r of filas){
+    const deudaRaw = r[kD], a = normNombre(r[kA]), c = normNombre(r[kC]);
+    if (!a && !c && (deudaRaw == null || deudaRaw === "")) continue;
+    const d = typeof deudaRaw === "number" ? deudaRaw : (leerNum(deudaRaw) || 0);
+    const sr = sinAcentos(normNombre(r[kS]));
+    let sec;
+    if (sr.includes("BIGOTT")) sec = 1;
+    else if (sr === "OTRAS LINEAS") sec = 0;
+    else if (["", "0", "-", "NAN", "NONE", "NULL"].includes(sr)) sec = 2;
+    else { sec = 3; if (!secs.includes(sr)) secs.push(sr); }
+    let b = BUCKET_CLAVES.indexOf(sinAcentos(normNombre(r[kB]))); if (b < 0){ b = 8; sinClasificar++; }
+    if (!fecha && kH) fecha = fechaISO(r[kH]);
+    flat.push(idx(ases, ia, a || "SIN ASESOR"), idx(sups, is, normNombre(kSup ? r[kSup] : "") || "SIN SUPERVISOR"), idxCli(c || "SIN NOMBRE", normNombre(kRif ? r[kRif] : "")), sec, b, Math.round((isFinite(d) ? d : 0) * 100) / 100, idx(coos, ik, normNombre(kCo ? r[kCo] : "") || "SIN ANALISTA"), docDe(kDoc ? r[kDoc] : null), diasDe(kDias ? r[kDias] : null),
+      idx(mods, im, normNombre(kMod ? r[kMod] : "") || "SIN MODULO"), ymd(kEmi ? r[kEmi] : null), ymd(kVc ? r[kVc] : null), idx(snom, isn, ["", "0", "-", "NAN", "NONE", "NULL"].includes(normNombre(r[kS])) ? "SIN SECTOR" : normNombre(r[kS])));
+  }
+  if (!flat.length) throw new Error("No encontré documentos con deuda en el archivo.");
+  if (!fecha) fecha = fechaISO(file.name) || fechaISO(new Date());
+  return {cxc:{fecha, archivo:file.name, asesores:ases, supervisores:sups, stride:13, clientes:clis, rifs, sectores:secs, coordinadores:coos, modulos:mods, sectoresTxt:snom, filas:flat}, sinClasificar};
+}
+async function cargarArchivo(f){
+  if (!f) return;
+  if (!/\.(xlsx|xls|xlsm)$/i.test(f.name)){ aviso("Elige un archivo de Excel (.xlsx, .xls o .xlsm).", 5000); return; }
+  const btn = $("#bCargar"); btn.disabled = true; aviso("Leyendo " + f.name + "…", 15000);
+  try {
+    const {cxc, sinClasificar} = await procesarExcel(f);
+    est.cxc = cxc; est.filas = decodificar(cxc); render();
+    if (!est.sucio) construirEdicion();
+    const T = combinar(est.vendTodos);
+    $("#cxcResultado").innerHTML = `<div class="ok-msg">Se cargaron ${f0(T.docs)} documentos de ${esc(f.name)} · corte ${fechaTxt(cxc.fecha)}</div>
+      <table class="mini-tabla" style="margin-top:10px"><tbody>
+        <tr><td class="izq">Total por cobrar</td><td><b>${usdFijo(T.total)}</b></td></tr>
+        <tr><td class="izq">Otras líneas</td><td>${usdFijo(T.lin[0])}</td></tr>
+        <tr><td class="izq">Bigott</td><td>${usdFijo(T.lin[1])}</td></tr>
+        <tr><td class="izq">Vencido</td><td>${usdFijo(T.vencido)} · ${fp(T.pv)}</td></tr>
+        <tr><td class="izq">Vendedores · clientes</td><td>${est.vendTodos.length} · ${f0(T.clientes.size)}</td></tr>
+      </tbody></table>`;
+    await guardarCxC();
+    if (sinClasificar) setTimeout(() => aviso(`${f0(sinClasificar)} documentos traen días de vencimiento que no reconozco; cuentan en el total pero no en la antigüedad.`, 6500), 3000);
+  } catch (err){ aviso(err && err.message ? err.message : "No se pudo leer el archivo.", 6500); }
+  finally { btn.disabled = false; }
+}
+
+/* ---------- Imagen ---------- */
+const promDownloads = capacidad("downloads");
+async function capturar(el, nombreArchivo, boton){
+  if (el.scrollHeight * 2 > 15000){ aviso("Esta vista es muy larga para guardarla como imagen. Filtra por un vendedor o usa Imprimir / PDF.", 7000); return; }
+  if (boton) boton.disabled = true;
+  aviso("Preparando la imagen…", 15000);
+  try {
+    await cargarScript(URL_H2C);
+    if (document.fonts && document.fonts.ready) await document.fonts.ready;
+    const canvas = await html2canvas(el, {
+      scale: 2, useCORS: true, logging: false, windowWidth: 1440, backgroundColor: "#F4F6FC",
+      onclone: doc => { doc.documentElement.setAttribute("data-theme", "light"); doc.body.classList.add("capturando"); }
+    });
+    const blob = await new Promise((ok, mal) => canvas.toBlob(b => b ? ok(b) : mal(new Error("No se pudo crear la imagen.")), "image/png"));
+    if (!enClaude){
+      const url = URL.createObjectURL(blob), a = document.createElement("a");
+      a.href = url; a.download = nombreArchivo; document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 4000); aviso("Imagen descargada: " + nombreArchivo); return;
+    }
+    const dl = await promDownloads;
+    if (dl){
+      try { await dl.save({filename: nombreArchivo, data: blob}); aviso("Imagen guardada: " + nombreArchivo); return; }
+      catch (e){ const c = e && e.code; if (c === "declined"){ aviso("Descarga cancelada"); return; } if (c === "rate_limited"){ aviso("Ya hay una descarga esperando tu confirmación."); return; } }
+    }
+    mostrarPreview(canvas, blob, nombreArchivo);
+  } catch (err){ aviso("No se pudo generar la imagen. " + (err && err.message ? err.message : ""), 6000); }
+  finally { if (boton) boton.disabled = boton.id === "bImagen" && (est.tab === "admin" || est.tab === "descargas" || est.tab === "detalle"); }
+}
+let urlPrev = null;
+function mostrarPreview(canvas, blob, nombreArchivo){
+  if (urlPrev) URL.revokeObjectURL(urlPrev);
+  urlPrev = URL.createObjectURL(blob);
+  $("#pvImg").src = canvas.toDataURL("image/png");
+  const a = $("#pvLink"); a.href = urlPrev; a.setAttribute("download", nombreArchivo);
+  $("#toast").classList.remove("ver"); abrirModal("#mPreview");
+}
+
+/* ---------- Imprimir / PDF ---------- */
+const tituloImpresion = () => `${NOMBRE_IMAGEN} ${TABS[est.tab].toLowerCase()} ${fechaTxt(est.cxc.fecha).replace(/\//g, "-")}`;
+let tituloPrevio = null;
+window.addEventListener("beforeprint", () => {
+  tituloPrevio = document.title; document.title = tituloImpresion();
+  document.documentElement.setAttribute("data-theme", "light");
+});
+window.addEventListener("afterprint", () => {
+  if (tituloPrevio != null) document.title = tituloPrevio;
+  document.documentElement.removeAttribute("data-theme");
+});
+async function imprimirPdf(){
+  if (!enClaude){
+    try { window.print(); } catch (e){ aviso("No se pudo abrir la impresión. Usa Ctrl + P.", 5000); }
+    return;
+  }
+  /* dentro de claude.ai la ventana de impresión no está disponible: se arma el PDF directo */
+  if ($("#captura").scrollHeight * 1.5 > 15500){ aviso("Esta vista es muy larga para armar el PDF aquí. Filtra por un vendedor o usa Imprimir (Ctrl + P) desde la copia de GitHub.", 8000); return; }
+  const btn = $("#bPdf"); btn.disabled = true; aviso("Preparando el PDF…", 15000);
+  try {
+    await cargarScript(URL_H2C); await cargarScript(URL_JSPDF);
+    if (document.fonts && document.fonts.ready) await document.fonts.ready;
+    const esc2 = 1.5;
+    const canvas = await html2canvas($("#captura"), {
+      scale: esc2, useCORS: true, logging: false, windowWidth: 1440, backgroundColor: "#F4F6FC",
+      onclone: doc => { doc.documentElement.setAttribute("data-theme", "light"); doc.body.classList.add("capturando"); }
+    });
+    const w = Math.round(canvas.width / esc2), h = Math.round(canvas.height / esc2);
+    const pdf = new window.jspdf.jsPDF({orientation: w > h ? "l" : "p", unit:"px", format:[w, h], hotfixes:["px_scaling"]});
+    pdf.addImage(canvas.toDataURL("image/jpeg", 0.92), "JPEG", 0, 0, w, h);
+    await bajarBlob(pdf.output("blob"), tituloImpresion() + ".pdf", "PDF");
+  } catch (err){ aviso("No se pudo generar el PDF. " + (err && err.message ? err.message : ""), 6000); }
+  finally { btn.disabled = est.tab === "admin" || est.tab === "descargas"; }
+}
+
+/* ---------- Eventos ---------- */
+function irATab(t){ if (!TABS[t] || t === est.tab) return; est.tab = t; $("#captura").classList.remove("animar"); render(); }
+function cambioFiltro(){ $("#captura").classList.remove("animar"); render(); }
+$("#fLinea").addEventListener("change", e => { est.f.linea = e.target.value; cambioFiltro(); });
+$("#fCanal").addEventListener("change", e => { est.f.canal = e.target.value; ajustarTipoPorCanal(); cambioFiltro(); });
+$("#fTipo").addEventListener("change", e => {
+  const v = e.target.value;
+  aplicarTipo(v);
+});
+$("#formClaveTipo").addEventListener("submit", intentarClaveTipo);
+$("#clTipo").addEventListener("change", () => { llenarEmpleadosClave(); $("#clErr").textContent = ""; });
+$("#fSup").addEventListener("change", e => { est.f.sup = e.target.value; cambioFiltro(); });
+$("#fCoord").addEventListener("change", e => { est.f.coord = e.target.value; cambioFiltro(); });
+$("#fVend").addEventListener("change", e => { est.f.vend = e.target.value; cambioFiltro(); });
+$("#bLimpiar").addEventListener("click", () => { est.f = {linea:"todas", canal:"todos", tipo:"todos", sup:"todos", coord:"todos", vend:"todos"}; cambioFiltro(); });
+document.addEventListener("click", e => {
+  const cerrarB = e.target.closest("[data-cerrar]");
+  if (cerrarB){ cerrarModal(cerrarB.closest(".modal")); return; }
+  if (e.target.classList && e.target.classList.contains("modal")){ cerrarModal(e.target); return; }
+  const ab = e.target.closest("[data-abrir-clave]"); if (ab){ abrirClave(); return; }
+  const tab = e.target.closest(".pest"); if (tab){ irATab(tab.dataset.tab); return; }
+  const can = e.target.closest("tr[data-canal]");
+  if (can){ est.f.canal = est.f.canal === can.dataset.canal ? "todos" : can.dataset.canal; ajustarTipoPorCanal(); cambioFiltro(); return; }
+  const vd = e.target.closest("[data-vend]"); if (vd) abrirDetalle(vd.dataset.vend);
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape"){ const m = document.querySelector(".modal.abierto"); if (m) cerrarModal(m); }
+  if ((e.key === "Enter" || e.key === " ") && e.target.matches){
+    if (e.target.matches("[data-vend]")){ e.preventDefault(); abrirDetalle(e.target.dataset.vend); }
+    else if (e.target.matches("tr[data-canal]")){ e.preventDefault(); e.target.click(); }
+  }
+  if ((e.key === "ArrowRight" || e.key === "ArrowLeft") && e.target.classList && e.target.classList.contains("pest")){
+    const ks = Object.keys(TABS), i = ks.indexOf(est.tab), n = ks[(i + (e.key === "ArrowRight" ? 1 : ks.length - 1)) % ks.length];
+    irATab(n); const b = document.querySelector(`.pest[data-tab="${n}"]`); if (b) b.focus();
+  }
+});
+$("#bImagen").addEventListener("click", e => capturar($("#captura"), NOMBRE_IMAGEN + ".png", e.currentTarget));
+$("#bPdf").addEventListener("click", imprimirPdf);
+$("#dtBuscar").addEventListener("input", e => { dt.q = e.target.value; renderDetalleDocs(); });
+$("#dtEstado").addEventListener("change", e => { dt.estado = e.target.value; renderDetalleDocs(); });
+$("#bVerDocs").addEventListener("click", () => {
+  if (!detalleActual) return;
+  cerrarModal($("#mDetalle"));
+  est.f.canal = "todos"; est.f.tipo = "todos"; est.f.sup = "todos"; est.f.coord = "todos"; est.f.vend = detalleActual.nombre;
+  est.tab = "detalle"; $("#captura").classList.remove("animar"); render(); window.scrollTo({top:0});
+});
+$("#bImagenDet").addEventListener("click", e => capturar($("#detPanel"), `${NOMBRE_IMAGEN} - ${detalleActual ? detalleActual.nombre.toLowerCase() : "vendedor"}.png`, e.currentTarget));
+$("#formClave").addEventListener("submit", intentarEntrar);
+$("#fMoneda").addEventListener("change", e => { est.moneda = e.target.value; lsPoner(LS_MONEDA, est.moneda); cambioFiltro(); });
+$("#bTasaGuardar").addEventListener("click", guardarTasaManual);
+$("#bCargarCom").addEventListener("click", () => $("#archivoCom").click());
+$("#archivoCom").addEventListener("change", e => { const f = e.target.files && e.target.files[0]; e.target.value = ""; cargarArchivoCom(f); });
+$("#bPlantillaCom").addEventListener("click", plantillaComisiones);
+const zonaCom = $("#zonaCom");
+["dragenter","dragover"].forEach(ev => zonaCom.addEventListener(ev, e => { e.preventDefault(); zonaCom.classList.add("activa"); }));
+["dragleave","drop"].forEach(ev => zonaCom.addEventListener(ev, e => { e.preventDefault(); zonaCom.classList.remove("activa"); }));
+zonaCom.addEventListener("drop", e => { const f = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]; cargarArchivoCom(f); });
+$("#bTasaQuitar").addEventListener("click", quitarTasaManual);
+document.addEventListener("click", e => { if (e.target && e.target.id === "bTasaAuto") cargarTasaAuto(true); if (e.target && e.target.id === "bBloquear") bloquearTodo(); });
+$("#dAlcance").addEventListener("change", renderDescargas);
+$("#bExcel").addEventListener("click", descargarExcel);
+$("#dTabla").addEventListener("change", e => {
+  if (e.target.id === "dTodas"){ if (e.target.checked) HOJAS.forEach(h => hojasMarcadas.add(h.id)); else hojasMarcadas.clear(); }
+  else if (e.target.dataset.hoja){ if (e.target.checked) hojasMarcadas.add(e.target.dataset.hoja); else hojasMarcadas.delete(e.target.dataset.hoja); }
+  renderDescargas();
+});
+$("#bSalir").addEventListener("click", salirAdmin);
+$("#bReset").addEventListener("click", restablecer);
+$("#bGhGuardar").addEventListener("click", ghGuardar);
+$("#bGhPublicar").addEventListener("click", ghPublicar);
+$("#bGhProbar").addEventListener("click", ghProbar);
+$("#bGhOlvidar").addEventListener("click", ghOlvidar);
+$("#bCargar").addEventListener("click", () => $("#archivo").click());
+$("#archivo").addEventListener("change", e => { const f = e.target.files && e.target.files[0]; e.target.value = ""; cargarArchivo(f); });
+const zona = $("#zonaCarga");
+["dragenter","dragover"].forEach(ev => zona.addEventListener(ev, e => { e.preventDefault(); zona.classList.add("activa"); }));
+["dragleave","drop"].forEach(ev => zona.addEventListener(ev, e => { e.preventDefault(); zona.classList.remove("activa"); }));
+zona.addEventListener("drop", e => { const f = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]; cargarArchivo(f); });
+$("#edGuardar").addEventListener("click", guardarEdicion);
+$("#edDescartar").addEventListener("click", () => { construirEdicion(); aviso("Cambios descartados"); });
+$("#edTabla").addEventListener("input", () => marcarSucio(true));
+$("#edFecha").addEventListener("input", () => marcarSucio(true));
+$("#edAgregar").addEventListener("click", () => {
+  const n = normNombre($("#edNuevo").value);
+  if (!n){ aviso("Escribe el nombre del vendedor que quieres agregar."); return; }
+  if ([...$("#edTabla").querySelectorAll("tbody tr")].some(tr => tr.dataset.nombre === n)){ aviso("Ese vendedor ya está en la lista."); return; }
+  $("#edTabla tbody").insertAdjacentHTML("beforeend", filaEdicion(n, null)); $("#edNuevo").value = ""; marcarSucio(true);
+});
+window.addEventListener("beforeunload", e => { if (est.sucio || (est.admin && est.sinPublicar)){ e.preventDefault(); e.returnValue = ""; } });
+
+/* ---------- Arranque ---------- */
+$("#logoDet").src = $("#logoVJ").src;
+if (!est.filas) est.filas = decodificar(est.cxc);
+est.admin = ssLeer(SS_ADMIN) === "1";
+const inicial = (location.hash || "").replace("#", "");
+if (TABS[inicial]) est.tab = inicial;
+if (lsLeer(LS_MONEDA) === "bs") est.moneda = "bs";
+render();
+if (est.admin){ construirEdicion(); llenarFormTasa(); llenarFormGH(); }
+cargarTasaAuto(false);
+cargarDataset(false);
+cargarClaves();
+setTimeout(() => $("#captura").classList.remove("animar"), 1500);
+})();
+
+</script>
+</body>
+</html>
