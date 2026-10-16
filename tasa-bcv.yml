@@ -1,0 +1,28 @@
+name: Tasa BCV
+
+on:
+  schedule:
+    # Hora de Caracas (UTC-4): 8:00 a. m., 1:00 p. m. y 6:00 p. m., de lunes a viernes
+    - cron: "0 12,17,22 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  tasa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - run: python tasa_bcv.py
+      - name: Guardar tasa en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tasa_bcv.json
+          git diff --cached --quiet || git commit -m "Tasa BCV $(date -u +%Y-%m-%d)"
+          git push
